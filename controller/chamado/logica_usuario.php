@@ -11,7 +11,7 @@
     function verificaUsuario() {
         if(!usuarioLogado()) {
             $_SESSION["warning"] = "Acesso negado, por favor faça o login!";
-            header("Location: login.php");
+            header("Location: login");
             die();
         }
     }

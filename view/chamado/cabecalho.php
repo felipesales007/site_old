@@ -39,12 +39,12 @@
 										<img src="recursos/img/usuario.jpg" id="icon-user">
 										<span id="mlogin-view"><b><?= usuarioLogin() ?></b></span>
 									</li>
-									<li><a href="alterar_senha.php"><i class="fa fa-pencil"></i> Alterar senha</a></li>
+									<li><a href="alterar_senha"><i class="fa fa-pencil"></i> Alterar senha</a></li>
 									<li><a href="#"><i class="fa fa-cog"></i> Administrador</a></li>
-									<li><a href="contato.php"><i class="fa fa-envelope-o"></i> Contato</a></li>
-									<li><a href="sobre.php"><i class="fa fa-code-fork"></i> Sobre</a></li>
+									<li><a href="contato"><i class="fa fa-envelope-o"></i> Contato</a></li>
+									<li><a href="sobre"><i class="fa fa-code-fork"></i> Sobre</a></li>
 									<hr>
-									<li><a href="../controller/logout.php" title="Logout" id="sair" style="color:red;"><i class="fa fa-power-off"></i> Sair</a></li>
+									<li><a href="../controller/logout" title="Logout" id="sair" style="color:red;"><i class="fa fa-power-off"></i> Sair</a></li>
 								</ul>
 							</div>
 						</div>
@@ -60,12 +60,12 @@
 										<span id="ic" class="fa fa-caret-down"></span>
 									</button>
 									<ul class="dropdown-menu">
-										<li><a href="alterar_senha.php"><i class="fa fa-pencil"></i> Alterar senha</a></li>
+										<li><a href="alterar_senha"><i class="fa fa-pencil"></i> Alterar senha</a></li>
 										<li><a href="#"><i class="fa fa-cog"></i> Administrador</a></li>
-										<li><a href="contato.php"><i class="fa fa-envelope-o"></i> Contato</a></li>
-										<li><a href="sobre.php"><i class="fa fa-code-fork"></i> Sobre</a></li>
+										<li><a href="contato"><i class="fa fa-envelope-o"></i> Contato</a></li>
+										<li><a href="sobre"><i class="fa fa-code-fork"></i> Sobre</a></li>
 										<li class="nav-divider">
-										<li><a href="../controller/logout.php" title="Logout" id="sair" style="color:red;"><i class="fa fa-power-off"></i> Sair</a></li>
+										<li><a href="../controller/logout" title="Logout" id="sair" style="color:red;"><i class="fa fa-power-off"></i> Sair</a></li>
 									</ul>
 								</li>
 							</ul>

@@ -16,7 +16,7 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a href="perfil.php" class="btn btn-simple btn-lg navbar-brand">Felipe Sales</a>
+						<a href="perfil" class="btn btn-simple btn-lg navbar-brand">Felipe Sales</a>
 					</div>
 
 					<div class="collapse navbar-collapse" id="navigation-example">

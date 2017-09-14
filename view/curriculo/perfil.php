@@ -115,7 +115,7 @@
                                                                     </a>
                                                                 </h6>
                                                                 <br>
-                                                                <a id="btn_detalhes" type="submit" href="chamado_online.php" class="btn_animado btn btn-primary">Detalhes</a>
+                                                                <a id="btn_detalhes" type="submit" href="chamado_online" class="btn_animado btn btn-primary">Detalhes</a>
                                                             </div>
                                                         </div>
                                                     <!-- Slide Chamdo Online -->
@@ -172,7 +172,7 @@
                                                                     </a>
                                                                 </h6>
                                                                 <br>
-                                                                <a id="btn_detalhes" type="submit" href="running_boy.php" class="btn_animado btn btn-primary">Detalhes</a>
+                                                                <a id="btn_detalhes" type="submit" href="running_boy" class="btn_animado btn btn-primary">Detalhes</a>
                                                             </div>
                                                         </div>
                                                     <!-- /Slide Running Boy -->
@@ -227,7 +227,7 @@
                                                                     </a>
                                                                 </h6>
                                                                 <br>
-                                                                <a id="btn_detalhes" type="submit" href="equipe_bravo.php" class="btn_animado btn btn-primary">Detalhes</a>
+                                                                <a id="btn_detalhes" type="submit" href="equipe_bravo" class="btn_animado btn btn-primary">Detalhes</a>
                                                             </div>
                                                         </div>
                                                     <!-- /Slide Equipe Bravo -->
@@ -277,7 +277,7 @@
                                                                     <p>Desenvolvimentos em HTML, PHP, JSP, Java, Android, libGDX e muito mais.</p>
                                                                 </div>
                                                                 <br>
-                                                                <a id="btn_detalhes" type="submit" href="outros.php" class="btn_animado btn btn-primary">Visualizar mais</a>
+                                                                <a id="btn_detalhes" type="submit" href="outros" class="btn_animado btn btn-primary">Visualizar mais</a>
                                                             </div>
                                                         </div>
                                                     <!-- /Slide Outros -->

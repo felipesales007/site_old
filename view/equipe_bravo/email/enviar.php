@@ -22,9 +22,9 @@
     $mail->AltBody = "De: {$nome}\nEmail: {$email}\n\nMensagem: {$mensagem}";
 
     if($mail->send()) {
-        header("Location: ../index.html");
+        header("Location: ../index");
     }else{
-        header("Location: ../erro.html");
+        header("Location: ../erro");
     }
     die();
 ?>

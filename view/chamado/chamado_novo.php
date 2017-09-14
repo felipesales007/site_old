@@ -16,7 +16,7 @@
 						<hr>
 						<li class="active"><a title="Novo"><i class="fa fa-user-plus fa-2x"><span id="menu-lateral"><b> Novo</b></span></i></a></li>
 						<hr>
-						<li><a href="lista_pendentes.php" title="Lista"><i class="fa fa-list-alt fa-2x"><span id="menu-lateral"><b> Lista</b></span></i></a></li>
+						<li><a href="lista_pendentes" title="Lista"><i class="fa fa-list-alt fa-2x"><span id="menu-lateral"><b> Lista</b></span></i></a></li>
 						<hr>
 					</ul>
 				</aside>
@@ -28,7 +28,7 @@
 						<section class="tab-pane active fade in content">
 							<div class="row">
 								<!-- FORMULÁRIO -->
-									<form class="well form-horizontal" action="../controller/chamado_novo.php" method="POST" id="contact_form">
+									<form class="well form-horizontal" action="../controller/chamado_novo" method="POST" id="contact_form">
 										<fieldset>
 											<!-- TÍTULO -->
 												<legend><center><i class="fa fa-user-plus fa-2x"></i><b> Novo Chamado</b><br><br></center></legend>

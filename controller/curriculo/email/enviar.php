@@ -23,10 +23,10 @@
 
     if($mail->send()) {
         $_SESSION["success"] = "Mensagem enviada com sucesso!";
-        header("Location: ../../../view/curriculo/perfil.php");
+        header("Location: ../../../view/curriculo/perfil");
     }else{
         $_SESSION["danger"] = "Erro ao enviar mensagem!" . $mail->ErroInfo;
-        header("Location: ../../../view/curriculo/perfil.php");
+        header("Location: ../../../view/curriculo/perfil");
     }
     die();
 ?>

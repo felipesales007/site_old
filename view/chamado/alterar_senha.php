@@ -13,9 +13,9 @@
 				<aside class="sidebar">
 					<ul class="sidebar-nav">
 						<hr>
-						<li><a href="chamado_novo.php" title="Novo"><i class="fa fa-user-plus fa-2x"><span id="menu-lateral"><b> Novo</b></span></i></a></li>
+						<li><a href="chamado_novo" title="Novo"><i class="fa fa-user-plus fa-2x"><span id="menu-lateral"><b> Novo</b></span></i></a></li>
 						<hr>
-						<li><a href="lista_pendentes.php" title="Lista"><i class="fa fa-list-alt fa-2x"><span id="menu-lateral"><b> Lista</b></span></i></a></li>
+						<li><a href="lista_pendentes" title="Lista"><i class="fa fa-list-alt fa-2x"><span id="menu-lateral"><b> Lista</b></span></i></a></li>
 						<hr>
 						<li class="active"><a title="Novo"><i class="fa fa-user fa-2x"><span id="menu-lateral"><b> Perfil</b></span></i></a></li>
 						<hr>

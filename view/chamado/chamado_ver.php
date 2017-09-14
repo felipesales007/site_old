@@ -17,9 +17,9 @@
 				<aside class="sidebar">
 					<ul class="sidebar-nav">
 						<hr>
-						<li><a href="chamado_novo.php" title="Novo"><i class="fa fa-user-plus fa-2x"><span id="menu-lateral"><b> Novo</b></span></i></a></li>
+						<li><a href="chamado_novo" title="Novo"><i class="fa fa-user-plus fa-2x"><span id="menu-lateral"><b> Novo</b></span></i></a></li>
 						<hr>
-						<li><a href="lista_pendentes.php" title="Lista"><i class="fa fa-list-alt fa-2x"><span id="menu-lateral"><b> Lista</b></span></i></a></li>
+						<li><a href="lista_pendentes" title="Lista"><i class="fa fa-list-alt fa-2x"><span id="menu-lateral"><b> Lista</b></span></i></a></li>
 						<hr>
 						<li class="active"><a title="Visualizar"><i class="fa fa-eye fa-2x"><span id="menu-lateral"><b> Visualizar</b></span></i></a></li>
 						<hr>
@@ -33,7 +33,7 @@
 						<section class="tab-pane active fade in content">
 							<div class="row">
 								<!-- FORMULÁRIO -->
-									<form class="well form-horizontal" action="../controller/chamado_novo.php" method="POST" id="contact_form">
+									<form class="well form-horizontal" action="../controller/chamado_novo" method="POST" id="contact_form">
 										<fieldset>
 											<!-- TÍTULO -->
 												<legend><center><i class="fa fa-eye fa-2x"></i><b> Visualizar Chamado</b><br><br></center></legend>
@@ -126,10 +126,10 @@
 													<div class="form-group">
 														<label class="col-md-4 control-label"></label>
 														<div class="col-md-4">
-															<a tabindex="7" class="btn btn-primary button btn-block" href="chamado_alterar.php?id=<?= $lista['id'] ?>"><i class="fa fa-pencil-square-o"></i><b> Alterar</b></a>
+															<a tabindex="7" class="btn btn-primary button btn-block" href="chamado_alterar?id=<?= $lista['id'] ?>"><i class="fa fa-pencil-square-o"></i><b> Alterar</b></a>
 															<br>
 															<a tabindex="8" class="btn btn-danger button btn-block" data-toggle="modal" data-target="#exampleModal" data-whatever="<?= $lista['id'] ?>" data-nome="<?= $lista['nome'] ?>"><i class="fa fa-trash-o"></i><b> Excluir</b></a>
-															<?php include("confirmar_deletar.php"); ?>
+															<?php include("confirmar_deletar"); ?>
 														</div>
 													</div>
 												</center>

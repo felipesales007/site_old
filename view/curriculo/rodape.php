@@ -17,7 +17,7 @@
             </ul>
              <ul>
                 <li class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1.1s" data-toggle="tooltip" data-placement="bottom" title="Informações">
-                    <a id="nao_link" href="resumo.php">
+                    <a id="nao_link" href="resumo">
                         Resumo
                     </a>
                 </li>

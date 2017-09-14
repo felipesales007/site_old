@@ -105,7 +105,7 @@
 		<!-- /Imagens -->
 
 		<!-- Voltar fixo -->
-			<a id="voltar" class="btn btn-primary btn-fab btn-round" href="perfil.php#desenvolvimentos">
+			<a id="voltar" class="btn btn-primary btn-fab btn-round" href="perfil#desenvolvimentos">
 				<i class="material-icons">reply</i>
 				<h6 id="voltar_tamanho">Voltar</h6>
 			</a>

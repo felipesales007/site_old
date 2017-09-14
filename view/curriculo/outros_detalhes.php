@@ -12,7 +12,7 @@
                                 <h4 class="text-justify">Site desenvolvido para postagem de cursos relacionados a programação, orientando e codificando através de breves textos, com auxílio de códigos e vídeos, buscando o compartilhamento de informações entre alunos.</h4>
                                 <br>
                                 <div class="col-md-9 col-md-offset-9 text-right">
-                                    <a href="../../mundodev.php" target="_blank" class="btn btn-default btn-xs">
+                                    <a href="../../mundodev" target="_blank" class="btn btn-default btn-xs">
                                         Clique aqui para ir ao site
                                     </a>
                                     <a href="https://github.com/felipesales007/mundo_dev" target="_blank" class="btn btn-default btn-xs" data-toggle="tooltip" data-placement="top" title="Visualizar no GitHub">
@@ -257,7 +257,7 @@
                                 <h4 class="text-justify">Site desenvolvido para cadastro de bebês de uma maternidade fictícia, codificada para a realização de uma prova da faculdade, cujo objetivo era de fazer um site com integração com um banco de dados.</h4>
                                 <br>
                                 <div class="col-md-9 col-md-offset-9 text-right">
-                                    <a href="../cadastrar_bebe/cadastrar.php" target="_blank" class="btn btn-default btn-xs">
+                                    <a href="../cadastrar_bebe/cadastrar" target="_blank" class="btn btn-default btn-xs">
                                         Clique aqui para ir ao site
                                     </a>
                                     <a href="https://github.com/felipesales007/cadastrar_bebe" target="_blank" class="btn btn-default btn-xs" data-toggle="tooltip" data-placement="top" title="Visualizar no GitHub">
@@ -617,7 +617,7 @@
                                 <h4 class="text-justify">Site desenvolvido para gerar localizações automaticamente no mapa através de um botão na tela, desafio proposto por uma empresa durante uma entrevista para um estágio de desenvolvimento.</h4>
                                 <br>
                                 <div class="col-md-9 col-md-offset-9 text-right">
-                                    <a href="../mapa/mapa.php" target="_blank" class="btn btn-default btn-xs">
+                                    <a href="../mapa/mapa" target="_blank" class="btn btn-default btn-xs">
                                         Clique aqui para ir ao site
                                     </a>
                                     <a href="https://github.com/felipesales007/mapa_randomico" target="_blank" class="btn btn-default btn-xs" data-toggle="tooltip" data-placement="top" title="Visualizar no GitHub">

@@ -4,7 +4,7 @@
             <div class="col-md-8 col-md-offset-2">
                 <div class="card card-signup">
                     <i id="i_mensagem" class="pull-left material-icons i_padrao_email" data-toggle="popover" data-placement="top" title="Entre em contato comigo" data-content="Você pode me enviar um elogio, sugestões de melhorias para o site, proposta de trabalho, informar um bug no site, entre outras coisa.">error_outline</i>
-                    <form class="form" method="POST" action="../../controller/curriculo/email/enviar.php" onsubmit="return valida_form(this)">
+                    <form class="form" method="POST" action="../../controller/curriculo/email/enviar" onsubmit="return valida_form(this)">
                         <p class="text-divider">Enviar mensagem para Felipe Sales</p>
                         <button id="mensagem_fechar" type="button" class="close" data-dismiss="modal" aria-hidden="true"><h3><b>&times;</b></h3></button>
                         <div class="content">

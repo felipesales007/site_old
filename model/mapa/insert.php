@@ -28,7 +28,7 @@
         // executou
         if($retorno == true) {
             echo "<script>
-                    location.href='../../view/mapa/mapa.php';
+                    location.href='../../view/mapa/mapa';
                 </script>";
         // deu erro...
         } else {

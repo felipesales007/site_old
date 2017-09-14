@@ -84,7 +84,7 @@
 											<div class="row">
 												<div class="col-xs-6 centered">
 													<img id="portifolio" class="img-responsive" src="recursos/img/equipe_bravo/background.jpg">
-													<a href="../../equipebravo.php" target="_blank" title="Ir ao site"><h6><i class="icon-link"></i> Equipe Bravo</h6></a>
+													<a href="../../equipebravo" target="_blank" title="Ir ao site"><h6><i class="icon-link"></i> Equipe Bravo</h6></a>
 												</div>
 												<div class="col-xs-6 centered">
 													<img id="portifolio" class="img-responsive" src="recursos/img/running_boy/background.png">
@@ -100,7 +100,7 @@
 												</div>
 												<div class="col-xs-6 centered">
 													<img id="portifolio" class="img-responsive" src="recursos/img/outros/mundo_dev/background.jpg">
-													<a href="../../mundodev.php" target="_blank" title="Ir ao site"><h6><i class="icon-link"></i> Mundo DEV</h6></a>
+													<a href="../../mundodev" target="_blank" title="Ir ao site"><h6><i class="icon-link"></i> Mundo DEV</h6></a>
 												</div>
 											</div>
 										</div>
@@ -147,7 +147,7 @@
 				</div>
 			</div>
 			<!-- Voltar fixo -->
-				<a id="voltar" class="btn btn-success" href="perfil.php">
+				<a id="voltar" class="btn btn-success" href="perfil">
 					<i id="icone_voltar" class="material-icons">reply</i>
 					<h6 id="voltar_tamanho">VOLTAR</h6>
 				</a>
