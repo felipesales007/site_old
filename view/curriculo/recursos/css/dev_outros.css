@@ -1,0 +1,102 @@
+#outros_fundo {
+    background-image: url('../img/outros/background.jpg');
+    background-repeat: no-repeat;
+    background-repeat: repeat-y;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    margin-top: 0px;
+}
+
+#outros_video {
+    width: 100%;
+    height: 45%;
+}
+
+#intro_dev {
+    font-size: 300%;
+}
+
+#dev_aviso {
+    cursor: default;
+}
+
+#voltar {
+    position: fixed;
+    bottom: 31.8px;
+    right: 30px;
+    opacity: 0.8;
+    z-index: 10;
+    transition: 0.7s;
+}
+
+#voltar:hover {
+    position: fixed;
+    bottom: 31.8px;
+    right: 30px;
+    opacity: 1;
+    z-index: 10;
+    transition: 0.7s;
+}
+
+.dev_espaco {
+    margin-bottom: -125px !important;
+}
+
+#download_link_margin {
+    margin-top: 4px;
+}
+
+.btn_dev_tamanho {
+    width: 225px
+}
+
+#voltar_tamanho {
+    font-size: 9px;
+    font-weight: bold;
+    margin-top: 38px;
+}
+
+
+/* Fotos */
+
+#img_foto {
+    width: 100%;
+    margin-bottom: 55px;
+}
+
+#img_foto_mobile {
+    width: 60%;
+    margin-bottom: 55px;
+}
+
+#imagem {
+    margin-top: -50px;
+}
+
+.w3-third {
+    padding: 1%;
+    cursor: pointer;
+}
+
+#img_foto:hover,
+#img_foto_mobile:hover {
+    opacity: 0.8;
+    transition: 0.1s;
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+#titulo_foto {
+    width: 100%;
+    margin-left: 0px;
+    cursor: default;
+}
+
+#escurecer {
+    z-index: 1052;
+}
+
+#dev_clique {
+    cursor: pointer;
+}

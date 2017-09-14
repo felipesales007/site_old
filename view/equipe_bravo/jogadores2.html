@@ -1,0 +1,431 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Equipe Bravo</title>
+</head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Language" content="pt-br">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/membros.css" media="all" />
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Cor da barra do navegador em celulares -->
+<meta name="theme-color" content="#4b749d">
+<meta name="apple-mobile-web-app-status-bar-style" content="#4b749d">
+<meta name="msapplication-navbutton-color" content="#4b749d">
+
+<!-- Icone do site nos navegadores -->
+<link rel="icon" type="image/png" href="img/membro1.jpg">
+<link rel="apple-touch-icon" sizes="76x76" href="img/membro1.jpg">
+
+<body id="home">
+    <br>
+
+    <!-- Icon Bar (Sidenav - hidden on small screens) -->
+    <nav id="menu" class="w3-sidenav w3-center w3-small w3-hide-small w3-hide-medium">
+        <!-- Avatar image in top left corner -->
+        <img src="img/membro2.jpg" style="width:100%">
+        <a class="w3-padding-large w3-hover-black" href="jogadores.html">
+            <i class="fa fa-group w3-xxlarge"></i>
+            <p>EQUIPE BRAVO</p>
+        </a>
+        <a class="w3-padding-large w3-black" href="jogadores2.html">
+            <i class="fa fa-group w3-xxlarge"></i>
+            <p>EQUIPE BRAVO 2</p>
+        </a>
+        <a class="w3-padding-large w3-hover-black" href="jogadores3.html">
+            <i class="fa fa-group w3-xxlarge"></i>
+            <p>EQUIPE BRAVO 3</p>
+        </a>
+    </nav>
+
+
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="w3-top w3-hide-large" id="myNavba">
+        <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+            <a class="w3-bar-item w3-button" style="width:33%" href="jogadores.html">BRAVO</a>
+            <a class="w3-bar-item w3-button" style="width:33%" href="jogadores2.html">BRAVO 2</a>
+            <a class="w3-bar-item w3-button" style="width:33%" href="jogadores3.html">BRAVO 3</a>
+        </div>
+    </div>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-opennav w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i> HOME</a>
+            <a href="index.html#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-book"></i> HISTÓRIA</a>
+            <a href="index.html#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> DECK DE BATALHA</a>
+            <a href="jogadores.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-group"></i> MEMBROS</a>
+            <a href="index.html#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTATO</a>
+            <a href="https://play.google.com/store/apps/details?id=com.supercell.clashroyale&hl=pt-BR" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right w3-hover-red">BAIXAR <img src="img\googleplay.png" alt="Trofeu" width="25" height="25"></a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">HISTÓRIA</a>
+            <a href="index.html#about" class="w3-bar-item w3-button" onclick="toggleFunction()">DECK DE BATALHA</a>
+            <a href="jogadores.html" class="w3-bar-item w3-button" onclick="toggleFunction()">MEMBROS</a>
+            <a href="index.html#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTATO</a>
+            <a href="https://play.google.com/store/apps/details?id=com.supercell.clashroyale&hl=pt-BR" target="_blank" class="w3-bar-item w3-button">BAIXAR</a>
+        </div>
+    </div>
+
+
+    <!-- Image Header -->
+    <div class="w3-display-container w3-animate-opacity">
+        <img src="img/membro.jpg" alt="membrost" style="width:100%;min-height:350px;max-height:500px;">
+        <div class="w3-container w3-display-bottomright w3-margin-bottom">
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Clique para visualizar"><img src="img/trofeugold.png" alt="Trofeu" width="25" height="25"> RECORDISTAS</button>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content w3-card-8 w3-animate-top">
+            <header class="w3-container w3-teal">
+                <span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn"><i class="fa fa-remove"></i></span>
+                <h6>
+                    <b>
+              <center>
+                  <img src="img/trofeugold.png" alt="Trofeu" width="20" height="20">
+                  <img class="w3-hide-small" src="img/trofeugold.png" alt="Trofeu" width="30" height="30">
+                    RECORDISTAS DE DOAÇÕES
+                  <img class="w3-hide-small" src="img/trofeugold.png" alt="Trofeu" width="30" height="30">
+                  <img src="img/trofeugold.png" alt="Trofeu" width="20" height="20">
+            </center>
+        </b>
+                </h6>
+            </header>
+            <div id="ranking1" class="w3-container">
+                <header class="w3-container w3-khaki">
+                    <h6 id="cartas"><b>CARTAS</b></h6>
+                </header>
+                <h4>1º <img src="img/emoticon1.gif" alt="Boss" style="width:18%" class="w3-circle w3-hover-opacity"> HenryKLisak<sup><sup> 912</sup></sup>
+                </h4>
+                <h4>2º <img src="img/emoticon2.gif" alt="Boss" style="width:18%" class="w3-circle w3-hover-opacity"> Marquinho clash<sup><sup> 838</sup></sup>
+                </h4>
+                <h4>3º <img src="img/emoticon3.gif" alt="Boss" style="width:18%" class="w3-circle w3-hover-opacity"> eddy<sup><sup> 720</sup></sup>
+                </h4>
+            </div>
+
+            <div id="ranking2" class="w3-container">
+                <header class="w3-container w3-khaki">
+                    <h6 id="bau"><b>BAÚ DO CLÃ</b></h6>
+                </header>
+                <h4>1º <img src="img/emoticon1.gif" alt="Boss" style="width:18%" class="w3-circle w3-hover-opacity"> Jonathan<sup><sup> 158</sup></sup>
+                </h4>
+                <h4>2º <img src="img/emoticon3.gif" alt="Boss" style="width:18%" class="w3-circle w3-hover-opacity"> Marquinho clash<sup><sup> 151</sup></sup>
+                </h4>
+                <h4>3º <img src="img/emoticon2.gif" alt="Boss" style="width:18%" class="w3-circle w3-hover-opacity"> Marquinho clash<sup><sup> 149</sup></sup>
+                </h4>
+            </div>
+            <footer class="w3-container">
+            </footer>
+            <footer class="w3-container w3-teal">
+                <p>Todos vocês estão de parabéns</p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Team Container -->
+    <div class="w3-container w3-padding-64 w3-center" id="team">
+        <div id="nomedeck" class="w3-center w3-grey">
+            <h1>
+                <b id="bomebatalhapreto">
+            MEMBROS
+        </b>
+            </h1>
+            <h5 id="bomebatalhapreto"><i>Os melhores jogadores você encontra aqui</i></h5>
+        </div>
+
+        <div class="w3-row"><br>
+
+            <div class="w3-quarter">
+                <img src="img/membro3.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+                <h3>NUNCA MEXA</h3>
+                <p>Líder</p>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="img/perfil.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+                <h3>Dinamite</h3>
+                <p>Colíder</p>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="img/membro1.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+                <h3>junior</h3>
+                <p>Colíder</p>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="img/membro2.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+                <h3>Trãumça</h3>
+                <p>Colíder</p>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="img/perfil.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+                <h3>SirIsaias</h3>
+                <p>Colíder</p>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="img/membro3.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+                <h3>Auxiliar</h3>
+                <p>Colíder</p>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="img/emoticon3.gif" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+                <h3>Astroyk</h3>
+                <p>Membro</p>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="img/membro1.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+                <h3>lucão</h3>
+                <p>Membro</p>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="img/membro2.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+                <h3>Mya</h3>
+                <p>Membro</p>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="img/emoticon4.gif" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+                <h3>chaves</h3>
+                <p>Membro</p>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="img/emoticon1.gif" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+                <h3>hugo</h3>
+                <p>Membro</p>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="img/membro3.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+                <h3>Caue</h3>
+                <p>Membro</p>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="img/perfil.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+                <h3>Marquinho clash</h3>
+                <p>Membro</p>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="img/emoticon2.gif" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+                <h3>UCHIHA MADARA</h3>
+                <p>Membro</p>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="img/membro1.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+                <h3>boneco</h3>
+                <p>Membro</p>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="img/membro3.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+                <h3>OniX.?</h3>
+                <p>Membro</p>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="img/membro2.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+                <h3>Bull Seu Terror</h3>
+                <p>Membro</p>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="img/membro1.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+                <h3>eddy</h3>
+                <p>Membro</p>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="img/emoticon1.gif" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+                <h3>VIÚVA NEGRA</h3>
+                <p>Membro</p>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="img/emoticon3.gif" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+                <h3>Thalitta</h3>
+                <p>Membro</p>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="img/membro1.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+                <h3>Jairo</h3>
+                <p>Membro</p>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="img/perfil.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+                <h3>CAOS</h3>
+                <p>Membro</p>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="img/membro2.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+                <h3>Deborah</h3>
+                <p>Membro</p>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="img/emoticon2.gif" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+                <h3>Arquiloco</h3>
+                <p>Membro</p>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="img/membro1.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+                <h3>SIR JOÃOZINHO</h3>
+                </h3>
+                <p>Membro</p>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="img/perfil.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+                <h3>LUCAS</h3>
+                <p>Membro</p>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="img/membro1.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+                <h3>Leo</h3>
+                <p>Membro</p>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="img/membro2.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+                <h3>Murilo</h3>
+                <p>Membro</p>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="img/membro3.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+                <h3>Caique</h3>
+                <p>Membro</p>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="img/perfil.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+                <h3>xXraquerXx</h3>
+                <p>Membro</p>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="img/membro2.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+                <h3>Xamps Golden</h3>
+                <p>Membro</p>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="img/membro1.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+                <h3>zDanilohc</h3>
+                <p>Membro</p>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="img/perfil.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+                <h3>fumaçinha</h3>
+                <p>Membro</p>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="img/membro3.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+                <h3>PerNna</h3>
+                <p>Membro</p>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="img/emoticon1.gif" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+                <h3>jonathan</h3>
+                <p>Membro</p>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="img/membro1.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+                <h3>bateumoreu</h3>
+                <p>Membro</p>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="img/membro2.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+                <h3>HenryKLisak</h3>
+                <p>Membro</p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- Third Parallax Image with Portfolio Text -->
+    <div class="bgimg-2 w3-display-container w3-opacity-min"></div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+        <a href="#home" class="w3-btn w3-padding w3-light-grey w3-hover-grey"><i class="fa fa-arrow-up w3-margin-right"></i>TOPO</a>
+        <div class="w3-xlarge w3-section">
+            <a class="fa fa-facebook-official w3-hover-text-indigo" href="https://www.facebook.com/felipesales007" target="_blank"></a>
+            <a class="fa fa-instagram w3-hover-text-purple" href="https://www.instagram.com/felipesales007/" target="_blank"></a>
+            <a class="fa fa-linkedin w3-hover-text-indigo" href="https://www.linkedin.com/in/felipesales007" target="_blank"></a>
+        </div>
+        <p>Desenvolvido por <a href="" title="W3.CSS" target="_blank" class="w3-hover-text-green">Felipe Sales</a></p>
+    </footer>
+
+
+    <script>
+        // Change style of navbar on scroll
+
+        var navbar = document.getElementById("myNavbar");
+        navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+
+
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function toggleFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+        function w3_open() {
+            document.getElementById("mySidenav").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidenav").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+    </script>
+
+</body>
+
+</html>

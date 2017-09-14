@@ -1,0 +1,11 @@
+html { height: 100%; }
+body { height: 100%; background-color: #c7c7c7; }
+textarea { resize:none; }
+.button:hover { box-shadow:0 3px 3px #808080; }
+.button:active { transform: translateY(4px); }
+#mapa { height: 100%; }
+
+/* responsividade na tela */
+@media (min-width: 500px) {
+    #corpo { height:100%; margin: auto; padding: 3px; float:left; width: 250px; }
+}

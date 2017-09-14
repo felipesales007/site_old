@@ -1,0 +1,86 @@
+/* VIDEO */
+
+.index-video {
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+.index-video video {
+    margin-top: -16%;
+    width: 100%;
+}
+
+.index-video-corpo {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    padding-top: 11%;
+    background: rgba(87, 117, 189, 0.5);
+}
+
+.index-video-corpo .carousel-caption {
+    position: relative !important;
+    left: 0%;
+    right: 0%;
+}
+
+#img-luz {
+    width: 7%;
+    margin: auto;
+}
+
+.index-video-corpo .carousel-caption h1 {
+    font-size: 300%;
+    font-weight: bold;
+}
+
+.index-video-corpo .carousel-caption p {
+    font-size: 160%;
+}
+
+.index-video-corpo .btn-info:hover {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    transition: ease 0.5s;
+    background: transparent;
+}
+
+.btn-info {
+    background: #5674bc none repeat scroll 0 0;
+    border: 1px solid #5674bc;
+    width: 100px;
+    margin: auto;
+    border-radius: 0;
+    color: #ffffff;
+    transition: all 0.5s ease 0s;
+}
+
+@keyframes index-texto-animacao {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.index-texto-animacao {
+    -webkit-animation-name: index-texto-animacao;
+    animation-name: index-texto-animacao;
+    animation-delay: 1s;
+    animation-duration: 2s;
+}
+
+
+/* CORPO */
+
+.index-corpo {
+    padding-top: 39%;
+}

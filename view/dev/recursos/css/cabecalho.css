@@ -1,0 +1,265 @@
+/* BARRA */
+
+.navbar {
+    background: #f8f8f8;
+    box-shadow: 0px 10px 7px -7px #414141;
+}
+
+
+/* BARRA LADO ESQUERDO */
+
+.barra-logo {
+    position: absolute;
+    margin-top: 6px;
+}
+
+#barra-img {
+    width: 45px;
+    margin-left: 13px;
+    margin-top: -4px;
+}
+
+#barra-titulo {
+    position: absolute;
+    font-size: 25px;
+    margin-top: 2px;
+    font-weight: bold;
+    cursor: default;
+    color: #00a2ff;
+}
+
+
+/* BARRA TELA CHEIA */
+
+#menu {
+    text-decoration: none;
+    color: #7a7a7a;
+    letter-spacing: 3pt;
+    word-spacing: -4pt;
+    font-size: 13px;
+    font-family: trebuchet MS, sans-serif;
+    cursor: pointer;
+}
+
+#menu:hover,
+#clique-texto-cursos-dropdown:hover,
+.menu-selecao:hover {
+    cursor: pointer;
+    color: #00a2ff !important;
+}
+
+#menu:focus,
+#clique-texto-cursos-dropdown:focus,
+.menu-selecao:focus {
+    cursor: pointer;
+    color: #00a2ff !important;
+}
+
+.cursos-cor-padrao {
+    color: #00b300 !important;
+}
+
+.cursos-cor-clicado {
+    color: #00a2ff !important;
+    background-color: #c8dcea;
+}
+
+.navbar-right {
+    list-style-type: none;
+    font-weight: bold;
+    margin-right: 0;
+    margin-top: 17px;
+    padding-right: 13px;
+}
+
+
+/* MENU DROPDOWN TELA CHEIA */
+
+.corpo-dropdown {
+    position: fixed;
+    right: 242px;
+    padding-right: 0px;
+    top: 35px;
+    box-shadow: 0px 10px 7px -7px #414141;
+    z-index: 1030;
+}
+
+input#clique-dropdown {
+    display: none;
+}
+
+input#clique-dropdown:checked~.menu-dropdown {
+    display: none;
+}
+
+.menu-dropdown a {
+    display: block;
+    background: #f8f8f8;
+    width: 122px;
+    text-decoration: none;
+    color: #7a7a7a;
+    letter-spacing: 3pt;
+    word-spacing: -4pt;
+    font-size: 13px;
+    font-family: trebuchet MS, sans-serif;
+    line-height: 40px;
+}
+
+.menu-dropdown a:nth-child(2) {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.menu-dropdown a:last-child {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.menu-dropdown a:hover {
+    color: #00a2ff !important;
+    background: #c8dcea;
+}
+
+.menu-dropdown a:focus {
+    color: #00a2ff !important;
+    background: #c8dcea;
+}
+
+.seta {
+    width: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 9px solid #F8F8F8;
+}
+
+
+/* BARRA MENU MOBILE */
+
+a {
+    text-decoration: none !important;
+}
+
+#sair {
+    color: red;
+}
+
+#sair:hover {
+    background-color: red;
+    color: #ffffff;
+}
+
+#menu-mobile-itens {
+    margin-top: 50px;
+    margin-right: -320px;
+    width: 300px;
+    height: 100%;
+    right: 0;
+    color: #7a7a7a;
+    letter-spacing: 3pt;
+    word-spacing: -4pt;
+    font-size: 13px;
+    font-family: trebuchet MS, sans-serif;
+    background: #f8f8f8;
+    position: fixed;
+    overflow-y: auto;
+    transition: all 0.5s ease-in 0s;
+    -webkit-transition: all 0.5s ease-in 0s;
+    -moz-transition: all 0.5s ease-in 0s;
+    -ms-transition: all 0.5s ease-in 0s;
+    -o-transition: all 0.5s ease-in 0s;
+    box-shadow: -15px 7px 7px -12px #414141;
+}
+
+.menu-mobile-lista {
+    position: absolute;
+    width: 250px;
+    padding: 0;
+}
+
+.menu-mobile-lista li {
+    line-height: 50px;
+    text-indent: 20px;
+}
+
+.menu-mobile-lista li a {
+    color: #999999;
+    display: block;
+}
+
+.menu-mobile-lista li a:hover {
+    color: #00a2ff;
+    background: #c8dcea;
+    text-decoration: none;
+}
+
+#menu-mobile {
+    right: 0;
+    position: fixed;
+}
+
+#menu-mobile-itens.active {
+    right: 250px;
+    width: 250px;
+    transition: all 0.5s ease-out 0s;
+    -webkit-transition: all 0.5s ease-out 0s;
+    -moz-transition: all 0.5s ease-out 0s;
+    -ms-transition: all 0.5s ease-out 0s;
+    -o-transition: all 0.5s ease-out 0s;
+}
+
+.barra-mobile>.barra-botao {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.barra-mobile.open>.barra-botao,
+.barra-mobile>.barra-botao {
+    background: #c8dcea;
+}
+
+.barra-mobile>.barra-botao>span {
+    position: absolute;
+    top: 50%;
+    right: 47%;
+    margin: -8px;
+    width: 17px;
+    height: 17px;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjIuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjMycHgiIHZpZXdCb3g9IjAgMCAxNiAzMiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTYgMzIiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZmlsbD0iI0ZGRkZGRiIgZD0iTTEsN2gxNGMwLjU1MiwwLDEsMC40NDgsMSwxcy0wLjQ0OCwxLTEsMUgxQzAuNDQ4LDksMCw4LjU1MiwwLDgKCVMwLjQ0OCw3LDEsN3oiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGZpbGw9IiNGRkZGRkYiIGQ9Ik0xLDEyaDE0YzAuNTUyLDAsMSwwLjQ0OCwxLDFzLTAuNDQ4LDEtMSwxSDFjLTAuNTUyLDAtMS0wLjQ0OC0xLTEKCVMwLjQ0OCwxMiwxLDEyeiIvPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZmlsbD0iI0ZGRkZGRiIgZD0iTTEsMmgxNGMwLjU1MiwwLDEsMC40NDgsMSwxcy0wLjQ0OCwxLTEsMUgxQzAuNDQ4LDQsMCwzLjU1MiwwLDMKCVMwLjQ0OCwyLDEsMnoiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGZpbGw9IiNGRkZGRkYiIGQ9Ik0xLjMzLDI4Ljk3bDExLjY0LTExLjY0YzAuNDU5LTAuNDU5LDEuMjA0LTAuNDU5LDEuNjYzLDAKCWMwLjQ1OSwwLjQ1OSwwLjQ1OSwxLjIwNCwwLDEuNjYzTDIuOTkzLDMwLjYzM2MtMC40NTksMC40NTktMS4yMDQsMC40NTktMS42NjMsMEMwLjg3MSwzMC4xNzQsMC44NzEsMjkuNDMsMS4zMywyOC45N3oiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yLjk5MywxNy4zM2wxMS42NDEsMTEuNjRjMC40NTksMC40NTksMC40NTksMS4yMDQsMCwxLjY2MwoJcy0xLjIwNCwwLjQ1OS0xLjY2MywwTDEuMzMsMTguOTkzYy0wLjQ1OS0wLjQ1OS0wLjQ1OS0xLjIwNCwwLTEuNjYzQzEuNzg5LDE2Ljg3MSwyLjUzNCwxNi44NzEsMi45OTMsMTcuMzN6Ii8+Cjwvc3ZnPgo=);
+    -webkit-transition: -webkit-transform .3s ease-out 0s;
+    -moz-transition: -moz-transform .3s ease-out 0s;
+    -o-transition: -moz-transform .3s ease-out 0s;
+    -ms-transition: -ms-transform .3s ease-out 0s;
+    transition: transform .3s ease-out 0s;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.barra-mobile.open>.barra-botao>span {
+    background-position: 0 -16px;
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
+
+/* MENU DROPDOWN MOBILE DE TURORIAIS */
+
+.menu-selecao {
+    text-decoration: none !important;
+}
+
+#menu-selecao-itens {
+    padding-left: 0 !important;
+    background-color: #eef1f7;
+    list-style-type: none;
+    border-bottom: solid 1px #dddddd;
+    border-top: solid 1px #dddddd;
+}

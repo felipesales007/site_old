@@ -1,0 +1,77 @@
+#myNavba {
+    margin-top: 38px;
+}
+
+.w3-quarter {
+    padding: 1%;
+}
+
+#nomedeck {
+    font-size: 30px;
+}
+
+#bomebatalhapreto {
+    color: #DDDDDD;
+}
+
+#deck1 {
+    margin-left: 8.8%;
+    margin-right: 8.8%;
+}
+
+#menu {
+    width: 120px;
+}
+
+.menu-celular{
+    margin-bottom: -80px;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Raleway", sans-serif
+}
+
+.w3-quarter img {
+    margin-bottom: -6px;
+    cursor: pointer
+}
+
+.w3-quarter img:hover {
+    opacity: 0.6;
+    transition: 0.3s
+}
+
+
+/* Create a Parallax Effect */
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Third image (Contact) */
+
+.bgimg-1 {
+    background-image: url('http://clashroyalearena.com/wp-content/uploads/2016/08/Community_July.jpg');
+    min-height: 400px;
+}
+
+.bgimg-2 {
+    background-image: url('https://2.bp.blogspot.com/-IxYCv8L1l68/WFtkOz2VHJI/AAAAAAAAwA4/JUHEQX9cX405TKyFgxxt4F1vfsekqbG8QCLcB/s1600/wallpaper-archer-clash-royale.jpg');
+    min-height: 400px;
+}
+
+.bgimg-3 {
+    background-image: url('http://www.baltana.com/files/wallpapers-2/Clash-Royale-Desktop-Wallpaper-08591.jpg');
+    min-height: 400px;
+}

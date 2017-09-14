@@ -1,0 +1,76 @@
+#ranking1 {
+    float: left;
+}
+
+#ranking2 {
+    float: right;
+}
+
+#myNavba {
+    margin-top: 38px;
+}
+
+#nomedeck {
+    font-size: 30px;
+}
+
+#bomebatalhapreto {
+    color: #DDDDDD;
+}
+
+.w3-row {
+    margin-left: 4%;
+}
+
+#menu {
+    width: 120px;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Raleway", sans-serif
+}
+
+.w3-quarter img {
+    margin-bottom: -6px;
+    cursor: pointer
+}
+
+.w3-quarter img:hover {
+    opacity: 0.6;
+    transition: 0.3s
+}
+
+
+/* Create a Parallax Effect */
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Third image (Contact) */
+
+.bgimg-1 {
+    background-image: url('http://i.imgur.com/WtTx5vp.jpg');
+    min-height: 400px;
+}
+
+.bgimg-2 {
+    background-image: url('http://i.imgur.com/JH1XEFP.jpg');
+    min-height: 400px;
+}
+
+.bgimg-3 {
+    background-image: url('http://i.imgur.com/pKbIwyY.jpg');
+    min-height: 400px;
+}

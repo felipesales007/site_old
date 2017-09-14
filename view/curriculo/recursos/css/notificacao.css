@@ -1,0 +1,17 @@
+.popup {
+    width: 360px;
+    position: fixed;
+    right: 0;
+    bottom: 5px;
+    z-index: 10;
+}
+
+@media screen and (max-width: 359px) {
+    .popup {
+        width: 320px;
+        position: fixed;
+        right: 0;
+        bottom: 5px;
+        z-index: 10;
+    }
+}
