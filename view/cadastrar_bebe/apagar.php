@@ -27,7 +27,7 @@
 	if($retorno == true) {
 		echo "<script>
 				alert('Bebê deletado com sucesso!');
-				location.href='listar.php';
+				location.href='listar';
 			</script>";
 	// deu erro...
 	} else {

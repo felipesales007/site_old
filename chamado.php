@@ -1,4 +1,4 @@
 <!-- Redirecionamento para página do sistema de Chamado Online -->
 <?php
-    header("location: view/chamado/login.php");
+    header("location: https://www.felipesales.com.br/view/chamado/login");
 ?>

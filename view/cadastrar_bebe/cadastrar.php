@@ -42,8 +42,8 @@
                         <a class="navbar-brand hidden-xs"><img class="img-responsive logo" id="img-top" src="https://s-media-cache-ak0.pinimg.com/originals/ba/b2/e4/bab2e43d04f43d98fcc8760ab73a92d4.png"></a>
                     </div>
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="cadastrar.php"><i class="fa fa-plus" aria-hidden="true"></i> Cadastrar Bebê</a></li>
-                        <li title="Voltar para lista"><a href="listar.php"><i class="fa fa-list-alt" aria-hidden="true"></i> Listar Bebês</a></li>
+                        <li class="active"><a href="cadastrar"><i class="fa fa-plus" aria-hidden="true"></i> Cadastrar Bebê</a></li>
+                        <li title="Voltar para lista"><a href="listar"><i class="fa fa-list-alt" aria-hidden="true"></i> Listar Bebês</a></li>
                     </ul>
                 </div>
             </div>
@@ -188,7 +188,7 @@
 			if($retorno == true) {
 				echo "<script>
 						alert('Bebê cadastrado com sucesso!');
-						location.href='listar.php';
+						location.href='listar';
 					</script>";
 			// deu erro...
 			} else {
