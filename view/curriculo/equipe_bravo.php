@@ -14,7 +14,7 @@
 							<h1 id="intro_dev" class="title wow fadeInRight" data-wow-duration="1s" data-wow-delay=".0s">As vezes, segurar uma carta é a melhor estratégia.</h1>
 							<h5 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".2s">Jogue com várias cartas de tropas, feitiços e estruturas de defesa do Clash of Clans, além dos Royales: príncipe, cavaleiro, bebê dragão e muito mais. Derrube o Rei e as Princesas do inimigo de cima das torres para derrotá-los e ganhar troféus, coroas e glória na arena.</h5>
 							<br>
-							<a href="../equipe_bravo/index.html" target="_blank" class="btn btn-success btn-raised btn-lg wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
+							<a href="../equipe_bravo/index" target="_blank" class="btn btn-success btn-raised btn-lg wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
 								<i class="material-icons">desktop_windows</i>&ensp;Ir ao site
 							</a>
 							<a href="https://play.google.com/store/apps/details?id=com.supercell.clashroyale&hl=pt-br" target="_blank" class="btn btn-info btn-raised btn-lg wow fadeInRight" data-wow-duration="1s" data-wow-delay=".8s">
