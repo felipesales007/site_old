@@ -31,7 +31,7 @@
                             <!-- /Descrição -->
 
                             <!-- Desenvolvimentos -->
-                                <div id="desenvolvimentos" class="col-md-6 col-md-offset-3">
+                                <div id="desenvolvimento" class="col-md-6 col-md-offset-3">
                                     <div class="profile-tabs">
                                         <div class="profile">
                                             <h4>DESENVOLVIMENTOS</h4>
