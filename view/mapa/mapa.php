@@ -7,7 +7,7 @@
     <body>
         <!-- formulário -->
             <div id="corpo">
-                <form class="well" action="../../model/mapa/insert" method="POST">
+                <form class="well" action="../../model/mapa/insert.php" method="POST">
                     <fieldset>
                         <!-- titulo -->
                         <legend><center><i class="fa fa-map-o"></i> Local<br><br></center></legend>
@@ -35,7 +35,7 @@
 
         <div id="mapa">
             <!-- visualização do mapa -->
-            <?php require_once("../../model/mapa/select");?>
+            <?php require_once("../../model/mapa/select.php");?>
         </div>
     </body>
 </html>

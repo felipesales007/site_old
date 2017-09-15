@@ -23,8 +23,8 @@
 
 		<!-- Fonts -->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic">
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:400,300,700">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,300,700">
 	</head>
 	<body>
 		<!-- /Corpo -->

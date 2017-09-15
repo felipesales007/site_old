@@ -56,7 +56,7 @@
                                                         </a>
                                                     </li>
                                                     <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.1s">
-                                                        <a id="dev_caixa" href="#outros" role="tab" data-toggle="tab">
+                                                        <a id="dev_caixa" href="#desenvolvimentos" role="tab" data-toggle="tab">
                                                             <i class="material-icons">extension</i>&ensp;&ensp; Outros &ensp;&ensp;
                                                         </a>
                                                     </li>
@@ -233,7 +233,7 @@
                                                     <!-- /Slide Equipe Bravo -->
 
                                                     <!-- Slide Outros -->
-                                                        <div class="tab-pane text-center" id="outros">
+                                                        <div class="tab-pane text-center" id="desenvolvimentos">
                                                             <div id="slide_margem" class="description text-center">
                                                                 <p>Clique em visualizar mais para ver outros desenvolvimentos.</p>
                                                             </div>
@@ -277,7 +277,7 @@
                                                                     <p>Desenvolvimentos em HTML, PHP, JSP, Java, Android, libGDX e muito mais.</p>
                                                                 </div>
                                                                 <br>
-                                                                <a id="btn_detalhes" type="submit" href="outros" class="btn_animado btn btn-primary">Visualizar mais</a>
+                                                                <a id="btn_detalhes" type="submit" href="desenvolvimentos" class="btn_animado btn btn-primary">Visualizar mais</a>
                                                             </div>
                                                         </div>
                                                     <!-- /Slide Outros -->

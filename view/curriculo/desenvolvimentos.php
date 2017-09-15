@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Outros | Felipe</title>
+	<title>Desenvolvimentos | Felipe</title>
 	<link rel="stylesheet" href="recursos/css/default/w3.css">
 	<?php require_once("cabecalho.php"); ?>
 	<link rel="stylesheet" href="recursos/css/dev_outros.css">
@@ -765,7 +765,7 @@
 			</a>
 		<!-- /Voltar fixo -->
 	</div>
-	<?php include("outros_detalhes.php"); ?>
+	<?php include("desenvolvimentos_detalhes.php"); ?>
 	<?php include("rodape.php"); ?>
 </body>
 </html>
