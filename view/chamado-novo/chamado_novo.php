@@ -1,5 +1,5 @@
 <?php 
-	require_once("../model/categorias.php");
+	require_once("../../model/chamado/categorias.php");
 
 	$categorias = listaCategrias($conexao);
 ?>
@@ -8,7 +8,9 @@
     <head>
         <title>Chamado | Novo</title>
         <?php require_once("cabecalho.php"); ?>
-    </head>
+	</head>
+	<body>
+		<?php include_once("../../controller/curriculo/analyticstracking.php") ?>
 		<section class="wrapper">
 			<!-- MENU LATERAL -->
 				<aside class="sidebar">
@@ -28,7 +30,7 @@
 						<section class="tab-pane active fade in content">
 							<div class="row">
 								<!-- FORMULÁRIO -->
-									<form class="well form-horizontal" action="../controller/chamado_novo" method="POST" id="contact_form">
+									<form class="well form-horizontal" action="../../controller/chamado/chamado_novo.php" method="POST" id="contact_form">
 										<fieldset>
 											<!-- TÍTULO -->
 												<legend><center><i class="fa fa-user-plus fa-2x"></i><b> Novo Chamado</b><br><br></center></legend>
@@ -135,6 +137,6 @@
 				</section>
 			<!-- /CENTRO -->
 		</section>
-		<?php include("../controller/script.php"); ?>
+		<?php include("../../controller/chamado/script.php"); ?>
 	</body>
 </html>

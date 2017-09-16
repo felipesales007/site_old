@@ -27,6 +27,7 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,300,700">
 	</head>
 	<body>
+		<?php include_once("../../controller/curriculo/analyticstracking.php") ?>
 		<!-- /Corpo -->
 			<div class="container wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".0s">
 				<div class="col-lg-6 col-lg-offset-3">

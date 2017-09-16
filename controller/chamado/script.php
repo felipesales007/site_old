@@ -1,9 +1,9 @@
 <!-- CONFIRMAÇÃO PARA DELETAR CHAMADO -->
-<script src='../view/recursos/css/bootstrap/js/bootstrap.min.js'></script>
+    <script src='../../view/chamado/recursos/css/bootstrap/js/bootstrap.min.js'></script>
 <!-- /CONFIRMAÇÃO PARA DELETAR CHAMADO -->
 
 <!-- /ENTER EM TELA DE CONFIRMAÇÃO -->
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 <!-- /ENTER EM TELA DE CONFIRMAÇÃO -->
 
 <!-- Para enter direito no botão -->
@@ -11,15 +11,15 @@
 <!-- /Para enter direito no botão -->
 
 <!-- Validador do formulario -->
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js'></script>
-    <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
-    <script src="recursos/js/chamado_validador.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js'></script>
+    <script src="https://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+    <script src="../../view/chamado/recursos/js/chamado_validador.js"></script>
 <!-- /Validador do formulario -->
 
 <!-- Auto clique na aba da tabela -->
-    <script async src="recursos/js/tabela_barra.js"></script>
+    <script async src="../../view/chamado/recursos/js/tabela_barra.js"></script>
 <!-- /Auto clique na aba da tabela -->
 
 <script>

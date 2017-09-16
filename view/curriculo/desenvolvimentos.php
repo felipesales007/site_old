@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="recursos/css/dev_outros.css">
 </head>
 <body class="landing-page" id="rolagem_lateral">
+	<?php include_once("../../controller/curriculo/analyticstracking.php") ?>
 	<div class="wrapper">
 		<!-- Capa -->
 			<div id="outros_fundo" class="header header-filter">

@@ -1,6 +1,6 @@
 <?php 
-	require_once("../model/chamado.php");
-	require_once("../model/categorias.php");
+	require_once("../../model/chamado/chamado.php");
+	require_once("../../model/chamado/categorias.php");
 
     $id = $_GET['id'];
     $lista = buscaChamado($conexao, $id);
@@ -11,7 +11,9 @@
     <head>
         <title>Chamado | Visualizar</title>
         <?php require_once("cabecalho.php"); ?>
-    </head>
+	</head>
+	<body>
+		<?php include_once("../../controller/curriculo/analyticstracking.php") ?>
 		<section class="wrapper">
             <!-- MENU LATERAL -->
 				<aside class="sidebar">
@@ -33,7 +35,7 @@
 						<section class="tab-pane active fade in content">
 							<div class="row">
 								<!-- FORMULÁRIO -->
-									<form class="well form-horizontal" action="../controller/chamado_novo" method="POST" id="contact_form">
+									<form class="well form-horizontal" action="../../controller/chamado/chamado_novo.php" method="POST" id="contact_form">
 										<fieldset>
 											<!-- TÍTULO -->
 												<legend><center><i class="fa fa-eye fa-2x"></i><b> Visualizar Chamado</b><br><br></center></legend>
@@ -129,7 +131,7 @@
 															<a tabindex="7" class="btn btn-primary button btn-block" href="chamado_alterar?id=<?= $lista['id'] ?>"><i class="fa fa-pencil-square-o"></i><b> Alterar</b></a>
 															<br>
 															<a tabindex="8" class="btn btn-danger button btn-block" data-toggle="modal" data-target="#exampleModal" data-whatever="<?= $lista['id'] ?>" data-nome="<?= $lista['nome'] ?>"><i class="fa fa-trash-o"></i><b> Excluir</b></a>
-															<?php include("confirmar_deletar"); ?>
+															<?php include("confirmar_deletar.php"); ?>
 														</div>
 													</div>
 												</center>
@@ -143,6 +145,6 @@
 				</section>
 			<!-- /CENTRO -->
 		</section>
-		<?php include("../controller/script.php"); ?>
+		<?php include("../../controller/chamado/script.php"); ?>
 	</body>
 </html>

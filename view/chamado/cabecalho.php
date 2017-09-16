@@ -1,16 +1,17 @@
 <?php
 	error_reporting(E_ALL ^ E_NOTICE);
-	require_once("../controller/logica_usuario.php");
-	require_once("../controller/mostra_alerta.php"); 
+	require_once("banco/logica-usuario.php");
+	require_once("mostra-alerta.php"); 
 	verificaUsuario();
 ?>
 
 <html>
 	<head>
-		<?php include("../controller/importacao.php"); ?>
+		<?php include("import.php");?>
 	</head>
+	
 	<body>
-		<!-- BARRA -->
+		<!-- Nav -->
 			<nav class="navbar navbar-default navbar-fixed-top topbar">
 				<div class="container-fluid">
 					<div class="navbar-header">
@@ -24,11 +25,10 @@
 						<span class="form-inline">
 							<span style="color:#ffffff;margin-left:25px;"><b>Chamado</b></span>
 						</span>
-
-						<!-- MENU EM TELA MOBILE -->
+						<!-- Menu em tela mobile -->
 							<a id="menu-toggle">
 								<button class="navbar-btn visible-xs" id="btn-user" title="<?= usuarioLogin() ?>" data-toggle="dropdown">
-									<img src="recursos/img/usuario.jpg" id="icon-user">
+									<img src="http://www4.csudh.edu/Assets/CSUDH-Sites/History/images/Faculty-Profile-Pictures/Faculty%20Male%20Default%20Profile%20Picture.jpg" id="icon-user">
 									<span id="ic" class="fa fa-caret-down"></span>
 								</button>
 							</a>
@@ -36,41 +36,41 @@
 								<ul class="msidebar-nav">
 									<a id="menu-close" href="#" class="btn btn-danger pull-right toggle" title="Fechar"><i class="fa fa-remove"></i></a>
 									<li class="sidebar-brand">
-										<img src="recursos/img/usuario.jpg" id="icon-user">
+										<img src="http://www4.csudh.edu/Assets/CSUDH-Sites/History/images/Faculty-Profile-Pictures/Faculty%20Male%20Default%20Profile%20Picture.jpg" id="icon-user">
 										<span id="mlogin-view"><b><?= usuarioLogin() ?></b></span>
 									</li>
-									<li><a href="alterar_senha"><i class="fa fa-pencil"></i> Alterar senha</a></li>
+									<li><a href="alterar-senha"><i class="fa fa-pencil"></i> Alterar senha</a></li>
 									<li><a href="#"><i class="fa fa-cog"></i> Administrador</a></li>
 									<li><a href="contato"><i class="fa fa-envelope-o"></i> Contato</a></li>
 									<li><a href="sobre"><i class="fa fa-code-fork"></i> Sobre</a></li>
 									<hr>
-									<li><a href="../controller/logout" title="Logout" id="sair" style="color:red;"><i class="fa fa-power-off"></i> Sair</a></li>
+									<li><a href="banco/logout.php" title="Logout" id="sair" style="color:red;"><i class="fa fa-power-off"></i> Sair</a></li>
 								</ul>
 							</div>
 						</div>
-					<!-- /MENU EM TELA MOBILE -->
+					<!-- /Menu em tela mobile -->
 					
-					<!-- MENU EM TELA CHEIA -->
+					<!-- Menu em tela cheia -->
 						<div class="navbar-collapse collapse" id="navbar-collapse-main">
 							<ul class="nav navbar-nav navbar-right">
 								<li class="dropdown">
 									<button disabled class="navbar-btn" id="btn-user" data-toggle="dropdown">
-										<img src="recursos/img/usuario.jpg" id="icon-user">
+										<img src="http://www4.csudh.edu/Assets/CSUDH-Sites/History/images/Faculty-Profile-Pictures/Faculty%20Male%20Default%20Profile%20Picture.jpg" id="icon-user">
 										<a id="login-view"><b><?= usuarioLogin() ?></b></a>
 										<span id="ic" class="fa fa-caret-down"></span>
 									</button>
 									<ul class="dropdown-menu">
-										<li><a href="alterar_senha"><i class="fa fa-pencil"></i> Alterar senha</a></li>
+										<li><a href="alterar-senha"><i class="fa fa-pencil"></i> Alterar senha</a></li>
 										<li><a href="#"><i class="fa fa-cog"></i> Administrador</a></li>
 										<li><a href="contato"><i class="fa fa-envelope-o"></i> Contato</a></li>
 										<li><a href="sobre"><i class="fa fa-code-fork"></i> Sobre</a></li>
 										<li class="nav-divider">
-										<li><a href="../controller/logout" title="Logout" id="sair" style="color:red;"><i class="fa fa-power-off"></i> Sair</a></li>
+										<li><a href="banco/logout.php" title="Logout" id="sair" style="color:red;"><i class="fa fa-power-off"></i> Sair</a></li>
 									</ul>
 								</li>
 							</ul>
 						</div>
-					<!-- /MENU EM TELA CHEIA -->
+					<!-- /Menu em tela cheia -->
 				</div>
 			</nav>
-		<!-- /BARRA -->
+		<!-- /Nav -->

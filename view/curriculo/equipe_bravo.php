@@ -5,6 +5,7 @@
 	<?php require_once("cabecalho.php"); ?>
 </head>
 <body class="landing-page" id="rolagem_lateral">
+	<?php include_once("../../controller/curriculo/analyticstracking.php") ?>
 	<div class="wrapper">
 		<!-- Capa -->
 			<div id="equipe_bravo_fundo" class="header header-filter">

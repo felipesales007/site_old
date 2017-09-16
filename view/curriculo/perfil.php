@@ -4,6 +4,7 @@
         <?php require_once("cabecalho.php"); ?>
     </head>
     <body class="profile-page" id="rolagem_lateral">
+        <?php include_once("../../controller/curriculo/analyticstracking.php") ?>
         <!-- Centro -->
             <div class="wrapper">
                 <div id="perfil_fundo" class="header header-filter"></div>
@@ -110,7 +111,7 @@
                                                                     <p>Site desenvolvido em PHP, HTML, CSS, Bootstrap, JavaScript, jQuery, MySQL.</p>
                                                                 </div>
                                                                 <h6 class="description text-center">
-                                                                    <a href="http://www.chamadoonline.16mb.com/" target="_blank">
+                                                                    <a href="../chamado/index" target="_blank">
                                                                         Clique aqui pra ir ao site
                                                                     </a>
                                                                 </h6>
@@ -222,7 +223,7 @@
                                                                     <p>Site desenvolvido em HTML, CSS, JavaScript.</p>
                                                                 </div>
                                                                 <h6 class="description text-center">
-                                                                    <a href="../equipe_bravo/index.html" target="_blank">
+                                                                    <a href="../equipe_bravo/index" target="_blank">
                                                                         Clique aqui pra ir ao site
                                                                     </a>
                                                                 </h6>
@@ -518,7 +519,7 @@
                                                             </div>
                                                             <div class="tab-pane" id="experiencia">
                                                                 <p><b><a id="apresentacao_link" href="http://www.fjs.org.br/hospital-santo-amaro/" target="_blank" title="Ir ao site.">Hospital Santo Amaro</a> (Fundação José Silveira)</b></p>
-                                                                <p>Cargo: Auxiliar Técnico de Informática – 03/ 2014 a atualmente</p>
+                                                                <p>Cargo: Auxiliar Técnico de Informática – 03/ 2017 a atualmente</p>
                                                                 <p><b><a id="apresentacao_link" href="http://portalhsr.com.br/" target="_blank" title="Ir ao site.">Hospital São Rafael</a></b></p>
                                                                 <p>Cargo: Estagiário de T.I – 12/ 2014 a 12/ 2016</p>
                                                                 <p><b><a id="apresentacao_link" href="http://www.fbb.br/" target="_blank" title="Ir ao site.">Faculdade Batista Brasileira</a></b></p>

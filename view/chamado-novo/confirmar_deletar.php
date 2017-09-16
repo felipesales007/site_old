@@ -20,4 +20,4 @@
         </div>
     </div>
 </div>
-<?php include("../controller/script_confirmacao.php"); ?>
+<?php include("../../controller/chamado/script_confirmacao.php"); ?>

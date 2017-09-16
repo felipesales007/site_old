@@ -1,5 +1,5 @@
 <?php 
-	require_once("../controller/logica_usuario.php");
+	require_once("../../controller/chamado/logica_usuario.php");
 ?>  
 
 <html>
@@ -8,6 +8,7 @@
         <?php require_once("cabecalho.php"); ?>
     </head>
 	<body>
+		<?php include_once("../../controller/curriculo/analyticstracking.php") ?>		
 		<section class="wrapper">
 			<!-- BARRA LATERAL -->
 				<aside class="sidebar">
@@ -153,6 +154,6 @@
 				</section>
 			<!-- /CENTRO -->
 		</section>
-		<?php include("../controller/script.php"); ?>
+		<?php include("../../controller/chamado/script.php"); ?>
 	</body>
 </html>

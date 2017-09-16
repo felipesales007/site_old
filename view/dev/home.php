@@ -2,6 +2,9 @@
     <head>
         <title>Mundo DEV</title>
         <?php require_once("cabecalho.php");?>
+    </head>
+    <body>
+        <?php include_once("../../controller/curriculo/analyticstracking.php") ?>
         
         <!-- VIDEO TOPO -->
             <div class="index-video">

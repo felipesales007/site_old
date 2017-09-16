@@ -1,7 +1,7 @@
 <!-- PEGA AS INFORMAÇÕES INSERIDAS PARA PASSAR PARA O BANCO DE BADOS -->
 <?php 
-    require_once("../model/chamado");
-    require_once("logica_usuario");
+    require_once("../../model/chamado/chamado.php");
+    require_once("logica_usuario.php");
 
     $nome           = $_POST['nome'];
     $setor          = $_POST['setor'];
@@ -12,9 +12,9 @@
 
     if(novoChamado($conexao, $nome, $setor, $ramal, $ip, $problema, $categoria_id)) {
         $_SESSION["success"] = "Chamado salvo com sucesso!";
-        header("location: ../view/chamado_novo");
+        header("location: ../../view/chamado/chamado_novo");
     } else {
         $_SESSION["danger"] = "Erro ao salvar o chamado!";
-        header("location: ../view/chamado_novo");
+        header("location: ../../view/chamado/chamado_novo");
     }
 ?>

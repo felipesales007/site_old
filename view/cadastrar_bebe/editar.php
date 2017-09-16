@@ -112,6 +112,7 @@
 		}
 	?>
 	<body>
+        <?php include_once("../../controller/curriculo/analyticstracking.php") ?>
         <!-- Navbar -->
             <div class="navbar-inverse navbar-fixed-top">
                 <div class="container">

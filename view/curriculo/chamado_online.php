@@ -5,6 +5,7 @@
 		<?php require_once("cabecalho.php"); ?>
     </head>
     <body class="landing-page" id="rolagem_lateral">
+		<?php include_once("../../controller/curriculo/analyticstracking.php") ?>
 		<div class="wrapper">
 			<!-- Capa -->
 				<div id="chamado_online_fundo" class="header header-filter">
@@ -14,7 +15,7 @@
 								<h1 id="intro_dev" class="title wow fadeInRight" data-wow-duration="1s" data-wow-delay=".0s">Sistema parou?<br>Computador não liga?<br>Abre um chamado.</h1>
 								<h5 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".2s">Sistema de chamados online para uso corporativo interno de uma empresa, visando design, agilidade, facilidade e transparência no andamento dos chamados solicitados.</h5>
 								<br>
-								<a href="http://www.chamadoonline.16mb.com" target="_blank" class="btn btn-success btn-raised btn-lg wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
+								<a href="../chamado/index" target="_blank" class="btn btn-success btn-raised btn-lg wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
 									<i class="material-icons">desktop_windows</i>&ensp;Ir ao site
 								</a>
 							</div>

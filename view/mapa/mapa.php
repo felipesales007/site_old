@@ -5,6 +5,7 @@
     </head>
 
     <body>
+        <?php include_once("../../controller/curriculo/analyticstracking.php") ?>
         <!-- formulário -->
             <div id="corpo">
                 <form class="well" action="../../model/mapa/insert.php" method="POST">

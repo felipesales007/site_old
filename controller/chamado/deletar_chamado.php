@@ -1,10 +1,10 @@
 <?php 
-    require_once("../model/chamado");
-    require_once("logica_usuario");
+    require_once("../../model/chamado/chamado.php");
+    require_once("logica_usuario.php");
 
     $id = $_POST['id'];
     removeChamado($conexao, $id);
     $_SESSION["success"] = "Chamado excluído com sucesso!";
-    header("Location: ../view/lista_pendentes");
+    header("Location: ../../view/chamado/lista_pendentes");
     die();
 ?>

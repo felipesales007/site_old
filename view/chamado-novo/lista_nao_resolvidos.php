@@ -1,14 +1,16 @@
 <?php 
-    require_once("../model/chamado.php");
+    require_once("../../model/chamado/chamado.php");
 ?>
 
 <html>
     <head>
-        <title>Lista | Pendentes</title>
+        <title>Lista | Não resolvidos</title>
         <?php require_once("cabecalho.php"); ?>
     </head>
+    <body>
+        <?php include_once("../../controller/curriculo/analyticstracking.php") ?>
         <article class="wrapper">
-            <!-- MENU LATERAL -->  
+            <!-- MENU LATERAL -->
                 <aside class="sidebar">
                     <ul class="sidebar-nav">
                         <hr>
@@ -19,23 +21,23 @@
                     </ul>
                 </aside>
             <!-- /MENU LATERAL -->
-            
-            <!-- LISTA PENDENTES -->
+        
+            <!-- LISTA NÃO RESOLVIDO -->
                 <div class="tab">
-                    <button style="color:#CFB53B;" tabindex="1" onclick="openCity(event, 'pendentes')" id="defaultOpen" title="Pendentes"><i class="fa fa-warning fa-2x"></i><b class="hidden-xs"> Pendentes</b></button>
-                    <a style="color:#FF6666;" href="lista_nao_resolvidos"><button tabindex="2" title="Não resolvido"><i class="fa fa-thumbs-o-down fa-2x"></i><b class="hidden-xs"> Não resolvidos</b></button></a>
+                    <a style="color:#CFB53B;" href="lista_pendentes"><button tabindex="1" title="Pendentes"><i class="fa fa-warning fa-2x"></i><b class="hidden-xs"> Pendentes</b></button></a>
+                    <button style="color:#FF6666;" tabindex="2" onclick="openCity(event, 'nao-resolvidos')" id="defaultOpen" title="Não resolvidos"><i class="fa fa-thumbs-o-down fa-2x"></i><b class="hidden-xs"> Não resolvidos</b></button>
                     <a style="color:#32cd99;" href="lista_resolvidos"><button tabindex="3" title="Resolvidos"><i class="fa fa-thumbs-o-up fa-2x"></i><b class="hidden-xs"> Resolvidos</b></button></a>
                     <a style="color:#4d4d4d;" href="lista_todos"><button tabindex="4" title="Todos"><i class="fa fa-sort-amount-desc fa-2x"></i><b class="hidden-xs"> Todos</b></button></a>
-                    <i id="contador"><?php echo count($chamados = listaChamadoPendente($conexao)) ?></i><i id="contador-n">nº </i>
+                    <i id="contador"><?php echo count($chamados = listaChamadoNaoResolvido($conexao)) ?></i><i id="contador-n">nº </i>
                 </div>
 
-                <div id="pendentes" class="tabcontent">
-                    <input type="text" class="form-control" data-action="filtery" data-filters="#dev-table" placeholder="Pesquisar" style="width:290px; margin-bottom:7px">
+                <div id="nao-resolvidos" class="tabcontent">
+                    <input type="text" class="form-control" data-action="filtery" data-filters="#dev-table" placeholder="Pesquisar" style="width:275px; margin-bottom:7px">
                     <?php
-                        if(count($chamados = listaChamadoPendente($conexao)) <= 12 ) {
+                        if(count($chamados = listaChamadoNaoResolvido($conexao)) <= 12 ) {
                             echo "<table>";
                         }
-                        if(count($chamados = listaChamadoPendente($conexao)) > 12 ) {
+                        if(count($chamados = listaChamadoNaoResolvido($conexao)) > 12 ) {
                             echo "<table class='toping'>";
                         }
                     ?>
@@ -56,9 +58,9 @@
                     <tr>
                         <div class="tbl-content">
                             <table class="table-fill" id="dev-table">
-                                <?php include("../controller/script.php"); ?>
+                                <?php include("../../controller/chamado/script.php"); ?>
                                 <?php
-                                    $chamados = listaChamadoPendente($conexao);
+                                    $chamados = listaChamadoNaoResolvido($conexao);
                                     foreach($chamados as $lista):
                                 ?>
                                 <tbody class="table-hover">
@@ -70,12 +72,12 @@
                                         <td class="text-left hidden-sm hidden-xs" style="text-transform:none;"><?= $lista['problema'] ?></td>
                                         <td class="text-left visible-lg"><?= $lista['hora'] ?></td>
                                         <td class="text-left" id="tabela-acao">
-                                            <form action="../controller/deletar_chamado" method="POST">
+                                            <form action="../../controller/chamado/deletar_chamado.php" method="POST">
                                                 <center>
                                                     <a class="btn btn-default" title="Visualizar" data-mensager="tooltip" href="chamado_ver?id=<?= $lista['id'] ?>"><i class="fa fa-eye"></i></a>
                                                     <a class="btn btn-primary hidden-xs" title="Editar" data-mensager="tooltip" href="chamado_alterar?id=<?= $lista['id'] ?>"><i class="fa fa-pencil-square-o"></i></a>
                                                     <a class="btn btn-danger hidden-sm hidden-xs" data-toggle="modal" data-target="#exampleModal" data-whatever="<?= $lista['id'] ?>" data-nome="<?= $lista['nome'] ?>" title="Excluir" data-mensager="tooltip"><i class="fa fa-trash-o"></i></a>
-                                                    <?php include("confirmar_deletar"); ?>
+                                                    <?php include("confirmar_deletar");?>
                                                 </center>
                                             </form>
                                         </td>
@@ -88,7 +90,7 @@
                         </div>
                     </tr>									
                 </div>
-            <!-- /LISTA PENDENTES -->
+            <!-- /LISTA NÃO RESOLVIDO -->
         </article>
     </body>
 </html>

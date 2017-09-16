@@ -7,7 +7,7 @@
 <meta name="theme-color" content="#2A3F54">
 
 <!-- ICONE NO NAVEGADOR -->
-<link rel="icon" type="image/png" href="../view/recursos/img/icone_site.png">
+<link rel="icon" type="image/png" href="../../view/recursos/img/icone_site.png">
 
 <!-- CSS -->
 <link rel="stylesheet" href="recursos/css/bootstrap/css/bootstrap.css">
