@@ -97,7 +97,7 @@
 												<br>	
 												<div class="col-xs-6 centered">
 													<img id="portifolio" class="img-responsive" src="recursos/img/chamado_online/background.jpg">
-													<a href="http://www.chamadoonline.16mb.com" target="_blank" title="Ir ao site"><h6><i class="icon-link"></i> Chamado Online</h6></a>
+													<a href="../../chamado" target="_blank" title="Ir ao site"><h6><i class="icon-link"></i> Chamado Online</h6></a>
 												</div>
 												<div class="col-xs-6 centered">
 													<img id="portifolio" class="img-responsive" src="recursos/img/outros/mundo_dev/background.jpg">
