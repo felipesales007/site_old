@@ -118,7 +118,7 @@ require_once("banco/banco-chamado.php");
 																			$selecao = $selecionado ? "selected='selected'" : "";
 																		?>
 																			<option value="<?=$categoria['id']?>" <?=$selecao?>>
-																				<?=$categoria['nome']?>
+																				<?=utf8_encode($categoria['nome'])?>
 																			</option>
 																		<?php endforeach ?>
 																	</select>

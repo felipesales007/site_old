@@ -80,7 +80,7 @@ require_once("banco/banco-chamado.php");
                                         if ($lista['categoria_nome'] == 'Sim') {                                   
                                             echo "<td class='text-left hidden-xs' style='background:#32CD99;'><center>Sim</center></td>";
                                         }
-                                        if ($lista['categoria_nome'] == 'Não') {                                   
+                                        if (utf8_encode($lista['categoria_nome']) == 'Não') {                                   
                                             echo "<td class='text-left hidden-xs' style='background:#FF6666;'><center>Não</center></td>";
                                         }
                                     ?>
