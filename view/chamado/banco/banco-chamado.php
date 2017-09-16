@@ -2,7 +2,7 @@
     require_once("conecta.php");
     function listaChamado($conexao){
         $chamados = array();
-        $resultado = mysqli_query($conexao, "SELECT C.*, DATE_FORMAT(DATE_SUB(hora, INTERVAL 3 HOUR), '%d/%m/%Y - %H:%i') AS hora, R.nome AS categoria_nome FROM chamados AS C JOIN categorias as R ON R.id = C.categoria_id ORDER BY id DESC");
+        $resultado = mysqli_query($conexao, "SELECT C.*, DATE_FORMAT(DATE_SUB(hora, INTERVAL 0 HOUR), '%d/%m/%Y - %H:%i') AS hora, R.nome AS categoria_nome FROM chamados AS C JOIN categorias as R ON R.id = C.categoria_id ORDER BY id DESC");
         while($lista = mysqli_fetch_assoc($resultado)){
             array_push($chamados, $lista);
         }        
@@ -11,7 +11,7 @@
 
     function listaChamadoPendente($conexao){
         $chamados = array();
-        $resultado = mysqli_query($conexao, "SELECT C.*, DATE_FORMAT(DATE_SUB(hora, INTERVAL 3 HOUR), '%d/%m/%Y - %H:%i') AS hora, R.nome AS categoria_nome FROM chamados AS C JOIN categorias as R ON R.id = C.categoria_id WHERE C.categoria_id = 1 ORDER BY id DESC");
+        $resultado = mysqli_query($conexao, "SELECT C.*, DATE_FORMAT(DATE_SUB(hora, INTERVAL 0 HOUR), '%d/%m/%Y - %H:%i') AS hora, R.nome AS categoria_nome FROM chamados AS C JOIN categorias as R ON R.id = C.categoria_id WHERE C.categoria_id = 1 ORDER BY id DESC");
         while($lista = mysqli_fetch_assoc($resultado)){
             array_push($chamados, $lista);
         }
@@ -20,7 +20,7 @@
 
     function listaChamadoResolvido($conexao){
         $chamados = array();
-        $resultado = mysqli_query($conexao, "SELECT C.*, DATE_FORMAT(DATE_SUB(hora, INTERVAL 3 HOUR), '%d/%m/%Y - %H:%i') AS hora, R.nome AS categoria_nome FROM chamados AS C JOIN categorias as R ON R.id = C.categoria_id WHERE C.categoria_id = 2 ORDER BY id DESC");
+        $resultado = mysqli_query($conexao, "SELECT C.*, DATE_FORMAT(DATE_SUB(hora, INTERVAL 0 HOUR), '%d/%m/%Y - %H:%i') AS hora, R.nome AS categoria_nome FROM chamados AS C JOIN categorias as R ON R.id = C.categoria_id WHERE C.categoria_id = 2 ORDER BY id DESC");
         while($lista = mysqli_fetch_assoc($resultado)){
             array_push($chamados, $lista);
         }
@@ -29,7 +29,7 @@
 
     function listaChamadoNaoResolvido($conexao){
         $chamados = array();
-        $resultado = mysqli_query($conexao, "SELECT C.*, DATE_FORMAT(DATE_SUB(hora, INTERVAL 3 HOUR), '%d/%m/%Y - %H:%i') AS hora, R.nome AS categoria_nome FROM chamados AS C JOIN categorias as R ON R.id = C.categoria_id WHERE C.categoria_id = 3 ORDER BY id DESC");
+        $resultado = mysqli_query($conexao, "SELECT C.*, DATE_FORMAT(DATE_SUB(hora, INTERVAL 0 HOUR), '%d/%m/%Y - %H:%i') AS hora, R.nome AS categoria_nome FROM chamados AS C JOIN categorias as R ON R.id = C.categoria_id WHERE C.categoria_id = 3 ORDER BY id DESC");
         while($lista = mysqli_fetch_assoc($resultado)){
             array_push($chamados, $lista);
         }
