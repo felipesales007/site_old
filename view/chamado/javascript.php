@@ -11,6 +11,10 @@
         <script src="style/js/formulario.js"></script>
     <!-- /Validador do formulario -->
 
+    <!-- Auto clique na aba da tabela -->
+        <script async src="style/js/tabela.js"></script>
+    <!-- /Auto clique na aba da tabela -->
+
     <script>
         // Ação do Menu lateral
             $(document).on("click",".sidebar-toggle",function(){
