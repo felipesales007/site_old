@@ -151,6 +151,68 @@
             $espaco2 = '<br><br><br>';
         }
 
+        if ($chamado["tecnico_nome"] != null) {
+            $responsavel = '
+                <a class="btn chamado-ponteiro btn-block pdf-btn-titulo"><center>Responsável</center></a>
+                
+                <div class="pull-left">
+                    <!-- Responsável -->
+                    <div class="form-group pdf-text-campo">
+                        <label class="col-md-4 control-label pdf-label">Responsável</label>  
+                        <div class="col-md-4">
+                            <div class="input-group pdf-input-group">
+                                <span class="input-group-addon pdf-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input class="form-control pdf-form-control" type="text" value="'.$chamado["tecnico_nome"].' '.$chamado["tecnico_sobrenome"].'" style="border-radius: 0 4px 4px 0">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Setor -->
+                    <div class="form-group pdf-text-campo">
+                        <label class="col-md-4 control-label pdf-label">Setor</label>  
+                        <div class="col-md-4">
+                            <div class="input-group pdf-input-group">
+                                <span class="input-group-addon pdf-addon"><i class="glyphicon glyphicon-briefcase"></i></span>
+                                <input class="form-control pdf-form-control" type="text" value="'.mb_strimwidth($chamado["tecnico_setor"], 0, 33, "...").'" style="border-radius: 0 4px 4px 0">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Telefone -->
+                    <div class="form-group pdf-text-campo">
+                        <label class="col-md-4 control-label pdf-label">Telefone</label>  
+                        <div class="col-md-4">
+                            <div class="input-group pdf-input-group">
+                                <span class="input-group-addon pdf-addon"><i class="glyphicon glyphicon-phone-alt"></i></span>
+                                <input class="form-control pdf-form-control" type="text" value="'.$chamado["tecnico_telefone"].'" style="border-radius: 0 4px 4px 0">
+                            </div>
+                        </div>
+                    </div>
+
+                    '.$celular2.'
+
+                    '.$email2.'
+                </div>
+
+                <div class="pull-right">
+                    '.$data_fechamento.'
+
+                    <!-- Status -->
+                    <div class="form-group pdf-text-campo">
+                        <label class="col-md-4 control-label pdf-label">Status</label>  
+                        <div class="col-md-4">
+                            <div class="input-group pdf-input-group">
+                                <span class="input-group-addon pdf-addon"><i class="glyphicon glyphicon-heart"></i></span>
+                                <input class="form-control pdf-form-control" type="text" value="'.$chamado["chamados_situacao"].'" style="border-radius: 0 4px 4px 0">
+                            </div>
+                        </div>
+                    </div>
+
+                    '.$solucao.'
+                </div>
+            ';
+        }
+
         // Dados do responsável que podem estar em branco são ignoradas
         if ($chamado["chamados_data_fechamento_data"] != null) {
             $data_fechamento = '
@@ -302,63 +364,7 @@
             </div>
 
             <br><br><br><br><br><br><br><br><br>'.$espaco.''.$espaco2.''.$espaco3.'
-            <a class="btn chamado-ponteiro btn-block pdf-btn-titulo"><center>Responsável</center></a>
-            
-            <div class="pull-left">
-                <!-- Responsável -->
-                <div class="form-group pdf-text-campo">
-                    <label class="col-md-4 control-label pdf-label">Responsável</label>  
-                    <div class="col-md-4">
-                        <div class="input-group pdf-input-group">
-                            <span class="input-group-addon pdf-addon"><i class="glyphicon glyphicon-user"></i></span>
-                            <input class="form-control pdf-form-control" type="text" value="'.$chamado["tecnico_nome"].' '.$chamado["tecnico_sobrenome"].'" style="border-radius: 0 4px 4px 0">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Setor -->
-                <div class="form-group pdf-text-campo">
-                    <label class="col-md-4 control-label pdf-label">Setor</label>  
-                    <div class="col-md-4">
-                        <div class="input-group pdf-input-group">
-                            <span class="input-group-addon pdf-addon"><i class="glyphicon glyphicon-briefcase"></i></span>
-                            <input class="form-control pdf-form-control" type="text" value="'.mb_strimwidth($chamado["tecnico_setor"], 0, 33, "...").'" style="border-radius: 0 4px 4px 0">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Telefone -->
-                <div class="form-group pdf-text-campo">
-                    <label class="col-md-4 control-label pdf-label">Telefone</label>  
-                    <div class="col-md-4">
-                        <div class="input-group pdf-input-group">
-                            <span class="input-group-addon pdf-addon"><i class="glyphicon glyphicon-phone-alt"></i></span>
-                            <input class="form-control pdf-form-control" type="text" value="'.$chamado["tecnico_telefone"].'" style="border-radius: 0 4px 4px 0">
-                        </div>
-                    </div>
-                </div>
-
-                '.$celular2.'
-
-                '.$email2.'
-            </div>
-
-            <div class="pull-right">
-                '.$data_fechamento.'
-
-                <!-- Status -->
-                <div class="form-group pdf-text-campo">
-                    <label class="col-md-4 control-label pdf-label">Status</label>  
-                    <div class="col-md-4">
-                        <div class="input-group pdf-input-group">
-                            <span class="input-group-addon pdf-addon"><i class="glyphicon glyphicon-heart"></i></span>
-                            <input class="form-control pdf-form-control" type="text" value="'.$chamado["chamados_situacao"].'" style="border-radius: 0 4px 4px 0">
-                        </div>
-                    </div>
-                </div>
-
-                '.$solucao.'
-            </div>
+            '.$responsavel.'
 
             <div class="pdf-footer">
                 <hr class="chamado-hr-espaco">
