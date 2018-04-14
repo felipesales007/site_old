@@ -313,8 +313,8 @@
 									</a>
 								</div>
 								<!-- Imprimir -->
-								<div class="pull-left chamado-itens-linha cursor-default">
-									<a class="btn btn-success btn-fab btn-fab-mini btn-round f-btn-success" data-toggle="tooltip" data-placement="top" title="Imprimir">
+								<div class="pull-left chamado-itens-linha cursor-default" data-toggle="tooltip" data-placement="top" title="Imprimir">
+									<a href="../../controllers/sistema/gerar-pdf.php?chamado=<?= $ver["chamados_id"] ?>" target="_blank" class="btn btn-success btn-fab btn-fab-mini btn-round f-btn-success">
 										<i class="glyphicon glyphicon-print glyphicon-f-pointer chamado-glyphicon-btn"></i>
 									</a>
 								</div>
