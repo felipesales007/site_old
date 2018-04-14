@@ -1,0 +1,533 @@
+.wrapper {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.wrapper.toggled {
+    padding-left: 50px;
+}
+
+.wrapper.toggled .sidebar {
+    left: 0;
+}
+
+@media(min-width:992px) {
+    .wrapper.toggled {
+        padding-left: 150px;
+    }
+    .wrapper.toggled .sidebar,
+    .wrapper.toggled .sidebar-nav {
+        width: 200px;
+    }
+    .wrapper.toggled .sidebar-nav li a {
+        text-align: left;
+        padding: 0 0 0 10px;
+    }
+    .wrapper.toggled .sidebar-nav li span {
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 352px) {
+    .some-mini-tela {
+        visibility: hidden;
+        margin: 0 !important;
+        transition: 0.4s;
+    }
+}
+
+@media screen and (max-width: 338px) {
+    .some-mini-tela {
+        visibility: hidden;
+        margin: 0 !important;
+        transition: 0.4s;
+    }
+    .chamado-status {
+        padding: 7.5px 2px 7.5px 2px !important;
+        margin-left: -25px !important;
+        margin-right: 2px !important;
+    }
+}
+
+/* Formulário */
+
+.navbar {
+    z-index: 3;
+}
+
+.sidebar {
+    z-index: 4;
+}
+
+.chamado-ponteiro {
+    cursor: default !important;
+    margin-top: 1px;
+}
+
+.well {
+    margin-top: 1px;
+    margin-left: 63px;
+    margin-right: 12px;
+    margin-bottom: 0 !important;
+    border-radius: 3px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+@media(max-width:991px) {
+    .well {
+        margin-left: 12px;
+    }
+}
+
+#chamado-i {
+    color: #555555;
+    position: relative;
+    margin-top: 11px;
+    margin-left: 6px;
+    z-index: 2;
+    cursor: default;
+    transition: 0.4s;
+    font-size: 13px;
+}
+
+#chamado-i:hover {
+    color: #b9b9b9;
+    transition: 0.4s;
+}
+
+#chamado-anexo {
+    z-index: 2;
+}
+
+.chamado-anexo-nome {
+    border: 1px solid #cecece;
+    height: 37px;
+    padding: 6.8px 5px 0 14px;
+    display: table-cell;
+}
+
+#chamado-prioridade-1:hover {
+    background-color: #f55145;
+}
+
+#chamado-prioridade-2:hover {
+    background-color: #fbc53c;
+}
+
+#chamado-prioridade-3:hover {
+    background-color: #0ab1fc;
+}
+
+.chamado-hr-espaco {
+    margin-bottom: 5px;
+}
+
+.chamado-aviso-espaco {
+    margin-bottom: -30px;
+}
+
+.chamado-input-desativado {
+    background-color: #dddddd !important;
+    pointer-events: none;
+}
+
+.chamado-area-desativado {
+    background-color: #dddddd !important;
+    cursor: default;
+}
+
+.chamado-sem-x::-ms-clear {
+    display: none;
+}
+
+.chamado-link {
+    background-color: #dff0d8 !important;
+    cursor: hand;
+}
+
+.chamado-id {
+    width: 81px !important;
+}
+
+.chamado-data {
+    width: 147px !important;
+}
+
+.chamado-i-id {
+    margin-left: 6px;
+}
+
+.chamado-status {
+    padding: 7.5px 6.9px 7.5px 6.9px;
+    cursor: default;
+}
+
+.chamado-anexo-deletar {
+    margin: 3px 0 0 0;
+    transition: 0.4s;
+}
+
+.chamado-anexo-deletar:hover {
+    transition: 0.4s;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.chamado-anexo-alterar {
+    margin: 3px 6px 0 0;
+    transition: 0.4s;
+}
+
+.chamado-anexo-alterar:hover {
+    transition: 0.4s;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.chamado-anexo-link {
+    cursor: hand;
+}
+
+.chamado-visualizar-hr {
+    margin-top: -12px;
+    margin-bottom: 15px;
+}
+
+#feedback-img-usuario {
+    position: relative;
+    width: 55px;
+    height: 55px;
+}
+
+.modal-coment {
+    border-radius: 3px !important;
+    margin-bottom: 0;
+}
+
+.chamado-glyphicon-btn {
+    margin: 8px;
+}
+
+.chamado-hr-itens-top {
+    margin-top: -5px;
+    margin-bottom: 5px;
+}
+
+.chamado-hr-itens-bottom {
+    margin-top: -11px;
+}
+
+@media screen and (max-width: 991px) {
+    .chamado-hr-itens-bottom {
+        margin-top: -17px;
+    }
+}
+
+.chamado-footer {
+    margin-top: 20px;
+}
+
+.chamado-card-itens {
+    padding-right: 35px;
+}
+
+.chamado-btn-ajuste {
+    padding-right: 20px;
+}
+
+.chamado-itens {
+    padding: 6px;
+    border-top-left-radius: 0.1px !important;
+    border-top-right-radius: 0;
+}
+
+.chamado-itens-linha {
+    margin: 5px;
+}
+
+.chamado-text-itens {
+    margin: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12) !important;
+}
+
+.chamado-modal-postar-text {
+    margin-bottom: 0;
+}
+
+.chamado-nome-text-post {
+    font-weight: 500 !important;
+}
+
+.chamado-img-modal-post {
+    margin-top: 2px;
+}
+
+.chamado-modal-post-data {
+    margin-top: 0;
+}
+
+@media screen and (max-width: 535px) {
+    .btn-post-modal {
+        margin-top: 17px;
+        transition: 0.4s;
+    }
+}
+
+@media screen and (max-width: 364px) {
+    .btn-post-modal {
+        margin-top: 37px;
+        transition: 0.4s;
+    }
+    .chamado-numero-feedback-modal {
+        margin-top:136px !important;
+        transition: 0.4s;
+    }
+}
+
+@media screen and (max-width: 335px) {
+    .btn-post-modal {
+        margin-top: 49px;
+        transition: 0.4s;
+    }
+}
+
+.chamado-margin-delete-post {
+    margin-bottom: 3px;
+}
+
+.chamado-hr-fim-post {
+    margin-top: 3px;
+    margin-bottom: 0px;
+}
+
+.post-modal-scroll {
+    /* height: 385px; */
+    max-height: 342px;
+    overflow-y: scroll;
+    overflow: -moz-scrollbars-vertical;
+    overflow-x: auto;
+}
+
+.chamado-post-fixo {
+    padding-left: 15px;
+    padding-right: 15px;
+    z-index: 1;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.87);
+    background: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.chamado-post-scroll {
+    background: #fff;
+}
+
+.chamado-numero-feedback-modal {
+    position: absolute;
+    margin-top:133px;
+    margin-left: -65px;
+    transition: 0.4s;
+}
+
+.hover-btn-feedback {
+    position: absolute;
+    margin-left: 30px;
+    padding-left: 7px;
+    padding-right: 7px;
+    z-index: 2;
+}
+
+.hover-btn-feedback2 {
+    position: absolute;
+    margin-left: 30px;
+    padding-left: 4px;
+    padding-right: 4px;
+    z-index: 2;
+}
+
+.hover-btn-feedback:first-child:hover ~ .btn-feedback {
+    box-shadow: 0 14px 26px -12px rgba(41, 39, 176, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(41, 39, 176, 0.2) !important;
+}
+
+.hover-btn-feedback2:first-child:hover ~ .btn-feedback {
+    box-shadow: 0 14px 26px -12px rgba(41, 39, 176, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(41, 39, 176, 0.2) !important;
+}
+
+.modal-historico {
+    width: 85%;
+    margin-left: 7.4%;
+}
+
+.modal-pesquisar {
+    width: 93%;
+    margin-left: 3.5%;
+}
+
+.chamado-historico-n {
+    margin-top: 14px !important;
+    margin-right: 15px;
+}
+
+.lista-pesquisar-historico {
+    margin-top: 3px;
+    margin-bottom: -10px;
+    margin-left: -10px;
+}
+
+.chamado-historico-img {
+    width: 26px;
+    margin-left: -4px;
+}
+
+.chamado-historico-img2 {
+    width: 26px;
+    margin-left: -4px;
+    margin-top: 0.4px;
+}
+
+.chamado-historico-img-icone {
+    margin-left: -1px;
+    margin-top: -3.3px;
+}
+
+@media screen and (max-width: 767px) {
+    .btn-post-modal {
+        margin-top: 17px;
+        transition: 0.4s;
+    }
+}
+
+.chamado-analista-envia {
+    padding: 2.5px;
+}
+
+.chamado-analista-envia2 {
+    margin-left: -7px;
+}
+
+.chamado-modal-input {
+    margin-left: 14%;
+    margin-right: 14%;
+}
+
+.chamado-visualizar-img-solicitante {
+    width: 21px;
+    margin-right: -3.2px;
+    margin-left: -3.8px;
+}
+
+.analista-espaco {
+    margin-top: 14px;
+}
+
+.rodape-fim {
+    margin-top: 10.5px;
+}
+
+.lista-hr-demanda {
+    margin-bottom: 4px;
+}
+
+.icon-historico {
+    margin-left: 9.22px;
+}
+
+#chamados-fechados {
+    display: none;
+}
+
+#servicos-fechados {
+    display: none;
+}
+
+#usuario-desativado {
+    display: none;
+}
+
+#ocorrencia-desativado {
+    display: none;
+}
+
+#setor-desativado {
+    display: none;
+}
+
+.chamado-analista-pesquisar-hr {
+    margin-top: -1px;
+    margin-bottom: -1.51px;
+}
+
+.tecnico-label-chamado-tipo {
+    margin-left :20px;
+    margin-top: -2px;
+}
+
+.tecnico-label-chamado-espaco {
+    margin-left: 68px;
+}
+
+.tecnico-chamado-tipo {
+    margin: -3px 0 0 -8px;
+}
+
+.pesquisar-chamado-tipo {
+    margin: 5px 0 0 -4px;
+}
+
+.pesquisar-usuario-tipo {
+    margin: -4px 0 0 -4px;
+}
+
+.btn-tecnico-cancelar {
+    position: relative;
+    margin-left: 19px;
+}
+
+.modal-tecnico-espaco-hr {
+    margin-top: -15px;
+}
+
+.chamado-ht-tecnico-modal {
+    margin-top: 20px;
+    margin-bottom: -2.5px;
+    
+}
+
+.perfil-img {
+    width: 140px;
+    position: relative;
+    z-index: 1
+}
+
+.perfil-card {
+    margin-top: -80px;
+}
+
+.perfil-aviso-espaco {
+    margin-bottom: -90px;
+    margin-top: 3px;
+}
+
+.popupunder-fixo {
+    border-radius: 3px;
+}
+
+.f-adicionar-ocorrencia {
+    margin-left: -14px;
+}
+
+.f-btn-adicionar-ocorrencia {
+    margin-top: 8px;
+}
+
+.f-icon-ocorrencia {
+    margin-left: -6px;
+}
+
+.btn-ocorrencia {
+    margin: 0;
+}

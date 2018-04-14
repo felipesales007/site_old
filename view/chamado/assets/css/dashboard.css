@@ -1,0 +1,104 @@
+.card-stats .card-header {
+    float: left;
+    text-align: center;
+}
+
+.card-stats .card-content {
+    text-align: right;
+    padding-top: 10px;
+}
+
+.card .card-header {
+    margin: -20px 15px 0;
+    border-radius: 3px;
+    padding: 15px;
+    color: #ffffff;
+}
+
+.f-dash-verde {
+    box-shadow: 0 10px 30px -12px rgba(17, 245, 9, 0.582), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.f-dash-vermelho {
+    box-shadow: 0 10px 30px -12px rgba(255, 0, 0, 0.89), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.f-dash-rosa {
+    box-shadow: 0 10px 30px -12px rgba(255, 0, 242, 0.89), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.f-dash-amarelo {
+    box-shadow: 0 10px 30px -12px rgba(255, 230, 0, 0.89), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.f-dash-azul {
+    box-shadow: 0 10px 30px -12px rgba(0, 153, 255, 0.89), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.f-dash-default {
+    box-shadow: 0 10px 30px -12px rgba(51, 51, 51, 0.89), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.f-dash-primary {
+    box-shadow: 0 10px 30px -12px rgb(3, 24, 116), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.f-dash-laranja {
+    box-shadow: 0 10px 30px -12px rgb(207, 112, 3), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.f-btn-laranja {
+    background: linear-gradient(60deg, #ffc8a8, #d4944c);
+}
+
+.f-btn-rosa {
+    background: linear-gradient(60deg, #ffbcf6, #d44cc9);
+}
+
+.card-stats .card-header i {
+    font-size: 36px;
+    line-height: 56px;
+    width: 56px;
+    height: 56px;
+}
+
+.card-stats {
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+.card .card-content {
+    padding: 15px 20px;
+}
+
+.card .card-footer .stats {
+    color: #999999;
+    font-size: 14px;
+    margin-top: 55px;
+}
+
+.f-dash-category {
+    color: #999999;
+}
+
+.f-dash-title {
+    margin-top: -10px;
+}
+
+.f-dash-text {
+    margin-top: -19px;
+}
+
+#dash-img-usuario {
+    position: relative;
+    width: 55px;
+    height: 55px;
+}
+
+.f-usuario-ativado {
+    border: 4px solid rgba(1, 177, 1, 0.534);
+}
+
+.f-usuario-desativado {
+    border: 4px solid rgba(255, 0, 0, 0.514);
+}

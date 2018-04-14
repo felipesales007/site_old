@@ -1,0 +1,58 @@
+.background-pdf {
+    background-color: white;
+}
+
+.pdf-titulo {
+    background-color: #e7e7e7;
+    padding-top: -14px;
+}
+
+.pdf-input-group {
+    width: 320px;
+    margin-left: 20px;
+}
+
+.pdf-input-group2 {
+    width: 373px;
+    margin-left: 20px;
+}
+
+.pdf-input-group3 {
+    width: 267px;
+    margin-left: 20px;
+}
+
+.pdf-label {
+    margin-left: 28px !important;
+}
+
+.pdf-form-control {
+    height: 22px;;
+}
+
+.pdf-addon {
+    width: 12px;
+}
+
+.pdf-btn-titulo {
+    background-color: #e7e7e7;
+    color: black;
+}
+
+.pdf-text-logo {
+    position: absolute;
+    margin-top: 0px;
+}
+
+.pdf-logo {
+    margin-top: -5px;
+}
+
+.pdf-text-campo {
+    margin-bottom: -3px;
+}
+
+.pdf-footer {
+    position: fixed;
+    bottom: 175px;
+}

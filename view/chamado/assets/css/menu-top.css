@@ -1,0 +1,258 @@
+/* Menu topo */
+
+.navbar {
+    width: 100%;
+    position: fixed;
+}
+
+
+/* Menu tela cheia */
+
+#menu-titulo {
+    cursor: default;
+}
+
+#menu-chamado-texto-correcao {
+    margin-left: -6px;
+}
+
+#menu-botao {
+    position: absolute;
+    margin-top: -7px !important;
+    width: 160px;
+    box-shadow: none;
+}
+
+.dropdown-menu {
+    left: 21px;
+}
+
+.menu-top-nome-usuario {
+    margin-right: 13px;
+    margin-top: 5px;
+    cursor: default;
+}
+
+#menu-usuario {
+    margin-right: 134.2px;
+}
+
+#menu-usuario-mobile {
+    margin-right: 75px;
+}
+
+#menu-img-usuario {
+    position: relative;
+    width: 35px;
+    height: 35px;
+}
+
+.material-icons {
+    margin-top: -1px;
+}
+
+.material-icons-historico {
+    position: absolute;
+    font-size: 19px;
+    margin-left: 2px;
+}
+
+.material-icons-historico-mobile {
+    font-size: 19px;
+    margin-left: 2px;
+}
+
+#menu-button-sair {
+    color: #f44336;
+    padding-bottom: 7px;
+    -webkit-transition: all 150ms linear;
+    -moz-transition: all 150ms linear;
+    -o-transition: all 150ms linear;
+    -ms-transition: all 150ms linear;
+    transition: all 150ms linear;
+}
+
+#menu-button-sair-mobile {
+    color: #f44336;
+    -webkit-transition: all 150ms linear;
+    -moz-transition: all 150ms linear;
+    -o-transition: all 150ms linear;
+    -ms-transition: all 150ms linear;
+    transition: all 150ms linear;
+}
+
+#menu-button-sair:hover,
+#menu-button-sair-mobile:hover {
+    background-color: #f44336;
+   color: #ffffff;
+    -webkit-transition: all 150ms linear;
+    -moz-transition: all 150ms linear;
+    -o-transition: all 150ms linear;
+    -ms-transition: all 150ms linear;
+    transition: all 150ms linear;
+}
+
+#menu-button-sair:focus, 
+#menu-button-sair-mobile:focus {
+    background-color: #f44336;
+    color: #ffffff;
+    -webkit-transition: all 150ms linear;
+    -moz-transition: all 150ms linear;
+    -o-transition: all 150ms linear;
+    -ms-transition: all 150ms linear;
+    transition: all 150ms linear;
+}
+
+#menu-texto {
+    margin: 10px;
+    color: #2a3f54;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+    #menu-botao {
+        position: absolute;
+        margin-top: -7px !important;
+        width: 86px;
+        box-shadow: none;
+    }
+    #menu-usuario {
+        margin-right: 134.2px;
+    }
+}
+
+
+/* Menu opções mobile */
+
+#menu-mobile {
+    top: 1px;
+    margin-right: -250px;
+    right: 0;
+    width: 250px;
+    background: #2A3F54;
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+    transition: all 0.5s ease-in 0s;
+    -webkit-transition: all 0.5s ease-in 0s;
+    -moz-transition: all 0.5s ease-in 0s;
+    -ms-transition: all 0.5s ease-in 0s;
+    -o-transition: all 0.5s ease-in 0s;
+}
+
+.menu-mobile-barra {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-mobile-barra li {
+    line-height: 50px;
+    text-indent: 20px;
+}
+
+.menu-mobile-barra li a {
+    margin-left: 6px;
+    margin-right: 6px;
+    color: white;
+    display: block;
+    text-decoration: none;
+}
+
+.menu-mobile-barra li a:hover {
+    color: #2A3F54;
+    background: white;
+    margin-left: 6px;
+    margin-right: 6px;
+    text-decoration: none;
+    border-radius: 3px;
+ }
+
+.menu-mobile-barra li a:active,
+.menu-mobile-barra li a:focus {
+    color: #2A3F54;
+    background: white;
+    margin-left: 6px;
+    margin-right: 6px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.menu-mobile-barra>.msidebar-brand {
+    height: 55px;
+    line-height: 55px;
+    font-size: 18px;
+}
+
+.menu-mobile-barra>.sidebar-brand a {
+    color: #999999;
+}
+
+.menu-mobile-barra>.sidebar-brand a:hover {
+    color: white;
+    background: none;
+}
+
+#menu-mobile.active {
+    right: 250px;
+    width: 250px;
+    transition: all 0.5s ease-out 0s;
+    -webkit-transition: all 0.5s ease-out 0s;
+    -moz-transition: all 0.5s ease-out 0s;
+    -ms-transition: all 0.5s ease-out 0s;
+    -o-transition: all 0.5s ease-out 0s;
+}
+
+#menu-button-fechar {
+    top: 14px;
+    right: 7px;
+    background-color: #f44336;
+}
+
+#menu-button-fechar:hover,
+#menu-button-fechar:focus {
+    top: 14px;
+    right: 7px;
+    background-color: #a71207;
+}
+
+
+/* Efeito de escurecer do fundo mobile */
+
+.window {
+    position: absolute;
+    z-index: 9900;
+}
+
+#fundo-escuro {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.616);
+    opacity: .3;
+    left: 0;
+    top: 0;
+    z-index: 9000;
+}
+
+@media screen and (min-width: 767px) {
+    #fundo-escuro {
+        display: none;
+        background-color: transparent;
+    }
+}
+
+.pesquisar-top {
+    box-shadow: none !important;
+    margin-bottom: -15px !important;
+    margin-top: -17.5px !important;
+}
+
+.pesquisar-top-mobile {
+    box-shadow: none !important;
+    margin-bottom: -15px !important;
+    margin-top: -4.5px !important;
+    margin-left: -50px !important;
+    float: left;
+}
