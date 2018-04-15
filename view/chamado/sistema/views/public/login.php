@@ -70,7 +70,7 @@
 												<div class="form-group wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".2s">
 													<div class="input-group">
 														<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-														<input required tabindex="1" maxlength=21 id="login-usuario" name="usuarios_usuario" placeholder="Usuário" class="form-control letra-primeiro" type="text" onKeypress="return somente_letras_numeros(event)">
+														<input required tabindex="1" maxlength=21 id="login-usuario" name="usuarios_usuario" placeholder="Usuário" class="form-control letra-primeiro" type="text" onKeypress="return somente_letras_numeros(event)" onkeyup="this.value = sem_espaco(this.value)">
 													</div>
 												</div>
 												<!-- Senha -->
@@ -78,7 +78,7 @@
 												<div class="form-group wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".4s"> 
 													<div class="input-group">
 														<span class="input-group-addon"><i class="fas fa-key"></i></span>
-														<input required tabindex="2" maxlength=10 id="login-senha" name="usuarios_senha" placeholder="Senha" class="form-control" type="password" onKeypress="return somente_letras_numeros(event)">
+														<input required tabindex="2" maxlength=10 id="login-senha" name="usuarios_senha" placeholder="Senha" class="form-control" type="password" onKeypress="return somente_letras_numeros(event)" onkeyup="this.value = sem_espaco(this.value)">
 													</div>
 												</div>
 											</div>

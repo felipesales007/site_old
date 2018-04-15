@@ -505,4 +505,9 @@
             document.getElementById('setor-desativado').style.display = 'block';
         }
     }
+
+    // Bloqueia espaço em campos não permitidos
+    function sem_espaco(str) {
+        return str.replace(/^\s+|\s+$/g,"");
+    }
 </script>

@@ -42,7 +42,7 @@
 											<div class="form-group">
 												<div class="input-group">
 													<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-													<input required tabindex="1" maxlength=15 id="login-nome" name="usuarios_nome" placeholder="Primeiro nome" class="form-control" type="text" onKeypress="return somente_letras(event)" onkeyup="maiuscula('login-nome')">
+													<input required tabindex="1" maxlength=15 id="login-nome" name="usuarios_nome" placeholder="Primeiro nome" class="form-control" type="text" onKeypress="return somente_letras(event)" onkeyup="maiuscula('login-nome')" onkeyup="this.value = sem_espaco(this.value)">
 												</div>
 											</div>
 											<!-- Sobrenome -->
@@ -50,7 +50,7 @@
 											<div class="form-group">
 												<div class="input-group">
 													<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-													<input required tabindex="2" maxlength=15 id="login-sobrenome" name="usuarios_sobrenome" placeholder="Sobrenome" class="form-control" type="text" onKeypress="return somente_letras(event)" onkeyup="maiuscula('login-sobrenome')">
+													<input required tabindex="2" maxlength=15 id="login-sobrenome" name="usuarios_sobrenome" placeholder="Sobrenome" class="form-control" type="text" onKeypress="return somente_letras(event)" onkeyup="maiuscula('login-sobrenome')" onkeyup="this.value = sem_espaco(this.value)">
 												</div>
 											</div>
 											<!-- Matrícula -->
@@ -58,7 +58,7 @@
 											<div class="form-group"> 
 												<div class="input-group">
 													<span class="input-group-addon"><i class="glyphicon glyphicon-credit-card"></i></span>
-													<input required tabindex="3" maxlength="6" id="login-matricula" name="usuarios_matricula" placeholder="Matrícula" class="form-control zero-esquerda" type="number">
+													<input required tabindex="3" maxlength="6" id="login-matricula" name="usuarios_matricula" placeholder="Matrícula" class="form-control zero-esquerda" type="number" onkeyup="this.value = sem_espaco(this.value)">
 												</div>
 											</div>
 											<!-- Senha -->
@@ -66,7 +66,7 @@
 											<div class="form-group"> 
 												<div class="input-group">
 													<span class="input-group-addon"><i class="fas fa-key"></i></span>
-													<input required tabindex="4" minlength=6 maxlength=10 id="login-senha" name="usuarios_senha_criar" placeholder="Senha" class="form-control" type="password" onKeypress="return somente_letras_numeros(event)">
+													<input required tabindex="4" minlength=6 maxlength=10 id="login-senha" name="usuarios_senha_criar" placeholder="Senha" class="form-control" type="password" onKeypress="return somente_letras_numeros(event)" onkeyup="this.value = sem_espaco(this.value)">
 												</div>
 											</div>
 											<!-- Repetir senha -->
@@ -74,7 +74,7 @@
 											<div class="form-group"> 
 												<div class="input-group">
 													<span class="input-group-addon"><i class="fas fa-key"></i></span>
-													<input required tabindex="5" minlength=6 maxlength=10 id="login-senha-repetir" name="usuarios_senha_repetir" placeholder="Confirmação de senha" class="form-control" type="password" onKeypress="return somente_letras_numeros(event)">	
+													<input required tabindex="5" minlength=6 maxlength=10 id="login-senha-repetir" name="usuarios_senha_repetir" placeholder="Confirmação de senha" class="form-control" type="password" onKeypress="return somente_letras_numeros(event)" onkeyup="this.value = sem_espaco(this.value)">	
 												</div>
 											</div>
 											<!-- Setor -->
@@ -96,7 +96,7 @@
 											<div class="form-group"> 
 												<div class="input-group">
 													<span class="input-group-addon"><i class="glyphicon glyphicon-phone-alt"></i></span>
-													<input required tabindex="7" maxlength=13 id="login-telefone" name="usuarios_telefone" placeholder="Telefone" class="form-control zero-esquerda" type="text" onKeypress="formatar('(99)9999-9999', this)" onclick="auto_numero()" onfocus="this.selectionStart = this.selectionEnd = 500" onblur="if(this.value == '(71)') {this.value = '';}">
+													<input required tabindex="7" maxlength=13 id="login-telefone" name="usuarios_telefone" placeholder="Telefone" class="form-control zero-esquerda" type="text" onKeypress="formatar('(99)9999-9999', this)" onclick="auto_numero()" onfocus="this.selectionStart = this.selectionEnd = 500" onblur="if(this.value == '(71)') {this.value = '';}" onkeyup="this.value = sem_espaco(this.value)">
 												</div>
 											</div>
 											<!-- Celular -->
@@ -104,7 +104,7 @@
 											<div class="form-group"> 
 												<div class="input-group">
 													<span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
-													<input tabindex="8" maxlength=14 id="login-celular" name="usuarios_celular" placeholder="Celular (opcional)" class="form-control zero-esquerda" type="text" onKeypress="formatar('(99)99999-9999', this)" onclick="auto_numero_opcional()" onfocus="this.selectionStart = this.selectionEnd = 500" onblur="if(this.value == '(71)') {this.value = '';}">
+													<input tabindex="8" maxlength=14 id="login-celular" name="usuarios_celular" placeholder="Celular (opcional)" class="form-control zero-esquerda" type="text" onKeypress="formatar('(99)99999-9999', this)" onclick="auto_numero_opcional()" onfocus="this.selectionStart = this.selectionEnd = 500" onblur="if(this.value == '(71)') {this.value = '';}" onkeyup="this.value = sem_espaco(this.value)">
 												</div>
 											</div>
 											<!-- E-mail -->
@@ -112,7 +112,7 @@
 											<div class="form-group">
 												<div class="input-group">
 													<span class="input-group-addon"><i class="far fa-envelope"></i></span>
-													<input tabindex="9" maxlength=40 id="login-email" name="usuarios_email" placeholder="E-mail (opcional)" class="form-control" type="email">
+													<input tabindex="9" maxlength=40 id="login-email" name="usuarios_email" placeholder="E-mail (opcional)" class="form-control" type="email" onkeyup="this.value = sem_espaco(this.value)">
 												</div>
 											</div>
 											<!-- Data de nascimento -->
@@ -120,7 +120,7 @@
 											<div class="form-group"> 
 												<div class="input-group">
 													<span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-													<input tabindex="10" maxlength="10" id="login-data-nascimento" name="usuarios_data_nascimento" placeholder="Nascimento (opcional)" class="datepicker form-control" type="text" onKeypress="formatar_data('99/99/9999', this)">
+													<input tabindex="10" maxlength="10" id="login-data-nascimento" name="usuarios_data_nascimento" placeholder="Nascimento (opcional)" class="datepicker form-control" type="text" onKeypress="formatar_data('99/99/9999', this)" onkeyup="this.value = sem_espaco(this.value)">
 												</div>
 											</div>
 											<!-- CPF -->
@@ -128,7 +128,7 @@
 											<div class="form-group"> 
 												<div class="input-group">
 													<span class="input-group-addon"><i class="far fa-address-card"></i></span>
-													<input required tabindex="11" maxlength="11" id="login-cpf" name="usuarios_cpf" placeholder="CPF" class="form-control" type="tel">
+													<input required tabindex="11" maxlength="11" id="login-cpf" name="usuarios_cpf" placeholder="CPF" class="form-control" type="tel" onkeyup="this.value = sem_espaco(this.value)">
 												</div>
 											</div>
 											<!-- Sexo -->
