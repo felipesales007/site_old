@@ -53,7 +53,7 @@
         && (document.getElementById("login-senha-repetir").value.length > 5)
         && (document.getElementById("login-setor").value != "")
         && (document.getElementById("login-telefone").value.length > 12)
-        && (document.getElementById("login-cpf").value.length > 13)
+        && (document.getElementById("login-cpf").value.length > 10)
         && (document.getElementById("login-sexo").value != "")) {
             document.getElementById('carregando').innerHTML = '<i class="fa fa-spinner fa-pulse"></i>&ensp;';
         }
@@ -108,7 +108,7 @@
         && (document.getElementById("login-usuario-auto").value != "")
         && (document.getElementById("login-setor").value != "")
         && (document.getElementById("login-telefone").value.length > 12)
-        && (document.getElementById("login-cpf").value.length > 13)
+        && (document.getElementById("login-cpf").value.length > 10)
         && (document.getElementById("login-sexo").value != "")) {
             document.getElementById('carregando-alterar-perfil').innerHTML = '<i class="fa fa-spinner fa-pulse"></i>&ensp;';
         }
@@ -180,7 +180,7 @@
     });
     $(document).ready(function() {
         $("#login-cpf").keyup(function() {
-            $("#login-cpf").val(this.value.match(/[0-9-.]*/));
+            $("#login-cpf").val(this.value.match(/[0-9.]*/));
         });
     });
     $(document).ready(function() {

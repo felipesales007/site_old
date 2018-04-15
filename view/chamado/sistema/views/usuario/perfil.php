@@ -156,7 +156,7 @@
                                 <i id="chamado-i" class="pull-right fa fa-question-circle fa-2x" data-toggle="tooltip" data-placement="top" title="Preencher com o seu CPF para utilizá-lo na recuperação de senha, este dado está seguro com criptografia de ponta-a-ponta"></i>
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="far fa-address-card"></i></span>
-                                    <input required tabindex="8" maxlength="14" id="login-cpf" name="usuarios_cpf" placeholder="CPF" class="form-control" type="text" onKeypress="formatar('999.999.999-99', this)" value="<?= $usuarios_cpf ?>">
+                                    <input required tabindex="8" maxlength="11" id="login-cpf" name="usuarios_cpf" placeholder="CPF" class="form-control" type="tel" value="<?= $usuarios_cpf ?>">
                                 </div>
                             </div>
                         </div>

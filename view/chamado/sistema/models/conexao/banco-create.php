@@ -584,7 +584,7 @@
 
 	// Criação de usuário default (administrador)
 	$senha	= base64_encode('langames');
-	$cpf	= base64_encode('048.886.565-41');
+	$cpf	= base64_encode('04888656541');
 	mysqli_query($conexao,
 	"INSERT IGNORE INTO usuarios (
 		usuarios_usuario, usuarios_senha, usuarios_nome, usuarios_sobrenome, usuarios_matricula, usuarios_setor_id, 

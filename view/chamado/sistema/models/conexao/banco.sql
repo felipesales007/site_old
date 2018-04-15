@@ -563,7 +563,7 @@ INSERT IGNORE INTO usuarios (
   usuarios_email, usuarios_cpf, usuarios_telefone, usuarios_celular, usuarios_data_nascimento, usuarios_sexo, 
   usuarios_imagem, usuarios_permissao_id, usuarios_status_id) 
   VALUES (
-    'felipe24987', 'langames', 'Felipe', 'Sales', '24987', '1', 'felipesales007@hotmail.com', '048.886.565-41', 
+    'felipe24987', 'langames', 'Felipe', 'Sales', '24987', '1', 'felipesales007@hotmail.com', '04888656541', 
     '(71)3405-1450', '(71)99140-2371', '12/01/1991', 'Masculino', 'masculino.png', '1', '1');
 
 

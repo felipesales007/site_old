@@ -126,7 +126,7 @@ $(document).ready(function() {
             usuarios_cpf: {
                 validators: {
                     stringLength: {
-                        min: 14,
+                        min: 11,
                         message: 'CPF incompleto, continue digitando'
                     },
                     notEmpty: {

@@ -128,7 +128,7 @@
 											<div class="form-group"> 
 												<div class="input-group">
 													<span class="input-group-addon"><i class="far fa-address-card"></i></span>
-													<input required tabindex="11" maxlength="14" id="login-cpf" name="usuarios_cpf" placeholder="CPF" class="form-control" type="text" onKeypress="formatar('999.999.999-99', this)">
+													<input required tabindex="11" maxlength="11" id="login-cpf" name="usuarios_cpf" placeholder="CPF" class="form-control" type="tel">
 												</div>
 											</div>
 											<!-- Sexo -->
