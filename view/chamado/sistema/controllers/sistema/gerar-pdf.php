@@ -28,8 +28,7 @@
                     <label class="col-md-4 control-label pdf-label">Celular</label>  
                     <div class="col-md-4">
                         <div class="input-group pdf-input-group">
-                            <span class="input-group-addon pdf-addon"><i class="glyphicon glyphicon-phone"></i></span>
-                            <input class="form-control pdf-form-control" type="text" value="'.$chamado["usuarios_celular"].'" style="border-radius: 0 4px 4px 0">
+                            <input class="form-control pdf-form-control" type="text" value="'.$chamado["usuarios_celular"].'" style="border-radius: 4px 4px 4px 4px">
                         </div>
                     </div>
                 </div>
@@ -43,8 +42,7 @@
                     <label class="col-md-4 control-label pdf-label">E-mail</label>  
                     <div class="col-md-4">
                         <div class="input-group pdf-input-group">
-                            <span class="input-group-addon pdf-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                            <input class="form-control pdf-form-control" type="text" value="'.mb_strimwidth($chamado["usuarios_email"], 0, 33, "...").'" style="border-radius: 0 4px 4px 0">
+                            <input class="form-control pdf-form-control" type="text" value="'.mb_strimwidth($chamado["usuarios_email"], 0, 33, "...").'" style="border-radius: 4px 4px 4px 4px"">
                         </div>
                     </div>
                 </div>
@@ -58,8 +56,7 @@
                     <label class="col-md-4 control-label pdf-label">Celular</label>  
                     <div class="col-md-4">
                         <div class="input-group pdf-input-group">
-                            <span class="input-group-addon pdf-addon"><i class="glyphicon glyphicon-phone"></i></span>
-                            <input class="form-control pdf-form-control" type="text" value="'.$chamado["usuarios_celular"].'" style="border-radius: 0 4px 4px 0">
+                            <input class="form-control pdf-form-control" type="text" value="'.$chamado["usuarios_celular"].'" style="border-radius: 4px 4px 4px 4px"">
                         </div>
                     </div>
                 </div>
@@ -69,8 +66,7 @@
                     <label class="col-md-4 control-label pdf-label">E-mail</label>  
                     <div class="col-md-4">
                         <div class="input-group pdf-input-group">
-                            <span class="input-group-addon pdf-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                            <input class="form-control pdf-form-control" type="text" value="'.mb_strimwidth($chamado["usuarios_email"], 0, 33, "...").'" style="border-radius: 0 4px 4px 0">
+                            <input class="form-control pdf-form-control" type="text" value="'.mb_strimwidth($chamado["usuarios_email"], 0, 33, "...").'" style="border-radius: 4px 4px 4px 4px"">
                         </div>
                     </div>
                 </div>
@@ -85,8 +81,7 @@
                     <label class="col-md-4 control-label pdf-label">Problema</label>  
                     <div class="col-md-4">
                         <div class="input-group pdf-input-group">
-                            <span class="input-group-addon pdf-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-                            <textarea width=50 class="form-control" style="border-radius: 0 4px 4px 0;">'.wordwrap(mb_strimwidth($chamado["chamados_problema"], 0, 110, "..."), 33, "<br />\n", true).'</textarea>
+                            <textarea width=50 class="form-control" style="border-radius: 4px 4px 4px 4px">'.wordwrap(mb_strimwidth($chamado["chamados_problema"], 0, 110, "..."), 33, "<br />\n", true).'</textarea>
                         </div>
                     </div>
                 </div>
@@ -100,8 +95,7 @@
                     <label class="col-md-4 control-label pdf-label">Problema</label>  
                     <div class="col-md-4">
                         <div class="input-group pdf-input-group">
-                            <span class="input-group-addon pdf-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-                            <textarea width=50 class="form-control" style="border-radius: 0 4px 4px 0;">'.wordwrap(mb_strimwidth($chamado["chamados_problema"], 0, 110, "..."), 33, "<br />\n", true).'</textarea>
+                            <textarea width=50 class="form-control" style="border-radius: 4px 4px 4px 4px">'.wordwrap(mb_strimwidth($chamado["chamados_problema"], 0, 110, "..."), 33, "<br />\n", true).'</textarea>
                         </div>
                     </div>
                 </div>
@@ -118,8 +112,7 @@
                     <label class="col-md-4 control-label pdf-label">Problema</label>  
                     <div class="col-md-4">
                         <div class="input-group pdf-input-group">
-                            <span class="input-group-addon pdf-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-                            <textarea width=50 class="form-control" style="border-radius: 0 4px 4px 0;">'.wordwrap(mb_strimwidth($chamado["chamados_problema"], 0, 110, "..."), 33, "<br />\n", true).'</textarea>
+                            <textarea width=50 class="form-control" style="border-radius: 4px 4px 4px 4px">'.wordwrap(mb_strimwidth($chamado["chamados_problema"], 0, 110, "..."), 33, "<br />\n", true).'</textarea>
                         </div>
                     </div>
                 </div>
@@ -136,8 +129,7 @@
                     <label class="col-md-4 control-label pdf-label">Problema</label>  
                     <div class="col-md-4">
                         <div class="input-group pdf-input-group">
-                            <span class="input-group-addon pdf-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-                            <textarea width=50 class="form-control" style="border-radius: 0 4px 4px 0;">'.wordwrap(mb_strimwidth($chamado["chamados_problema"], 0, 110, "..."), 33, "<br />\n", true).'</textarea>
+                            <textarea width=50 class="form-control" style="border-radius: 4px 4px 4px 4px">'.wordwrap(mb_strimwidth($chamado["chamados_problema"], 0, 110, "..."), 33, "<br />\n", true).'</textarea>
                         </div>
                     </div>
                 </div>
@@ -161,8 +153,7 @@
                         <label class="col-md-4 control-label pdf-label">Responsável</label>  
                         <div class="col-md-4">
                             <div class="input-group pdf-input-group">
-                                <span class="input-group-addon pdf-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                <input class="form-control pdf-form-control" type="text" value="'.$chamado["tecnico_nome"].' '.$chamado["tecnico_sobrenome"].'" style="border-radius: 0 4px 4px 0">
+                                <input class="form-control pdf-form-control" type="text" value="'.$chamado["tecnico_nome"].' '.$chamado["tecnico_sobrenome"].'" style="border-radius: 4px 4px 4px 4px">
                             </div>
                         </div>
                     </div>
@@ -172,8 +163,7 @@
                         <label class="col-md-4 control-label pdf-label">Setor</label>  
                         <div class="col-md-4">
                             <div class="input-group pdf-input-group">
-                                <span class="input-group-addon pdf-addon"><i class="glyphicon glyphicon-briefcase"></i></span>
-                                <input class="form-control pdf-form-control" type="text" value="'.mb_strimwidth($chamado["tecnico_setor"], 0, 33, "...").'" style="border-radius: 0 4px 4px 0">
+                                <input class="form-control pdf-form-control" type="text" value="'.mb_strimwidth($chamado["tecnico_setor"], 0, 33, "...").'" style="border-radius: 4px 4px 4px 4px">
                             </div>
                         </div>
                     </div>
@@ -183,8 +173,7 @@
                         <label class="col-md-4 control-label pdf-label">Telefone</label>  
                         <div class="col-md-4">
                             <div class="input-group pdf-input-group">
-                                <span class="input-group-addon pdf-addon"><i class="glyphicon glyphicon-phone-alt"></i></span>
-                                <input class="form-control pdf-form-control" type="text" value="'.$chamado["tecnico_telefone"].'" style="border-radius: 0 4px 4px 0">
+                                <input class="form-control pdf-form-control" type="text" value="'.$chamado["tecnico_telefone"].'" style="border-radius: 4px 4px 4px 4px">
                             </div>
                         </div>
                     </div>
@@ -202,8 +191,7 @@
                         <label class="col-md-4 control-label pdf-label">Status</label>  
                         <div class="col-md-4">
                             <div class="input-group pdf-input-group">
-                                <span class="input-group-addon pdf-addon"><i class="glyphicon glyphicon-heart"></i></span>
-                                <input class="form-control pdf-form-control" type="text" value="'.$chamado["chamados_situacao"].'" style="border-radius: 0 4px 4px 0">
+                                <input class="form-control pdf-form-control" type="text" value="'.$chamado["chamados_situacao"].'" style="border-radius: 4px 4px 4px 4px">
                             </div>
                         </div>
                     </div>
@@ -221,8 +209,7 @@
                     <label class="col-md-4 control-label pdf-label">Data de fechamento do chamado</label>  
                     <div class="col-md-4">
                         <div class="input-group pdf-input-group">
-                            <span class="input-group-addon pdf-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-                            <input class="form-control pdf-form-control" type="text" value="'.$chamado["chamados_data_fechamento_data"].'" style="border-radius: 0 4px 4px 0">
+                            <input class="form-control pdf-form-control" type="text" value="'.$chamado["chamados_data_fechamento_data"].'" style="border-radius: 4px 4px 4px 4px">
                         </div>
                     </div>
                 </div>
@@ -236,8 +223,7 @@
                     <label class="col-md-4 control-label pdf-label">Solução</label>  
                     <div class="col-md-4">
                         <div class="input-group pdf-input-group">
-                            <span class="input-group-addon pdf-addon"><i class="glyphicon glyphicon-wrench"></i></span>
-                            <textarea width=50 class="form-control" style="border-radius: 0 4px 4px 0;">'.wordwrap(mb_strimwidth($chamado["chamados_solucao"], 0, 110, "..."), 33, "<br />\n", true).'</textarea>
+                            <textarea width=50 class="form-control" style="border-radius: 4px 4px 4px 4px">'.wordwrap(mb_strimwidth($chamado["chamados_solucao"], 0, 110, "..."), 33, "<br />\n", true).'</textarea>
                         </div>
                     </div>
                 </div>
@@ -251,8 +237,7 @@
                     <label class="col-md-4 control-label pdf-label">Celular</label>  
                     <div class="col-md-4">
                         <div class="input-group pdf-input-group">
-                            <span class="input-group-addon pdf-addon"><i class="glyphicon glyphicon-phone"></i></span>
-                            <input class="form-control pdf-form-control" type="text" value="'.$chamado["tecnico_celular"].'" style="border-radius: 0 4px 4px 0">
+                            <input class="form-control pdf-form-control" type="text" value="'.$chamado["tecnico_celular"].'" style="border-radius: 4px 4px 4px 4px">
                         </div>
                     </div>
                 </div>
@@ -266,8 +251,7 @@
                     <label class="col-md-4 control-label pdf-label">E-mail</label>  
                     <div class="col-md-4">
                         <div class="input-group pdf-input-group">
-                            <span class="input-group-addon pdf-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                            <input class="form-control pdf-form-control" type="text" value="'.mb_strimwidth($chamado["tecnico_email"], 0, 33, "...").'" style="border-radius: 0 4px 4px 0">
+                            <input class="form-control pdf-form-control" type="text" value="'.mb_strimwidth($chamado["tecnico_email"], 0, 33, "...").'" style="border-radius: 4px 4px 4px 4px">
                         </div>
                     </div>
                 </div>
@@ -275,9 +259,9 @@
         }
 
         $html = '
-            <img class="pdf-logo" width=40 src="../../../assets/img/icone.png"> <span class="pdf-text-logo"><b> Chamados</b></span>
+            <span class="pdf-text-logo"><b>Chamados</b></span>
             <p class="pull-right">Data da impressão '.$data_atual.'</p>
-            <br>
+            <br><br>
             <div class="pdf-titulo">
                 <center><h3><b>Relatório do chamado de nº '.$chamado["chamados_id"].'</b></h3></center>
             </div>
@@ -291,8 +275,7 @@
                     <label class="col-md-4 control-label pdf-label">Solicitante</label>  
                     <div class="col-md-4">
                         <div class="input-group pdf-input-group">
-                            <span class="input-group-addon pdf-addon"><i class="glyphicon glyphicon-user"></i></span>
-                            <input class="form-control pdf-form-control" type="text" value="'.$chamado["usuarios_nome"].' '.$chamado["usuarios_sobrenome"].'" style="border-radius: 0 4px 4px 0">
+                            <input class="form-control pdf-form-control" type="text" value="'.$chamado["usuarios_nome"].' '.$chamado["usuarios_sobrenome"].'" style="border-radius: 4px 4px 4px 4px">
                         </div>
                     </div>
                 </div>
@@ -302,8 +285,7 @@
                     <label class="col-md-4 control-label pdf-label">Setor</label>  
                     <div class="col-md-4">
                         <div class="input-group pdf-input-group">
-                            <span class="input-group-addon pdf-addon"><i class="glyphicon glyphicon-briefcase"></i></span>
-                            <input class="form-control pdf-form-control" type="text" value="'.mb_strimwidth($chamado["usuarios_setor"], 0, 33, "...").'" style="border-radius: 0 4px 4px 0">
+                            <input class="form-control pdf-form-control" type="text" value="'.mb_strimwidth($chamado["usuarios_setor"], 0, 33, "...").'" style="border-radius: 4px 4px 4px 4px">
                         </div>
                     </div>
                 </div>
@@ -313,8 +295,7 @@
                     <label class="col-md-4 control-label pdf-label">Telefone</label>  
                     <div class="col-md-4">
                         <div class="input-group pdf-input-group">
-                            <span class="input-group-addon pdf-addon"><i class="glyphicon glyphicon-phone-alt"></i></span>
-                            <input class="form-control pdf-form-control" type="text" value="'.$chamado["usuarios_telefone"].'" style="border-radius: 0 4px 4px 0">
+                            <input class="form-control pdf-form-control" type="text" value="'.$chamado["usuarios_telefone"].'" style="border-radius: 4px 4px 4px 4px">
                         </div>
                     </div>
                 </div>
@@ -332,8 +313,7 @@
                     <label class="col-md-4 control-label pdf-label">Data de abertura do chamado</label>  
                     <div class="col-md-4">
                         <div class="input-group pdf-input-group">
-                            <span class="input-group-addon pdf-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-                            <input class="form-control pdf-form-control" type="text" value="'.$chamado["chamados_data_abertura_data"].'" style="border-radius: 0 4px 4px 0">
+                            <input class="form-control pdf-form-control" type="text" value="'.$chamado["chamados_data_abertura_data"].'" style="border-radius: 4px 4px 4px 4px">
                         </div>
                     </div>
                 </div>
@@ -343,8 +323,7 @@
                     <label class="col-md-4 control-label pdf-label">Prioridade</label>  
                     <div class="col-md-4">
                         <div class="input-group pdf-input-group">
-                            <span class="input-group-addon pdf-addon"><i class="glyphicon glyphicon-heart"></i></span>
-                            <input class="form-control pdf-form-control" type="text" value="'.$chamado["chamados_prioridade"].'" style="border-radius: 0 4px 4px 0">
+                            <input class="form-control pdf-form-control" type="text" value="'.$chamado["chamados_prioridade"].'" style="border-radius: 4px 4px 4px 4px">
                         </div>
                     </div>
                 </div>
@@ -354,8 +333,7 @@
                     <label class="col-md-4 control-label pdf-label">Ocorrência</label>  
                     <div class="col-md-4">
                         <div class="input-group pdf-input-group">
-                            <span class="input-group-addon pdf-addon"><i class="glyphicon glyphicon-list-alt"></i></span>
-                            <input class="form-control pdf-form-control" type="text" value="'.mb_strimwidth($chamado["ocorrencias_ocorrencia"], 0, 33, "...").'" style="border-radius: 0 4px 4px 0">
+                            <input class="form-control pdf-form-control" type="text" value="'.mb_strimwidth($chamado["ocorrencias_ocorrencia"], 0, 33, "...").'" style="border-radius: 4px 4px 4px 4px">
                         </div>
                     </div>
                 </div>
@@ -374,8 +352,7 @@
                         <label class="col-md-4 control-label pdf-label">Recebido por</label>  
                         <div class="col-md-4">
                             <div class="input-group pdf-input-group2">
-                                <span class="input-group-addon pdf-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                <input class="form-control pdf-form-control" type="text" style="border-radius: 0 4px 4px 0">
+                                <input class="form-control pdf-form-control" type="text" style="border-radius: 4px 4px 4px 4px">
                             </div>
                         </div>
                     </div>
@@ -385,8 +362,7 @@
                         <label class="col-md-4 control-label pdf-label">Assinatura</label>  
                         <div class="col-md-4">
                             <div class="input-group pdf-input-group2">
-                                <span class="input-group-addon pdf-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                <input class="form-control pdf-form-control" type="text" style="border-radius: 0 4px 4px 0">
+                                <input class="form-control pdf-form-control" type="text" style="border-radius: 4px 4px 4px 4px">
                             </div>
                         </div>
                     </div>
@@ -398,8 +374,7 @@
                         <label class="col-md-4 control-label pdf-label">Matrícula</label>  
                         <div class="col-md-4">
                             <div class="input-group pdf-input-group3">
-                                <span class="input-group-addon pdf-addon"><i class="glyphicon glyphicon-credit-card"></i></span>
-                                <input class="form-control pdf-form-control" type="text" style="border-radius: 0 4px 4px 0">
+                                <input class="form-control pdf-form-control" type="text" style="border-radius: 4px 4px 4px 4px">
                             </div>
                         </div>
                     </div>
@@ -409,8 +384,7 @@
                         <label class="col-md-4 control-label pdf-label">Data</label>  
                         <div class="col-md-4">
                             <div class="input-group pdf-input-group3">
-                                <span class="input-group-addon pdf-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-                                <input class="form-control pdf-form-control" value="_____/_____/__________"type="text" style="border-radius: 0 4px 4px 0">
+                                <input class="form-control pdf-form-control" value="_____/_____/__________"type="text" style="border-radius: 4px 4px 4px 4px">
                             </div>
                         </div>
                     </div>
