@@ -9,21 +9,21 @@
 
 .pdf-input-group {
     width: 320px;
-    margin-left: 20px;
+    margin-left: 0px;
 }
 
 .pdf-input-group2 {
     width: 373px;
-    margin-left: 20px;
+    margin-left: 0px;
 }
 
 .pdf-input-group3 {
     width: 267px;
-    margin-left: 20px;
+    margin-left: 0px;
 }
 
 .pdf-label {
-    margin-left: 28px !important;
+    margin-left: 2px !important;
 }
 
 .pdf-form-control {
