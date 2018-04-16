@@ -60,7 +60,7 @@
                                 <i id="chamado-i" class="pull-right fa fa-question-circle fa-2x" data-toggle="tooltip" data-placement="top" title="Preencher com o seu primeiro nome sem acentos ou caracteres especiais, por exemplo, Felipe"></i>
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                    <input required tabindex="1" maxlength=15 id="login-nome" name="usuarios_nome" placeholder="Primeiro nome" class="form-control" type="text" onKeypress="return somente_letras(event)" onkeyup="maiuscula('login-nome')" value="<?= $usuarios_nome ?>" onkeyup="this.value = sem_espaco(this.value)">
+                                    <input required tabindex="1" maxlength=15 id="login-nome" name="usuarios_nome" placeholder="Primeiro nome" class="form-control" type="text" onKeypress="return somente_letras(event)" onkeydown="maiuscula('login-nome')" value="<?= $usuarios_nome ?>" onkeyup="this.value = sem_espaco(this.value)">
                                 </div>
                             </div>
                         </div>
@@ -72,7 +72,7 @@
                                 <i id="chamado-i" class="pull-right fa fa-question-circle fa-2x" data-toggle="tooltip" data-placement="top" title="Preencher com o seu sobrenome sem acentos ou caracteres especiais, por exemplo, seu nome Felipe Sales, sobrenome Sales"></i>
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                    <input required tabindex="2" maxlength=15 id="login-sobrenome" name="usuarios_sobrenome" placeholder="Sobrenome" class="form-control" type="text" onKeypress="return somente_letras(event)" onkeyup="maiuscula('login-sobrenome')" value="<?= $usuarios_sobrenome ?>" onkeyup="this.value = sem_espaco(this.value)">
+                                    <input required tabindex="2" maxlength=15 id="login-sobrenome" name="usuarios_sobrenome" placeholder="Sobrenome" class="form-control" type="text" onKeypress="return somente_letras(event)" onkeydown="maiuscula('login-sobrenome')" value="<?= $usuarios_sobrenome ?>" onkeyup="this.value = sem_espaco(this.value)">
                                 </div>
                             </div>
                         </div>
@@ -105,10 +105,10 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label">Telefone</label>  
                             <div class="col-md-4">
-                                <i id="chamado-i" class="pull-right fa fa-question-circle fa-2x" data-toggle="tooltip" data-placement="top" title="Preencher com o seu telefone ou do seu setor de trabalho, por exemplo, (99)9999-9999"></i>
+                                <i id="chamado-i" class="pull-right fa fa-question-circle fa-2x" data-toggle="tooltip" data-placement="top" title="Preencher com o seu telefone ou do seu setor de trabalho, por exemplo, 07134455667"></i>
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-phone-alt"></i></span>
-                                    <input required tabindex="4" maxlength=13 id="login-telefone" name="usuarios_telefone" placeholder="Telefone" class="form-control zero-esquerda" type="text" onKeypress="formatar('(99)9999-9999', this)" onclick="auto_numero()" onfocus="this.selectionStart = this.selectionEnd = 500" onblur="if(this.value == '(71)') {this.value = '';}" value="<?= $usuarios_telefone ?>" onkeyup="this.value = sem_espaco(this.value)">
+                                    <input required tabindex="4" maxlength=11 id="login-telefone" name="usuarios_telefone" placeholder="Telefone" class="form-control" type="tel" onclick="auto_numero()" onfocus="this.selectionStart = this.selectionEnd = 500" onblur="if(this.value == '071') {this.value = '';}" value="<?= $usuarios_telefone ?>" onkeyup="this.value = sem_espaco(this.value)">
                                 </div>
                             </div>
                         </div>
@@ -117,10 +117,10 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label">Celular</label>  
                             <div class="col-md-4">
-                                <i id="chamado-i" class="pull-right fa fa-question-circle fa-2x" data-toggle="tooltip" data-placement="top" title="Preencher com outro telefone para contato, se houver, por exemplo, (99)99999-9999"></i>
+                                <i id="chamado-i" class="pull-right fa fa-question-circle fa-2x" data-toggle="tooltip" data-placement="top" title="Preencher com outro telefone para contato, se houver, por exemplo, 071988776655"></i>
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
-                                    <input tabindex="5" maxlength=14 id="login-celular" name="usuarios_celular" placeholder="Celular (opcional)" class="form-control zero-esquerda" type="text" onKeypress="formatar('(99)99999-9999', this)" onclick="auto_numero_opcional()" onfocus="this.selectionStart = this.selectionEnd = 500" onblur="if(this.value == '(71)') {this.value = '';}" value="<?= $usuarios_celular ?>" onkeyup="this.value = sem_espaco(this.value)">
+                                    <input tabindex="5" maxlength=12 id="login-celular" name="usuarios_celular" placeholder="Celular (opcional)" class="form-control" type="tel" onclick="auto_numero_opcional()" onfocus="this.selectionStart = this.selectionEnd = 500" onblur="if(this.value == '071') {this.value = '';}" value="<?= $usuarios_celular ?>" onkeyup="this.value = sem_espaco(this.value)">
                                 </div>
                             </div>
                         </div>

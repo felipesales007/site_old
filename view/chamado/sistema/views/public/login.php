@@ -43,7 +43,7 @@
 												</center>
 											<hr class="login-hr">
 											<center>
-												<a class="btn btn-primary login-button-espaco f-btn-primary" onclick="button_avancar()"><i class="glyphicon glyphicon-share-alt glyphicon-f-pointer"></i>&ensp;Voltar</a>
+												<a href="../usuario/chamado-novo" class="btn btn-primary login-button-espaco f-btn-primary"><i class="glyphicon glyphicon-share-alt glyphicon-f-pointer"></i>&ensp;Voltar</a>
 											</center>
 											</div>
 										</form>

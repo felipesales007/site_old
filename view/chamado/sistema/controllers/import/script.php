@@ -107,7 +107,7 @@
         && (document.getElementById("login-matricula").value != "")
         && (document.getElementById("login-usuario-auto").value != "")
         && (document.getElementById("login-setor").value != "")
-        && (document.getElementById("login-telefone").value.length > 12)
+        && (document.getElementById("login-telefone").value.length > 10)
         && (document.getElementById("login-cpf").value.length > 10)
         && (document.getElementById("login-sexo").value != "")) {
             document.getElementById('carregando-alterar-perfil').innerHTML = '<i class="fa fa-spinner fa-pulse"></i>&ensp;';
@@ -170,12 +170,12 @@
     });
     $(document).ready(function() {
         $("#login-telefone").keyup(function() {
-            $("#login-telefone").val(this.value.match(/[0-9-()]*/));
+            $("#login-telefone").val(this.value.match(/[0-9]*/));
         });
     });
     $(document).ready(function() {
         $("#login-celular").keyup(function() {
-            $("#login-celular").val(this.value.match(/[0-9-()]*/));
+            $("#login-celular").val(this.value.match(/[0-9]*/));
         });
     });
     $(document).ready(function() {
@@ -298,12 +298,12 @@
     // Preenche o campo telefônico automaticamente
     function auto_numero() {  
         if (document.formulario.usuarios_telefone.value == '') {  
-            document.formulario.usuarios_telefone.value="(71)";
+            document.formulario.usuarios_telefone.value="071";
         }    
     }
     function auto_numero_opcional() {  
         if (document.formulario.usuarios_celular.value == '') {  
-            document.formulario.usuarios_celular.value="(71)";
+            document.formulario.usuarios_celular.value="071";
         }    
     }
 

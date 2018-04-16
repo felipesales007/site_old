@@ -100,8 +100,8 @@ $(document).ready(function() {
             usuarios_telefone: {
                 validators: {
                     stringLength: {
-                        min: 13,
-                        message: 'Favor complete seu telefone'
+                        min: 11,
+                        message: 'Por favor complete seu telefone'
                     },
                     notEmpty: {
                         message: 'Por favor informe um telefone para contato'
@@ -111,7 +111,7 @@ $(document).ready(function() {
             usuarios_celular: {
                 validators: {
                     stringLength: {
-                        min: 14,
+                        min: 11,
                         message: 'Por favor complete seu telefone'
                     }
                 }

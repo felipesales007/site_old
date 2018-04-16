@@ -79,7 +79,6 @@
                     <p class="text-left text-danger col-md-12 col-xs-12"> - Matrícula já cadastrada no sistema.</p>
                     <p class="text-left text-danger col-md-12 col-xs-12"> - CPF já cadastrado no sistema.</p>
                     <p class="text-left text-danger col-md-12 col-xs-12"> - Campo sem preencher ou incorreto.</p>
-                    <p class="text-left text-danger col-md-12 col-xs-12"> - Perda de conexão com a internet ou com o servidor.</p>
                 </div>
                 <hr class="modal-espaco-hr">
                 <div class="modal-footer">
@@ -146,7 +145,6 @@
                     <p class="text-left text-danger col-md-12 col-xs-12"> - Usuário não é cadastrado no sistema.</p>
                     <p class="text-left text-danger col-md-12 col-xs-12"> - Usuário ou CPF incorreto.</p>
                     <p class="text-left text-danger col-md-12 col-xs-12"> - Campo sem preencher ou incorreto.</p>
-                    <p class="text-left text-danger col-md-12 col-xs-12"> - Perda de conexão com a internet ou com o servidor.</p>
                 </div>
                 <hr class="modal-espaco-hr">
                 <div class="modal-footer">
