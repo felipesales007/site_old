@@ -42,7 +42,7 @@
                     <label class="col-md-4 control-label pdf-label">E-mail</label>  
                     <div class="col-md-4">
                         <div class="input-group pdf-input-group">
-                            <input class="form-control pdf-form-control" type="text" value="'.mb_strimwidth($chamado["usuarios_email"], 0, 33, "...").'" style="border-radius: 4px 4px 4px 4px"">
+                            <input class="form-control pdf-form-control" type="text" value="'.mb_strimwidth($chamado["usuarios_email"], 0, 33, "...").'" style="border-radius: 4px 4px 4px 4px">
                         </div>
                     </div>
                 </div>
@@ -56,7 +56,7 @@
                     <label class="col-md-4 control-label pdf-label">Celular</label>  
                     <div class="col-md-4">
                         <div class="input-group pdf-input-group">
-                            <input class="form-control pdf-form-control" type="text" value="'.$chamado["usuarios_celular"].'" style="border-radius: 4px 4px 4px 4px"">
+                            <input class="form-control pdf-form-control" type="text" value="'.$chamado["usuarios_celular"].'" style="border-radius: 4px 4px 4px 4px">
                         </div>
                     </div>
                 </div>
@@ -66,7 +66,7 @@
                     <label class="col-md-4 control-label pdf-label">E-mail</label>  
                     <div class="col-md-4">
                         <div class="input-group pdf-input-group">
-                            <input class="form-control pdf-form-control" type="text" value="'.mb_strimwidth($chamado["usuarios_email"], 0, 33, "...").'" style="border-radius: 4px 4px 4px 4px"">
+                            <input class="form-control pdf-form-control" type="text" value="'.mb_strimwidth($chamado["usuarios_email"], 0, 33, "...").'" style="border-radius: 4px 4px 4px 4px">
                         </div>
                     </div>
                 </div>
@@ -143,6 +143,63 @@
             $espaco2 = '<br><br><br>';
         }
 
+        // Dados do responsável que podem estar em branco são ignoradas
+        if ($chamado["chamados_data_fechamento_data"] != null) {
+            $data_fechamento = '
+                <!-- Data fechamento -->
+                <div class="form-group pdf-text-campo">
+                    <label class="col-md-4 control-label pdf-label">Data de fechamento do chamado</label>  
+                    <div class="col-md-4">
+                        <div class="input-group pdf-input-group">
+                            <input class="form-control pdf-form-control" type="text" value="'.$chamado["chamados_data_fechamento_data"].'" style="border-radius: 4px 4px 4px 4px">
+                        </div>
+                    </div>
+                </div>
+            ';
+        }
+
+        if ($chamado["chamados_solucao"] != null) {
+            $solucao = '
+                <!-- Solução -->
+                <div class="form-group pdf-text-campo">
+                    <label class="col-md-4 control-label pdf-label">Solução</label>  
+                    <div class="col-md-4">
+                        <div class="input-group pdf-input-group">
+                            <textarea width=50 class="form-control" style="border-radius: 4px 4px 4px 4px">'.wordwrap(mb_strimwidth($chamado["chamados_solucao"], 0, 110, "..."), 33, "<br />\n", true).'</textarea>
+                        </div>
+                    </div>
+                </div>
+            ';
+        }
+
+        if ($chamado["tecnico_celular"] != null) {
+            $celular2 = '
+                <!-- Celular -->
+                <div class="form-group pdf-text-campo">
+                    <label class="col-md-4 control-label pdf-label">Celular</label>  
+                    <div class="col-md-4">
+                        <div class="input-group pdf-input-group">
+                            <input class="form-control pdf-form-control" type="text" value="'.$chamado["tecnico_celular"].'" style="border-radius: 4px 4px 4px 4px">
+                        </div>
+                    </div>
+                </div>
+            ';
+        }
+
+        if ($chamado["tecnico_email"] != null) {
+            $email2 = '
+                <!-- E-mail -->
+                <div class="form-group pdf-text-campo">
+                    <label class="col-md-4 control-label pdf-label">E-mail</label>  
+                    <div class="col-md-4">
+                        <div class="input-group pdf-input-group">
+                            <input class="form-control pdf-form-control" type="text" value="'.mb_strimwidth($chamado["tecnico_email"], 0, 33, "...").'" style="border-radius: 4px 4px 4px 4px">
+                        </div>
+                    </div>
+                </div>
+            ';
+        }
+
         if ($chamado["tecnico_nome"] != null) {
             $responsavel = '
                 <a class="btn chamado-ponteiro btn-block pdf-btn-titulo"><center>Responsável</center></a>
@@ -197,63 +254,6 @@
                     </div>
 
                     '.$solucao.'
-                </div>
-            ';
-        }
-
-        // Dados do responsável que podem estar em branco são ignoradas
-        if ($chamado["chamados_data_fechamento_data"] != null) {
-            $data_fechamento = '
-                <!-- Data fechamento -->
-                <div class="form-group pdf-text-campo">
-                    <label class="col-md-4 control-label pdf-label">Data de fechamento do chamado</label>  
-                    <div class="col-md-4">
-                        <div class="input-group pdf-input-group">
-                            <input class="form-control pdf-form-control" type="text" value="'.$chamado["chamados_data_fechamento_data"].'" style="border-radius: 4px 4px 4px 4px">
-                        </div>
-                    </div>
-                </div>
-            ';
-        }
-
-        if ($chamado["chamados_solucao"] != null) {
-            $solucao = '
-                <!-- Solução -->
-                <div class="form-group pdf-text-campo">
-                    <label class="col-md-4 control-label pdf-label">Solução</label>  
-                    <div class="col-md-4">
-                        <div class="input-group pdf-input-group">
-                            <textarea width=50 class="form-control" style="border-radius: 4px 4px 4px 4px">'.wordwrap(mb_strimwidth($chamado["chamados_solucao"], 0, 110, "..."), 33, "<br />\n", true).'</textarea>
-                        </div>
-                    </div>
-                </div>
-            ';
-        }
-
-        if ($chamado["tecnico_celular"] != null) {
-            $celular2 = '
-                <!-- Celular -->
-                <div class="form-group pdf-text-campo">
-                    <label class="col-md-4 control-label pdf-label">Celular</label>  
-                    <div class="col-md-4">
-                        <div class="input-group pdf-input-group">
-                            <input class="form-control pdf-form-control" type="text" value="'.$chamado["tecnico_celular"].'" style="border-radius: 4px 4px 4px 4px">
-                        </div>
-                    </div>
-                </div>
-            ';
-        }
-
-        if ($chamado["tecnico_email"] != null) {
-            $email2 = '
-                <!-- E-mail -->
-                <div class="form-group pdf-text-campo">
-                    <label class="col-md-4 control-label pdf-label">E-mail</label>  
-                    <div class="col-md-4">
-                        <div class="input-group pdf-input-group">
-                            <input class="form-control pdf-form-control" type="text" value="'.mb_strimwidth($chamado["tecnico_email"], 0, 33, "...").'" style="border-radius: 4px 4px 4px 4px">
-                        </div>
-                    </div>
                 </div>
             ';
         }
