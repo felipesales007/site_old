@@ -15,7 +15,7 @@
             INNER JOIN permissoes ON (usuarios.usuarios_permissao_id = permissoes.permissoes_id)
             INNER JOIN status ON (usuarios.usuarios_status_id = status.status_id)
             WHERE usuarios_status_id = '1'
-            ORDER BY usuarios_id ASC";
+            ORDER BY usuarios_usuario ASC";
         $retorno = $conexao -> query($sql);
 
         while($registro = $retorno -> fetch_array()) {
