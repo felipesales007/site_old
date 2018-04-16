@@ -259,7 +259,7 @@
         }
 
         $html = '
-            <span class="pdf-text-logo"><b>Chamados</b></span>
+            <span class="pdf-text-logo"><b>Chamado</b></span>
             <p class="pull-right">Data da impressão '.$data_atual.'</p>
             <br><br>
             <div class="pdf-titulo">
