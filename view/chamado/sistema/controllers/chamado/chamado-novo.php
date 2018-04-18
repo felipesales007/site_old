@@ -16,8 +16,8 @@
 
         // Se o anexo estiver sido selecionada
         if (!empty($chamados_anexo["name"])) {
-            // Tamanho máximo do anexo em bytes (1MB)
-            $tamanho = 2100000;
+            // Tamanho máximo do anexo em bytes (5MB)
+            $tamanho = 5242880;
             $error = array();
     
             // Verifica se o anexo é uma extensão válida

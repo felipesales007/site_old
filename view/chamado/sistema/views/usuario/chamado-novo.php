@@ -98,7 +98,7 @@
 					<div class="form-group">
 						<label for="chamado-anexo" class="col-md-4 control-label">Anexar</label>  
 						<div class="col-md-4">
-							<i id="chamado-i" class="pull-right fa fa-question-circle fa-2x" data-toggle="tooltip" data-placement="top" title="Se necessário, adicione um arquivo ao seu chamado para um atendimento mais eficiente no setor, com 2 MB de tamanho no máximo"></i>
+							<i id="chamado-i" class="pull-right fa fa-question-circle fa-2x" data-toggle="tooltip" data-placement="top" title="Se necessário, adicione um arquivo ao seu chamado para um atendimento mais eficiente no setor, com 5 MB de tamanho no máximo"></i>
 							<div class="input-group">
 								<span class="input-group-addon"><i class="glyphicon glyphicon-file"></i></span>
 								<div class="chamado-anexo-nome form-control">Arquivo (opcional)</div>

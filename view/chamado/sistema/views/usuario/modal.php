@@ -60,7 +60,7 @@
                              
                     <!-- Anexo -->			
                     <div class="form-group chamado-modal-input">
-                        <i id="chamado-i" class="pull-right fa fa-question-circle fa-2x" data-toggle="tooltip" data-placement="top" title="Altere o arquivo do seu chamado, se necessário, por um com 2 MB de tamanho no máximo"></i>
+                        <i id="chamado-i" class="pull-right fa fa-question-circle fa-2x" data-toggle="tooltip" data-placement="top" title="Altere o arquivo do seu chamado, se necessário, por um com 5 MB de tamanho no máximo"></i>
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-file"></i></span>
                             <div class="chamado-anexo-nome form-control">Anexar arquivo</div>
