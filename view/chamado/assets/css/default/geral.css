@@ -19,6 +19,11 @@ textarea {
     resize: none !important;
 }
 
+.modal {
+    overflow-y: hidden !important;
+    overflow-x: hidden !important;
+}
+
 .form-group {
     padding-top: 3px !important;
 }
