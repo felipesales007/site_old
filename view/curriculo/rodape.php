@@ -4,7 +4,7 @@
     <div class="container">
         <nav class="pull-left">
             <ul>
-                <li class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s" data-toggle="tooltip" data-placement="bottom" title="Enviar um e-mail">
+                <li class="wow fadeInLeft hidden" hidden data-wow-duration="1s" data-wow-delay=".5s" data-toggle="tooltip" data-placement="bottom" title="Enviar um e-mail">
                     <a id="nao_link" data-toggle="modal" data-target="#contato">
                         Contato
                     </a>
@@ -35,7 +35,7 @@
         </center>
         <br>
         <center class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".0s">
-            <div id="rodape_nome">&copy; 2017, Desenvolvido por Felipe Sales</div>
+            <div id="rodape_nome">&copy; 2019, Desenvolvido por Felipe Sales</div>
             <p>Ser desenvolvedor é uma viagem onde a próxima parada é a solução de um problema.</p>
         </center>
     </div>

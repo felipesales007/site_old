@@ -1,0 +1,1100 @@
+/* ---------------------------------------------------------
+ * WhatsApp Master Template v0.0.3
+ * Copyright 2018, Felipe Sales (https://felipesales.com.br)
+ * E-mail: felipesales007@hotmail.com
+ * Atualizado em 31/10/2018
+ * Licença livre
+/* --------------------------------------------------------- */
+
+
+/* --------------------------------------------
+ * Estilos para todo o WhatsApp Master Template
+/* -------------------------------------------- */
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(#dbdbd2, #d2dbdc);
+    overflow: hidden;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.fe-linha-verde {
+    position: absolute;
+    background-color: #009688;
+    width: 100%;
+    height: 127px;
+}
+
+.fe-font {
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "Segoe UI", "Helvetica Neue", "Helvetica", "Lucida Grande", Arial, "Ubuntu", "Cantarell", "Fira Sans", sans-serif;
+}
+
+.fe-hide {
+    display: none !important;
+}
+
+.fe-hidden {
+    visibility: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+  
+::-webkit-scrollbar-track-piece {
+    background-color: transparent;
+}
+  
+::-webkit-scrollbar-thumb:vertical,
+::-webkit-scrollbar-thumb:horizontal {
+    background-color: #00000036;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+}
+
+.fe-corpo {
+    position: absolute;
+    display: flex;
+    background-color: #ffffff;
+    width: 1396px;
+    height: calc(100% - 38px);
+    top: 19px;
+    bottom: 19px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 1.4px 7px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1.4px 7px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px 1.4px 7px -2px rgba(0,0,0,0.75);
+}
+
+.fe-coluna-esquerda {
+    width: 419px;
+    height: 100%;
+    overflow: hidden;
+    border-right: 1px solid rgba(0, 0, 0, 0.14);
+    -moz-background-clip: border;
+    -webkit-background-clip: border;
+    background-clip: border-box;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding;
+    background-clip: padding-box;
+}
+
+.fe-coluna-central {
+    width: 976px;
+    height: 100%;
+}
+
+.fe-coluna-direita {
+    background-color: red;
+    width: 0;
+    height: 100%;
+}
+
+@media screen and (max-width: 1440px) {
+    .fe-corpo {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        border-radius: 0;
+    }
+
+    .fe-coluna-esquerda,
+    .fe-coluna-esquerda-fixo {
+        width: 30% !important;
+    }
+
+    .fe-menu-usuario {
+        border-top-left-radius: 0 !important;
+    }
+    
+    .fe-coluna-central {
+        width: 70%;
+        height: 100%;
+    }
+
+    .fe-menu-contato {
+        border-top-right-radius: 0 !important;
+    }
+
+    .fe-chat {
+        width: 100% !important;
+        border-top-right-radius: 0 !important;
+    }
+    
+    .fe-coluna-direita {
+        width: 0;
+        height: 100%;
+    }
+}
+
+.fe-margin-left-15 {
+    margin-left: 15px;
+}
+
+.fe-margin-left-16 {
+    margin-left: 16px;
+}
+
+.fe-margin-left-19 {
+    margin-left: 19px;
+}
+
+.fe-circulo-pequeno {
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+}
+
+.fe-circulo-icone {
+    width: 44.3px;
+    height: 44.9px;
+    border-radius: 25px;
+}
+
+.fe-circulo-contato {
+    width: 48.5px;
+    height: 48.9px;
+    border-radius: 25px;
+}
+
+.fe-pointer {
+    cursor: pointer;
+}
+
+.fe-center-y {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.fe-center-x {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.fe-left {
+    float: left;
+}
+
+.fe-right {
+    float: right;
+}
+
+.material-icons {
+    color: #80868a;
+}
+
+.fe-btn-item {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-right: 17px;
+    margin-left: -6.5px;
+    border-radius: 25px;
+}
+
+.fe-btn-item:hover {
+    background-color: #d6d6d6;
+}
+
+.fe-btn-icone {
+    margin-top: -1px;
+    left: 16px;
+}
+
+.fe-icone-menu {
+    margin-top: -1px;
+    color: #767e83;
+    opacity: 1 !important;
+}
+
+.fe-branco {
+    color: #ffffff;
+}
+
+.fe-branco-back {
+    background-color: #ffffff;
+}
+
+
+/* ----------------------------------
+ * Estilos da coluna do lado esquerdo
+/* ---------------------------------- */
+
+/* --------------------------
+ * Estilos do menu do usuário
+/* -------------------------- */
+
+.fe-menu-usuario {
+    width: 100%;
+    height: 59px;
+    background-color: #eeeeee;
+    border-top-left-radius: 3px;
+}
+
+.fe-menu-usuario div {
+    margin-right: 16px;
+}
+
+.fe-menu-usuario .fe-icone-chat {
+    font-size: 21.5px;
+    left: -2px;
+}
+
+.fe-menu-usuario .fe-icone-status {
+    font-size: 25px;
+    left: -2px;
+}
+
+.fe-menu-usuario-item {
+    cursor: pointer;
+    margin-right: 24px;
+    margin-left: 2.5px;
+}
+
+
+/* -----------------------------------------
+ * Estilos do informativo ativar notificação
+/* ----------------------------------------- */
+
+.fe-info-notificacao {
+    width: 100%;
+    height: 89px;
+    background-color: #9de1fe;
+}
+
+.fe-info-notificacao > .fe-circulo-icone {
+    opacity: .9;
+}
+
+.fe-info-notificacao > .fe-circulo-icone > .material-icons {
+    position: absolute;
+    font-size: 22px;
+    margin-top: -12px;
+    color: #9de1fe;
+}
+
+.fe-info-notificacao:hover a {
+    text-decoration: underline
+}
+
+.fe-texto-notificacao {
+    font-size: 15.7px;
+    letter-spacing: 0.15px;
+    line-height: 15px;
+    margin-left: 17.5px;
+    opacity: .8;
+}
+
+.fe-texto-notificacao div {
+    margin-bottom: 3px;
+}
+
+.fe-texto-notificacao a {
+    position: relative;
+    color: #161b1d;
+    top: -1px;
+    font-size: 13.5px;
+    letter-spacing: 0.22px;
+}
+
+.fe-texto-notificacao i {
+    position: relative;
+    color: black;
+    font-size: 18.5px;
+    top: 4.7px;
+    left: -7px;
+}
+
+
+/* -------------------
+ * Estilos do buscador
+/* ------------------- */
+
+.fe-buscador {
+    position: relative;
+    width: 100%;
+    height: 49px;
+    background-color: #fbfbfb;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    -moz-background-clip: border;
+    -webkit-background-clip: border;
+    background-clip: border-box;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding;
+    background-clip: padding-box;
+    z-index: 1;
+}
+
+.fe-buscador i {
+    position: absolute;
+    font-size: 19px;
+    margin: 14.5px 0 0 26.5px;
+    opacity: .5;
+    z-index: 1;
+}
+
+.fe-input-buscar {
+    width: calc(81% - 17px);
+    height: 22.1px;
+    font-size: 12.8px;
+    letter-spacing: 0.5px;
+    margin-top: 7px;
+    margin-left: -2px;
+    padding: 5px 5px 5px 63px;
+    border: 1px solid #f6f6f6;
+    border-radius: 5px;
+}
+
+.fe-input-buscar:active,
+.fe-input-buscar:focus {
+    outline: 0;
+    border: 1px solid #ffffff;
+}
+
+.fe-input-buscar:active::-webkit-input-placeholder,
+.fe-input-buscar:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.fe-input-buscar:active:-moz-placeholder,
+.fe-input-buscar:focus:-moz-placeholder {
+    color: transparent;
+}
+
+.fe-input-buscar:active::-moz-placeholder,
+.fe-input-buscar:focus::-moz-placeholder {
+    color: transparent;
+}
+
+.fe-input-buscar:active:-ms-input-placeholder,
+.fe-input-buscar:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+.fe-input-buscar::-webkit-input-placeholder {
+    color: #a4a4a4;
+}
+ 
+.fe-input-buscar:-moz-placeholder {
+    color: #a4a4a4;  
+}
+ 
+.fe-input-buscar::-moz-placeholder {
+    color: #a4a4a4;  
+}
+ 
+.fe-input-buscar:-ms-input-placeholder {  
+    color: #a4a4a4;  
+}
+
+
+/* ---------------------------
+ * Estilos da lista de contato
+/* --------------------------- */
+
+.fe-coluna-esquerda-fixo {
+    position: absolute;
+    top: 0;
+    width: 419px;
+    height: 100%;
+}
+
+.fe-lista-contato {
+    background-color: #ffffff;
+    width: 100%;
+    height: calc(100% - 197.6px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    cursor: pointer;
+    border-bottom-left-radius: 3px;
+}
+
+.fe-lista-contato-item {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 71px;
+    margin-bottom: 1px;
+}
+
+.fe-lista-contato-item:hover {
+    background-color: #f4f5f5;
+}
+
+.fe-contato-ativo {
+    background-color: #e9ebeb !important;
+    height: 71px;
+}
+
+.fe-lista-contato-item:after {
+    position: absolute;
+    width: 81.3%;
+    content: '';
+    border-top: 1px solid #f2f2f2;
+    top: -1px;
+    right: 0px;
+    opacity: .9;
+}
+
+.fe-lista-contato-item img {
+    margin-top: -1.7px;
+    margin-left: 13px;
+}
+
+.fe-lista-contato-nome {
+    position: absolute;
+    display: flex;
+    font-size: 16.5px;
+    letter-spacing: 0.2px;
+    margin-top: -39px;
+    margin-left: 77px;
+    color: #000000;
+    opacity: .95;
+}
+
+.fe-lista-contato-hora {
+    margin-top: 17.5px;
+    margin-right: 15px;
+    color: #929393;
+    font-size: 11.5px;
+    letter-spacing: 0.4px;
+    font-weight: 300;
+    opacity: .9;
+}
+
+.fe-lista-contato-resumo {
+    position: absolute;
+    display: flex;
+    font-size: 14px;
+    letter-spacing: 0.01px;
+    margin-top: -15px;
+    margin-left: 77px;
+    color: #626262;
+    opacity: .77;
+}
+
+/* ------------------------
+ * Estilos de nova conversa
+/* ------------------------ */
+
+.fe-nova-conversa {
+    position: relative;
+    height: calc(100% + 40px);
+    width: 100%;
+    left: -100%;
+    transition: left 0.2s ease 0s;
+    z-index: 2;
+}
+
+.fe-nova-conversa-voltar {
+  background-color: #00bfa5;
+  height: 108px;
+  border-top-left-radius: 3px;
+}
+
+.fe-nova-conversa-voltar i {
+  color: white;
+  font-size: 27px;
+  cursor: pointer;
+  margin: 65px 0 0 25px;
+}
+
+.fe-nova-conversa-voltar span {
+  position: absolute;
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+  margin: 62px 0 0 83px;
+}
+
+/* -------------------------
+ * Estilos da coluna central
+/* ------------------------- */
+
+/* -----------------------
+ * Estilos do chat inativo
+/* ----------------------- */
+
+.fe-chat-inativo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #f7f9fa;
+    box-shadow: 0 -6px #58e870 inset;
+}
+
+.fe-circulo-chat-inativo {
+    max-width: 37%;
+    min-width: 360px;
+    min-height: 160px;
+    max-height: 38.35%;
+    margin-top: 4%;
+    border-radius: 25px;
+}
+
+.fe-texto-inativo {
+    margin-left: 280px;
+    margin-right: 280px;
+}
+
+.fe-texto-inativo-1 {
+    font-size: 33px;
+    letter-spacing: 0.2px;
+    font-weight: 100;
+    text-align: center;
+    color: #000000;
+    margin-top: 24px;
+    margin-bottom: 19px;
+    opacity: .7;
+}
+
+.fe-texto-inativo-2,
+.fe-texto-inativo-3 {
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    font-weight: 400;
+    text-align: center;
+    color: #000000;
+    opacity: .4;
+}
+
+.fe-texto-inativo-3 a {
+    color: #3fb853;
+    font-weight: 500;
+    text-decoration: none; 
+}
+
+.fe-hr-chat-inativo {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    opacity: .2;
+}
+
+
+/* --------------------------
+ * Estilos do menu do contato
+/* -------------------------- */
+
+.fe-menu-contato {
+    position: relative;
+    width: 100%;
+    height: 59px;
+    background-color: #eeeeee;
+    border-top-right-radius: 3px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.045);
+    -moz-background-clip: border;
+    -webkit-background-clip: border;
+    background-clip: border-box;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding;
+    background-clip: padding-box;
+    z-index: 1;
+}
+
+.fe-menu-contato img {
+    margin-top: -1px;
+}
+
+.fe-contato-nome-ativo {
+    position: absolute;
+    display: flex;
+    color: #000000;
+    margin-left: 71px;
+    font-size: 15.5px;
+    letter-spacing: 0.2px;
+    margin-top: -34px;
+    opacity: .95;
+}
+
+.fe-contato-status-ativo,
+.fe-contato-status-digitando {
+    position: absolute;
+    display: flex;
+    font-size: 12.95px;
+    letter-spacing: 0.01px;
+    margin-top: -12px;
+    margin-left: 71px;
+    color: #626262;
+    opacity: .77;
+}
+
+.fe-menu-contato .material-icons {
+    opacity: .9;
+}
+
+.fe-menu-contato .fe-icone-anexar {
+    margin-top: -12px;
+    -webkit-transform: rotate(50deg);
+    -moz-transform: rotate(50deg);
+    -ms-transform: rotate(50deg);
+    -o-transform: rotate(50deg);
+    transform: rotate(50deg);
+}
+
+.fe-menu-envio {
+    position: relative;
+}
+
+.fe-menu-envio:hover .fe-menu-envio-opcoes {
+    visibility: visible;
+    opacity: 1;
+}
+
+.fe-menu-envio:hover .fe-menu-envio-link {
+    transform: scaleY(1) scaleX(1) translateY(16px) translateX(0px);
+}
+
+.fe-menu-envio-opcoes {
+    position: absolute;
+    visibility: hidden;
+    left: -5px;
+    right: 0;
+    top: 34px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.fe-menu-envio-item {
+    display: block;
+    text-align: center;
+    margin: 16px 0;
+}
+
+.fe-menu-envio-link {
+    cursor: pointer;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    border-radius: 50%;
+    transform: scaleY(0.5) scaleX(0.5) translateY(0px) translateX(0px);
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+.fe-menu-link-imagem {
+    cursor: pointer;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 80px;
+    background-color: transparent;
+    -webkit-box-shadow: 0px 5.5px 18px -4px rgba(8, 3, 3, 0.8);
+    -moz-box-shadow: 0px 5.5px 18px -4px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 5.5px 18px -4px rgba(0, 0, 0, 0.8);
+}
+
+.fe-menu-upload > input {
+    display: none;
+}
+
+[data-tooltip]:before {
+    position: absolute;
+    background: #585858;
+    color: #ffffff;
+    visibility: hidden;
+    font-size: 13px;
+    font-weight: 400;
+    text-decoration: none;
+    top: 50%;
+    right: 100%;
+    margin-top: -17px;
+    margin-right: 12px;
+    padding: 8px 18px;
+    border-radius: 25px;
+    content: attr(data-tooltip);
+    opacity: .7;
+    white-space: nowrap;
+}
+
+[data-tooltip]:hover:before {
+    visibility: visible;
+}
+
+.fe-menu-contato .fe-icone-menu {
+    margin-right: 24px;
+}
+
+
+/* ---------------------
+ * Estilos do chat ativo
+/* --------------------- */
+
+.fe-chat {
+    width: 976px;
+    height: 100%;
+    margin-top: -60px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.fe-chat-ativo {
+    background-image: url("../image/chat-bg.png");
+}
+
+.fe-chat-box {
+    position: absolute;
+    background-color: #eeeeee;
+    width: 976px;
+    height: 62px;
+    bottom: 0px;
+    border-bottom-right-radius: 3px;
+}
+
+.fe-textarea-chat-texto {
+    width: calc(100% - 160px);
+    height: 29.5px;
+    font-size: 14.7px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "Segoe UI", "Helvetica Neue", "Helvetica", "Lucida Grande", Arial, "Ubuntu", "Cantarell", "Fira Sans", sans-serif;
+    letter-spacing: 0.1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    border: none;
+    resize: none;
+    border-radius: 25px;
+    opacity: .75;
+}
+
+.fe-textarea-chat-texto:active,
+.fe-textarea-chat-texto:focus {
+    outline: 0;
+}
+
+.fe-textarea-chat-texto::-webkit-input-placeholder {
+    color: #a4a4a4;
+}
+ 
+.fe-textarea-chat-texto:-moz-placeholder {
+    color: #a4a4a4;  
+}
+ 
+.fe-textarea-chat-texto::-moz-placeholder {
+    color: #a4a4a4;  
+}
+ 
+.fe-textarea-chat-texto:-ms-input-placeholder {  
+    color: #a4a4a4;  
+}
+
+.fe-chat-box .material-icons {
+    position: relative;
+    opacity: .8;
+}
+
+.fe-chat-emoticon {
+    font-size: 29px;
+    margin-left: 19px;
+    margin-right: 14px;
+    top: 4.4px;
+}
+
+.fe-chat-audio {
+    font-size: 28.5px;
+    margin-left: 12.9px;
+    top: 5px;
+}
+
+.fe-chat-send {
+    font-size: 25.5px;
+    margin-left: 15px;
+    top: 2px;
+}
+
+@media screen and (max-width: 1440px) {
+    .fe-chat-box {
+        width: 100%;
+    }
+
+    .fe-textarea-chat-texto {
+        width: calc(70% - 161px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* mensagem */
+
+.messages {
+    width: 100%;
+    height: calc(100% - 133px);
+}
+
+.messages-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 9px;
+    padding-bottom: 18px;
+    overflow-y: auto;
+}
+ 
+.messages-content .message {
+    position: relative;
+    float: left;
+    max-width: calc(100% - 425px);
+    color: #4b4b4b;
+    font-size: 14.4px;
+    margin: 1px 87px 1px 87px !important;
+    padding: 8px;
+    clear: both;
+    -webkit-box-shadow: 0px 3.7px 2px -3.65px rgba(0, 0, 0, 0.300);
+    -moz-box-shadow: 0px 3.7px 2px -3.5px rgba(0, 0, 0, 0.300);
+    box-shadow: 0px 3.7px 2px -3.65px rgba(0, 0, 0, 0.300);
+}
+
+.user {
+    background-color: #dcf8c6;
+    border-radius: 8px 0 8px 8px;
+}
+  
+.client {
+    background-color: #ffffff;
+    border-radius: 0 8px 8px 8px;
+}
+
+.transfer {
+    width: auto;
+    left: calc(50% - 84px);
+    font-size: 13px !important;
+    text-align: center;
+    background-color: #dcf2fc;
+    color: #4b4b4b;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border-radius: 8px 8px 8px 8px;
+    -webkit-border-radius: 8px 8px 8px 8px;
+    -moz-border-radius: 8px 8px 8px 8px;
+    -ms-border-radius: 8px 8px 8px 8px;
+    -o-border-radius: 8px 8px 8px 8px;
+    opacity: .9;
+}
+
+.transfer div {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+
+.message.transfer::after {
+    border-color: transparent;
+}
+  
+.message::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+  
+.message.user::after {
+    border-width: 0px 0 10px 10px;
+    border-color: transparent transparent transparent #dcf8c6;
+    top: 0;
+    right: -8px;
+    height: 2px;
+}
+  
+.message.client::after {
+    border-width: 0px 10px 10px 0;
+    border-color: transparent #ffffff transparent transparent;
+    top: 0;
+    left: -8px;
+    height: 2px;
+}
+  
+.materialboxed {
+    position: relative;
+    display: flex;
+    width: 325px;
+    margin: -5px -5px 7px -5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.fe-imagem-legenda {
+    max-width: 315px !important;
+}
+
+.reloginho {
+    margin-bottom: 1px;
+    opacity: .75;
+}
+  
+
+/* vezinho de mensagem */
+  
+.metadata {
+    position: relative;
+    float: right;
+    top: 9px;
+}
+  
+.metadata .tick {
+    position: relative;
+    height: 16px;
+    width: 16px;
+    right: -90px;
+}
+
+/* hora da mensagem */
+  
+.messages-content .message .timestamp {
+    position: relative;
+    float: right;
+    top: -8px;
+    font-size: 11px;
+    color: #000000;
+    opacity: .4;
+}
+  
+.messages-content .message.personal .timestamp {
+    margin: 19px 17px -14px 46px;
+}
+  
+.messages-content .message.client .timestamp {
+    margin: 19px -2px -14px 45px;
+}
+  
+/* margem da mensagem do usuário */
+
+.messages-content .message.personal {
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* centraliza o chat no meio da tela */
+
+body .messages-content .message.typing::after,
+body .messages-content .message.typing span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+  
+/* animação dos balões do chat */
+
+@keyframes ball {
+  0% {
+    margin-top: 0;
+  }
+  20% {
+    margin-top: 3px;
+  }
+  80% {
+    margin-top: -5px;
+  }
+}
+
+
+
+/* animação da mensagem sendo digitada */
+
+.messages-content .message.typing {
+  background-color: transparent;
+  width: 30px;
+  height: 16px;
+}
+
+.messages-content .message.typing::after {
+  content: "";
+  border-radius: 50%;
+  width: 3px;
+  height: 3px;
+  background-color: #4b4b4b;
+  transform: translate(-50%, -50%);
+  animation: ball 1.2s infinite linear;
+}
+
+.messages-content .message.typing span {
+  width: 3px;
+  height: 3px;
+  transform: translate(-50%, -50%);
+}
+
+.messages-content .message.typing span::before, .messages-content .message.typing span::after {
+  content: "";
+  border-radius: 50%;
+  width: 3px;
+  height: 3px;
+  position: absolute;
+  background-color: #4b4b4b;
+  animation: ball 1.2s infinite linear;
+}
+
+.messages-content .message.typing span::before {
+  left: 8px;
+  animation-delay: 0.3s;
+}
+  
+.messages-content .message.typing span::after {
+  right: 8px;
+  animation-delay: -0.3s;
+}

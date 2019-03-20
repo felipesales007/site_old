@@ -57,7 +57,7 @@
 									<span class="visible-xs text-left"><i id="whatsapp_color" class="fa fa-whatsapp"></i> (71) 9 9140-2371</span>
 								</a>
 							</li>
-							<li data-toggle="tooltip" data-placement="bottom" title="Enviar um e-mail">
+							<li class="hidden" hidden data-toggle="tooltip" data-placement="bottom" title="Enviar um e-mail">
 								<a data-toggle="modal" data-target="#contato" class="btn btn-simple btn-white btn-just-icon">
 									<i class="fa fa-envelope-o hidden-xs"></i>
 									<span class="visible-xs text-left"><i id="envelope_color" class="fa fa-envelope-o"></i> Enviar E-mail</span>

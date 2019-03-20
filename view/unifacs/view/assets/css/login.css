@@ -1,0 +1,91 @@
+main {
+    display: block;
+    min-height: 100vh;
+    min-height: -webkit-calc(100vh - 81px);
+    min-height: -moz-calc(100vh - 81px);
+    min-height: calc(100vh - 81px);
+    position: relative;
+    width: 100%;
+}
+
+footer {
+    display: block;
+    min-height: 81px;
+    width: 100%;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+#dedo {
+    cursor: pointer;
+}
+
+#login_nome:hover {
+    text-decoration: underline !important;
+}
+
+#login_sobre_fechar {
+    font-size: 15px;
+    font-weight: bold;
+    background-color: red !important;
+    transition: 0.7s;
+}
+
+#login_sobre_fechar:hover {
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #9F0303 !important;
+    transition: 0.7s;
+}
+
+#login_sobre_img {
+    width: 100% !important;
+    height: 25% !important;
+}
+
+#login_link_youtube:hover {
+    color: red;
+}
+
+@media (max-width: 767px) {
+    #login_itens {
+        display: inline-block;
+        text-align: center;
+        padding: 10px 0;
+        float: none !important;
+        width: 100%;
+    }
+}
+
+.row {
+    margin-top: -75px;
+}
+
+#esqueceu {
+    margin-left: 0;
+    margin-right: 30px;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+#i {
+    position: relative;
+    margin-top: 33px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.modal-dialog {
+    margin-top: 107px !important;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- html 5 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WhatsApp</title>
+
+    <!-- cor da barra do navegador em celulares -->
+    <meta name="theme-color" content="#075e55">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#075e55">
+    <meta name="msapplication-navbutton-color" content="#075e55">
+
+    <!-- icone do whatsapp -->
+    <link rel="icon" href="assets/image/icone.png">
+    <link rel="apple-touch-icon" href="assets/image/icone.png" sizes="76x76">
+
+    <!-- icones do google -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="fe-linha-verde"></div>
+    <div class="fe-font fe-corpo fe-center-x">
+        <!-- esquerda -->
+        <div class="fe-coluna-esquerda">
+            <!-- nova conversa -->
+            <div id="fe-nova-conversa" class="fe-nova-conversa">
+                <!-- voltar -->
+                <div class="fe-nova-conversa-voltar">
+                    <i id="fe-nova-conversa-fechar" class="material-icons">arrow_back</i>
+                    <span>Contatos</span>
+                </div>
+                <!-- buscador -->
+                <div id="fe-nova-conversa-buscador" class="fe-buscador">
+                    <i class="material-icons">search</i>
+                    <input type="text" class="fe-input-buscar fe-center-x" placeholder="Buscar contatos">
+                </div>
+                <!-- lista de contato -->
+                <div class="fe-lista-contato">
+                    <div id="fe-contato-clicado" class="fe-contato-ativo">
+                        <div class="fe-lista-contato-item">
+                            <img class="fe-margin-left-16 fe-circulo-contato fe-center-y" src="assets/image/perfil/perfil-0.png">
+                            <div class="fe-lista-contato-nome">Backup</div>
+                            <div class="fe-lista-contato-hora fe-right">09:54</div>
+                            <div class="fe-lista-contato-resumo">Oi Tudo bem?</div>
+                        </div>
+                    </div>
+                    <!-- repetição de exemplo -->
+                    <span id="fe-nova-conversa-repeticao"></span>
+                </div>
+            </div>
+            <!-- contatos -->
+            <div class="fe-coluna-esquerda-fixo">
+                <!-- menu do usuário -->
+                <div class="fe-menu-usuario">
+                    <img class="fe-margin-left-16 fe-circulo-pequeno fe-pointer fe-center-y" src="assets/image/usuario.jpeg">
+                    <div class="fe-btn-item fe-right">
+                        <i class="fe-btn-icone material-icons fe-right fe-center-y fe-menu-usuario-item fe-icone-menu"
+                            title="Menu">more_vert</i>
+                    </div>
+                    <i id="fe-nova-conversa-abrir" class="material-icons fe-right fe-center-y fe-menu-usuario-item fe-icone-chat"
+                        title="Nova conversa">chat</i>
+                    <i class="material-icons fe-right fe-center-y fe-menu-usuario-item fe-icone-status" title="Status">donut_large</i>
+                </div>
+                <!-- informativo ativar notificação -->
+                <div class="fe-info-notificacao fe-pointer">
+                    <div class="fe-circulo-icone fe-branco-back fe-margin-left-15 fe-center-y fe-left">
+                        <i class="material-icons fe-center-x fe-center-y">notifications_off</i>
+                    </div>
+                    <div class="fe-margin-left-19 fe-center-y fe-left fe-texto-notificacao">
+                        <div>Receba notificações de novas mensagens</div>
+                        <a>Ativar notificações na área de trabalho</a>
+                        <i class="material-icons">chevron_right</i>
+                    </div>
+                </div>
+                <!-- buscador -->
+                <div id="fe-buscador" class="fe-buscador">
+                    <i class="material-icons">search</i>
+                    <input type="text" class="fe-input-buscar fe-center-x" placeholder="Procurar ou começar uma nova conversa">
+                </div>
+                <!-- lista de contato -->
+                <div class="fe-lista-contato">
+                    <div id="fe-contato-clicado" class="fe-contato-ativo">
+                        <div class="fe-lista-contato-item">
+                            <img class="fe-margin-left-16 fe-circulo-contato fe-center-y" src="assets/image/perfil/perfil-0.png">
+                            <div class="fe-lista-contato-nome">Backup</div>
+                            <div class="fe-lista-contato-hora fe-right">09:54</div>
+                            <div class="fe-lista-contato-resumo">Oi Tudo bem?</div>
+                        </div>
+                    </div>
+                    <!-- repetição de exemplo -->
+                    <span id="fe-contatos-repeticao"></span>
+                </div>
+            </div>
+        </div>
+        <!-- central -->
+        <div class="fe-coluna-central">
+            <!-- menu do contato -->
+            <div class="fe-menu-contato">
+                <img class="fe-margin-left-16 fe-circulo-pequeno fe-pointer fe-center-y" src="assets/image/perfil/perfil-0.png">
+                <div class="fe-contato-nome-ativo">Celeste</div>
+                <div class="fe-contato-status-ativo">visto por último hoje às 10:00</div>
+                <div class="fe-contato-status-digitando fe-hide">digitando...</div>
+
+                <div class="fe-btn-item fe-right">
+                    <i class="fe-btn-icone material-icons fe-right fe-center-y fe-menu-usuario-item fe-icone-menu"
+                        title="Menu">more_vert</i>
+                </div>
+                <div class="fe-btn-item fe-right fe-menu-envio">
+                    <i class="fe-btn-icone material-icons fe-right fe-center-y fe-menu-usuario-item fe-icone-anexar"
+                        title="Anexar">attach_file</i>
+                    <!-- envio de arquivos -->
+                    <ul class="fe-menu-envio-opcoes">
+                        <!-- fotos e vídeos -->
+                        <li class="fe-menu-envio-item">
+                            <a class="fe-menu-envio-link" data-tooltip="Fotos e Vídeos">
+                                <div class="fe-menu-upload">
+                                    <label for="fe-input-menu-foto">
+                                        <img class="fe-menu-link-imagem" src="assets/image/fab_photo.png">
+                                    </label>
+                                    <input type="file" id="fe-input-menu-foto" accept="image/*">
+                                </div>
+                            </a>
+                        </li>
+                        <!-- câmera -->
+                        <li class="fe-menu-envio-item">
+                            <a class="fe-menu-envio-link" data-tooltip="Câmera">
+                                <img class="fe-menu-link-imagem" src="assets/image/fab_camera.png">
+                            </a>
+                        </li>
+                        <!-- documento -->
+                        <li class="fe-menu-envio-item">
+                            <a class="fe-menu-envio-link" data-tooltip="Documento">
+                                <div class="fe-menu-upload">
+                                    <label for="fe-input-menu-documento">
+                                        <img class="fe-menu-link-imagem" src="assets/image/fab_file.png">
+                                    </label>
+                                    <input type="file" id="fe-input-menu-documento" accept="application/vnd.openxmlformats-officedocument.wordprocessingml.document, .xlsx, .xls, .doc, .docx, .ppt, .pptx, text/plain, application/pdf">
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <i class="material-icons fe-right fe-center-y fe-menu-usuario-item fe-icone-buscar" title="Buscar...">search</i>
+            </div>
+            <!-- chat inativo -->
+            <div hidden class="fe-chat fe-chat-inativo">
+                <img class="fe-circulo-chat-inativo fe-center-x" src="assets/image/in.png">
+                <div class="fe-texto-inativo">
+                    <div class="fe-texto-inativo-1 fe-center-x">Mantenha seu telefone conectado</div>
+                    <div class="fe-texto-inativo-2">
+                        O WhatsApp conecta ao seu telefone para sincronizar suas mensagens. Para reduzir o uso de seu
+                        plano de dados, conecte seu telefone a uma rede Wi-Fi.
+                    </div>
+                    <hr class="fe-hr-chat-inativo">
+                    <div class="fe-texto-inativo-3">
+                        O WhatsApp está disponível para Windows.
+                        <a href="https://www.whatsapp.com/download" target="_blank">Obtenha-o aqui</a>.
+                    </div>
+                </div>
+            </div>
+            <!-- chat ativo -->
+            <div class="fe-chat fe-chat-ativo">
+
+
+
+                <!-- mensagens -->
+                <div class="messages">
+                    <div id="scroll_abaixo" class="messages-content">
+                        
+                            <!-- repetição client /  user personal timestamp -->
+                            <!-- mensagem -->
+                            <div class="message user personal timestamp">
+                                <img src="https://cdn.motor1.com/images/mgl/1BN89/s3/2018-volvo-xc40.jpg" class="materialboxed"
+                                    alt="imagem não carregada">
+                                Carro bonito né?
+                                <div class="timestamp">10:00</div>
+                                <span class="metadata">
+                                    <!-- não enviado -->
+                                    <div class="tick fe-hide">
+                                        <img src="assets/image/relogio.png" class="reloginho">
+                                    </div>
+                                    <!-- enviado -->
+                                    <div class="tick fe-hide">
+                                        <svg width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076">
+                                            <path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 0-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z"
+                                                fill="#92a58c" />
+                                        </svg>
+                                    </div>
+                                    <!-- enviado e entregue  -->
+                                    <div class="tick fe-hide">
+                                        <svg width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076">
+                                            <path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z"
+                                                fill="#92a58c" />
+                                        </svg>
+                                    </div>
+                                    <!-- enviado, entregue e visto  -->
+                                    <div class="tick">
+                                        <svg width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076">
+                                            <path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z"
+                                                fill="#4fc3f7" />
+                                        </svg>
+                                    </div>
+                                </span>
+                            </div>
+                            <div class="message transfer">
+                                <div class="message-text">SEGUNDA-FEIRA</div>
+                            </div>
+
+
+
+                            <div class="message client">
+                                dasd Eu vou
+                                <div class="timestamp">10:01</div>
+                            </div>
+                            <span class="metadata"></span>
+                            
+
+
+                            <div class="message user personal">
+                                :D É sim, é seu?
+                                <div class="timestamp">10:09</div>
+                                <span class="metadata">
+                                    <!-- não enviado -->
+                                    <div class="tick fe-hide">
+                                        <img src="assets/image/relogio.png" class="reloginho">
+                                    </div>
+                                    <!-- enviado -->
+                                    <div class="tick fe-hide">
+                                        <svg width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076">
+                                            <path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 0-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z"
+                                                fill="#92a58c" />
+                                        </svg>
+                                    </div>
+                                    <!-- enviado e entregue  -->
+                                    <div class="tick fe-hide">
+                                        <svg width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076">
+                                            <path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z"
+                                                fill="#92a58c" />
+                                        </svg>
+                                    </div>
+                                    <!-- enviado, entregue e visto  -->
+                                    <div class="tick">
+                                        <svg width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076">
+                                            <path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z"
+                                                fill="#4fc3f7" />
+                                        </svg>
+                                    </div>
+                                </span>
+                            </div>
+                            <div class="message transfer">
+                                <div class="message-text">10/08/18</div>
+                            </div>
+
+
+
+                            <div class="message client">
+                                É sim, é seu?
+                                <div class="timestamp">10:01</div>
+                            </div>
+                            
+                            <div class="message user personal timestamp">
+                                <img src="https://cdn.motor1.com/images/mgl/1BN89/s3/2018-volvo-xc40.jpg" class="materialboxed"
+                                    alt="imagem não carregada">
+
+                                Carro bonito né?
+                                <div class="timestamp">10:00</div>
+                                <span class="metadata">
+                                    <!-- não enviado -->
+                                    <div class="tick fe-hide">
+                                        <img src="assets/image/relogio.png" class="reloginho">
+                                    </div>
+                                    <!-- enviado -->
+                                    <div class="tick fe-hide">
+                                        <svg width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076">
+                                            <path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 0-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z"
+                                                fill="#92a58c" />
+                                        </svg>
+                                    </div>
+                                    <!-- enviado e entregue  -->
+                                    <div class="tick fe-hide">
+                                        <svg width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076">
+                                            <path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z"
+                                                fill="#92a58c" />
+                                        </svg>
+                                    </div>
+                                    <!-- enviado, entregue e visto  -->
+                                    <div class="tick">
+                                        <svg width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076">
+                                            <path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z"
+                                                fill="#4fc3f7" />
+                                        </svg>
+                                    </div>
+                                </span>
+                            </div>
+
+
+
+
+                            <div class="message client">
+                                É sim, é seu?
+                                <div class="timestamp">10:01</div>
+                            </div>
+
+
+                            <div class="message user personal timestamp">
+                                <img src="https://cdn.motor1.com/images/mgl/1BN89/s3/2018-volvo-xc40.jpg" class="materialboxed"
+                                    alt="imagem não carregada">
+
+
+
+                                <div class="timestamp">10:00</div>
+                                <span class="metadata">
+                                    <!-- não enviado -->
+                                    <div class="tick fe-hide">
+                                        <img src="assets/image/relogio.png" class="reloginho">
+                                    </div>
+                                    <!-- enviado -->
+                                    <div class="tick fe-hide">
+                                        <svg width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076">
+                                            <path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 0-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z"
+                                                fill="#92a58c" />
+                                        </svg>
+                                    </div>
+                                    <!-- enviado e entregue  -->
+                                    <div class="tick">
+                                        <svg width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076">
+                                            <path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z"
+                                                fill="#92a58c" />
+                                        </svg>
+                                    </div>
+                                    <!-- enviado, entregue e visto  -->
+                                    <div class="tick fe-hide">
+                                        <svg width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076">
+                                            <path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z"
+                                                fill="#4fc3f7" />
+                                        </svg>
+                                    </div>
+                                </span>
+                            </div>
+
+
+
+                            <div class="message user personal timestamp fe-imagem-legenda">
+                                <img src="https://cdn.motor1.com/images/mgl/1BN89/s3/2018-volvo-xc40.jpg" class="materialboxed"
+                                    alt="imagem não carregada">
+
+                                efwef erg erger gerg er gerg ergerg ergerfg dfsge erg rwe
+                                    gergergreg rg r ewrgdfg we wef wdfwdg reg erte g erg r gerge gdfg gdfgd ergergegdf
+                                    r grdfg sd grdfg sd grdfg sd grdfgsss?
+                                <div class="timestamp">10:00</div>
+                                <span class="metadata">
+                                    <!-- não enviado -->
+                                    <div class="tick">
+                                        <img src="assets/image/relogio.png" class="reloginho">
+                                    </div>
+                                    <!-- enviado -->
+                                    <div class="tick fe-hide">
+                                        <svg width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076">
+                                            <path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 0-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z"
+                                                fill="#92a58c" />
+                                        </svg>
+                                    </div>
+                                    <!-- enviado e entregue  -->
+                                    <div class="tick fe-hide">
+                                        <svg width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076">
+                                            <path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z"
+                                                fill="#92a58c" />
+                                        </svg>
+                                    </div>
+                                    <!-- enviado, entregue e visto  -->
+                                    <div class="tick fe-hide">
+                                        <svg width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076">
+                                            <path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z"
+                                                fill="#4fc3f7" />
+                                        </svg>
+                                    </div>
+                                </span>
+                            </div>
+
+
+
+                            <div class="message client">
+                                efwef erg erger gerg er gerg ergerg ergerfg dfsge erg rwe
+                                    gergergreg rg r ewrgdfg we wef wdfwdg reg erte g erg r gerge gdfg gdfgd ergergegdf
+                                    r grdfgaa?
+                                <div class="timestamp">10:01</div>
+                            </div>
+
+                            
+                            <div class="message user personal timestamp">
+                                <img src="https://cdn.motor1.com/images/mgl/1BN89/s3/2018-volvo-xc40.jpg" class="materialboxed"
+                                    alt="imagem não carregada">
+                                Carro bonito né?    
+                                <div class="timestamp">10:00</div>
+                                <span class="metadata">
+                                    <!-- não enviado -->
+                                    <div class="tick fe-hide">
+                                        <img src="assets/image/relogio.png" class="reloginho">
+                                    </div>
+                                    <!-- enviado -->
+                                    <div class="tick">
+                                        <svg width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076">
+                                            <path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 0-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z"
+                                                fill="#92a58c" />
+                                        </svg>
+                                    </div>
+                                    <!-- enviado e entregue  -->
+                                    <div class="tick fe-hide">
+                                        <svg width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076">
+                                            <path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z"
+                                                fill="#92a58c" />
+                                        </svg>
+                                    </div>
+                                    <!-- enviado, entregue e visto  -->
+                                    <div class="tick fe-hide">
+                                        <svg width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076">
+                                            <path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z"
+                                                fill="#4fc3f7" />
+                                        </svg>
+                                    </div>
+                                </span>
+                            </div>
+
+
+
+                            <div class="message client">
+                                É sim, é seu?
+                                <div class="timestamp">10:01</div>
+                            </div>
+
+
+                        
+                    </div>
+
+
+
+
+
+
+
+                    <div class="fe-chat-box">
+                        <i class="material-icons fe-chat-emoticon">insert_emoticon</i>
+                        <textarea class="fe-textarea-chat-texto fe-center-y" placeholder="Digite uma mensagem"></textarea>
+                        <i class="material-icons fe-chat-audio">mic</i>
+                        <i class="material-icons fe-chat-send fe-hide">send</i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- direita -->
+        <div class="fe-coluna-direita">
+
+        </div>
+    </div>
+</body>
+
+<!-- javascript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="assets/js/javascript.js"></script>
+<script type="text/javascript" src="assets/js/chat-bot.js"></script>
+</html>

@@ -12,6 +12,17 @@
 <link rel="icon" type="image/png" href="../../view/curriculo/recursos/img/logo.png">
 <link rel="apple-touch-icon" sizes="76x76" href="../../view/curriculo/recursos/img/logo.png">
 
+<!-- compartilhamento -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:image" content="../../../assets/img/default/favicon.png">
+<meta property="og:title" content="Felipe Sales - Portfólio">
+<meta property="og:site_name" content="Felipe Sales - Portfólio">
+<meta property="og:description" content="Desenvolvedor Web - Clique e faça o seu orçamento gratuitamente">
+<meta property="og:url" content="felipesales.com.br">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@felipesales007">
+
 <!-- CSS -->
 <link rel="stylesheet" href="recursos/css/default/bootstrap.min.css">
 <link rel="stylesheet" href="recursos/css/default/demo.css">
