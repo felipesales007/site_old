@@ -8,7 +8,9 @@ Site para divulgação de projetos desenvolvidos, demonstrando e descrevendo meu
 
 ## Versão disponível
 
-[<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1200px-PHP-logo.svg.png" width="150" height="85" />](http://www.php.net/)
+[<img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" width="100" height="100" />](http://www.php.net/)
+
+## Mais telas
 
 | DESENVOLVIMENTOS | CONHECIMENTOS |
 | --- | --- |
@@ -43,6 +45,7 @@ Site para divulgação de projetos desenvolvidos, demonstrando e descrevendo meu
 | <img src="https://uploaddeimagens.com.br/images/001/973/137/original/15.png" width="420" height="600" /> | <img src="https://uploaddeimagens.com.br/images/001/973/139/original/16.png" width="420" height="600" />
 
 ## Site
+
 Visite a página do [site](https://www.felipesales.com.br).
 
 ## Suporte nos navegadores
