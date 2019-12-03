@@ -4,5 +4,5 @@
     // header("location: https://www.felipesales.com.br/sistema/views/usuario/login");
 
     // Link em teste
-    header("location: sistema/views/public/login");
+    header("location: http://www.felipesales.com.br/site/view/chamado/sistema/views/public/login");
 ?>
