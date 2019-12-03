@@ -1,4 +1,4 @@
 <!-- Redirecionamento para página da Mundo DEV -->
 <?php
-    header("location: https://www.felipesales.com.br/view/dev/home");
+    header("location: http://www.felipesales.com.br/site/view/dev/home");
 ?>

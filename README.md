@@ -1,4 +1,4 @@
-# [Site](https://www.felipesales.com.br)
+# [Site](http://www.felipesales.com.br)
 
 ![version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 
@@ -46,7 +46,7 @@ Site para divulgação de projetos desenvolvidos, demonstrando e descrevendo meu
 
 ## Site
 
-Visite a página do [site](https://www.felipesales.com.br).
+Visite a página do [site](http://www.felipesales.com.br).
 
 ## Suporte nos navegadores
 

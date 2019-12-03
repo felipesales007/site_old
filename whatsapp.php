@@ -1,4 +1,4 @@
 <!-- Redirecionamento para página do WhatsApp -->
 <?php
-    header("location: https://www.felipesales.com.br/view/whatsapp/index");
+    header("location: http://www.felipesales.com.br/site/view/whatsapp/index");
 ?>

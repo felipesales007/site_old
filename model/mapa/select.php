@@ -3,8 +3,8 @@
     error_reporting(1);
     
     // se conecta ao DB
-    // $conexao = new mysqli("localhost", "root", "", "mapa");
-    $conexao = new mysqli("mysql552.umbler.com", "felipesales", "terraazul", "felipesales");
+    $conexao = new mysqli("localhost", "root", "", "mapa");
+    // $conexao = new mysqli("mysql552.umbler.com", "felipesales", "terraazul", "felipesales");
     
     if($conexao -> connect_error == true) {
         $msg_erro = $conexao -> connect_error;

@@ -21,7 +21,7 @@
                         </ul>
                     </nav>
                     <div class="copyright pull-right">
-                        &copy; 2018, desenvolvido por <a id="login-link-dev" href="https://www.felipesales.com.br" target="_blank" data-toggle="tooltip" data-placement="top" title="Portfólio">Felipe Sales</a>
+                        &copy; 2018, desenvolvido por <a id="login-link-dev" href="http://www.felipesales.com.br" target="_blank" data-toggle="tooltip" data-placement="top" title="Portfólio">Felipe Sales</a>
                     </div>
                 </div>
             </footer>

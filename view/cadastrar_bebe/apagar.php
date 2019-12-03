@@ -3,8 +3,8 @@
 	error_reporting(1);
 	
 	// se conecta ao DB
-	// $conexao = new mysqli("localhost", "root", "", "20171_php");
-	$conexao = new mysqli("mysql552.umbler.com", "felipesales", "terraazul", "felipesales");
+	$conexao = new mysqli("localhost", "root", "", "20171_php");
+	// $conexao = new mysqli("mysql552.umbler.com", "felipesales", "terraazul", "felipesales");
 	
 	// Obtem ID via GET
 	$id = $_GET["id"];

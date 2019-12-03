@@ -8,15 +8,15 @@
 
     $mail = new PHPMailer();
     $mail->isSMTP();
-    $mail->Host = 'smtp.live.com';
-    $mail->Port = 587;
-    $mail->SMTPSecure = 'tls';
+    $mail->Host = 'smtp.googlemail.com';
+    $mail->Port = 465;
+    $mail->SMTPSecure = 'ssl';
     $mail->SMTPAuth = true;
-    $mail->Username = "1felipesales007online@hotmail.com";
-    $mail->Password = "perfilonline1";
+    $mail->Username = "felipesales.info@gmail.com";
+    $mail->Password = "langames";
 
-    $mail->setFrom("1felipesales007online@hotmail.com", "Contato");
-    $mail->addAddress("1felipesales007@hotmail.com");
+    $mail->setFrom("felipesales.info@gmail.com", "Contato");
+    $mail->addAddress("felipesales007@hotmail.com");
     $mail->Subject = "Contato Perfil Online";
     $mail->msgHTML("<html>De: {$nome}<br/>Email: {$email}<br/><br/>Mensagem: {$mensagem}</html>");
     $mail->AltBody = "De: {$nome}\nEmail: {$email}\n\nMensagem: {$mensagem}";

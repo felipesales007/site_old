@@ -69,7 +69,7 @@
 								</ul>
 							</nav>
 							<div class="copyright pull-right wow fadeInRight" data-wow-duration="1s" data-wow-delay=".6s">
-								&copy; 2017, desenvolvido por <a id="login_nome" href="https://www.felipesales.com.br" target="_blank" data-toggle="tooltip" data-placement="top" title="Portfólio">Felipe Sales</a>
+								&copy; 2017, desenvolvido por <a id="login_nome" href="http://www.felipesales.com.br" target="_blank" data-toggle="tooltip" data-placement="top" title="Portfólio">Felipe Sales</a>
 							</div>
 						</div>
 					</footer>

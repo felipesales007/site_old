@@ -1,7 +1,7 @@
 
 /* ---------------------------------------------------------
  * WhatsApp Master Template v0.0.8
- * Copyright 2018, Felipe Sales (https://felipesales.com.br)
+ * Copyright 2018, Felipe Sales (http://felipesales.com.br)
  * E-mail: felipesales007@hotmail.com
  * Atualizado em 31/10/2018
  * Licença livre
