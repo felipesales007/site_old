@@ -1,4 +1,4 @@
 <!-- Redirecionamento para página da Equipe Bravo -->
 <?php
-    header("location: http://www.felipesales.com.br/site/view/equipe_bravo/index");
+    header("location: http://www.felipesales.com.br/site_old/view/equipe_bravo/index");
 ?>
